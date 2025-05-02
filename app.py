@@ -1,5 +1,5 @@
 import streamlit as st
-from transformers import pipeline, GPT2LMHeadModel, GPT2Tokenizer
+from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 import pandas as pd
 import numpy as np
 import os
@@ -17,15 +17,15 @@ from googletrans import Translator
 import base64
 import tempfile
 
-# Load GPT2 models
+# Load GPT2 models from Hugging Face Hub
 @st.cache_resource
 def load_models():
-    tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+    # Replace 'Sohamb2005' with your actual Hugging Face username if different
+    excuse_model = AutoModelForCausalLM.from_pretrained("Sohamb2005/gpt2-finetuned-excuses")
+    apology_model = AutoModelForCausalLM.from_pretrained("Sohamb2005/gpt2-finetuned-apologies")
+    emergency_model = AutoModelForCausalLM.from_pretrained("Sohamb2005/gpt2-finetuned-emergency")
+    tokenizer = AutoTokenizer.from_pretrained("Sohamb2005/gpt2-finetuned-excuses")  # Use excuses tokenizer for all, if same
     tokenizer.pad_token = tokenizer.eos_token
-
-    excuse_model = GPT2LMHeadModel.from_pretrained("gpt2-finetuned-excuses")
-    apology_model = GPT2LMHeadModel.from_pretrained("gpt2-finetuned-apologies")
-    emergency_model = GPT2LMHeadModel.from_pretrained("gpt2-finetuned-emergency")
 
     excuse_gen = pipeline("text-generation", model=excuse_model, tokenizer=tokenizer)
     apology_gen = pipeline("text-generation", model=apology_model, tokenizer=tokenizer)
@@ -50,6 +50,7 @@ def speak_text(text, lang='en'):
     tts = gTTS(text, lang=lang)
     fp = BytesIO()
     tts.write_to_fp(fp)
+    fp.seek(0)
     return fp
 
 def generate_text(prompt, generator):
