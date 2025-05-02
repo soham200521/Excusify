@@ -1,5 +1,6 @@
 streamlit
-transformers
+transformers>=4.27.0
+safetensors
 torch
 gtts
 pillow
@@ -7,4 +8,5 @@ faker
 reportlab
 pandas
 numpy
-googletrans==4.0.0-rc1
+deep-translator
+safetensors
