@@ -1,0 +1,10 @@
+streamlit
+transformers
+torch
+gtts
+pillow
+faker
+reportlab
+pandas
+numpy
+googletrans==4.0.0-rc1
