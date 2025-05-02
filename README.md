@@ -123,13 +123,9 @@ Excusify/
 ├── README.md
 ├── LICENSE
 ├── data/
-│ ├── intelligent_excuses_dataset.csv
-│ ├── guilt_tripping_apologies.csv
-│ └── emergency_messages.csv
-├── models/
-│ ├── gpt2-finetuned-excuses/
-│ ├── gpt2-finetuned-apologies/
-│ └── gpt2-finetuned-emergency/
+  ├── intelligent_excuses_dataset.csv
+  ├── guilt_tripping_apologies.csv
+  └── emergency_messages.csv
 ```
 
 ---
@@ -138,6 +134,17 @@ Excusify/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
+## 🤗 Models
+
+This app uses fine-tuned GPT-2 models hosted on the Hugging Face Hub.  
+You do **not** need to download the models manually - when you run the app, it will automatically load each model from the Hub.
+
+- [Excuse Generator Model](https://huggingface.co/Sohamb2005/gpt2-finetuned-excuses)
+- [Apology Generator Model](https://huggingface.co/Sohamb2005/gpt2-finetuned-apologies)
+- [Emergency Message Model](https://huggingface.co/Sohamb2005/gpt2-finetuned-emergency)
+
+If you want to use these models elsewhere, download them directly from their Hugging Face model pages.
 ---
 ## 👨‍💻 Created By
 
