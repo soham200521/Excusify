@@ -20,11 +20,10 @@ import tempfile
 # Load GPT2 models from Hugging Face Hub
 @st.cache_resource
 def load_models():
-    # Replace 'Sohamb2005' with your actual Hugging Face username if different
     excuse_model = AutoModelForCausalLM.from_pretrained("Sohamb2005/gpt2-finetuned-excuses")
     apology_model = AutoModelForCausalLM.from_pretrained("Sohamb2005/gpt2-finetuned-apologies")
     emergency_model = AutoModelForCausalLM.from_pretrained("Sohamb2005/gpt2-finetuned-emergency")
-    tokenizer = AutoTokenizer.from_pretrained("Sohamb2005/gpt2-finetuned-excuses")  # Use excuses tokenizer for all, if same
+    tokenizer = AutoTokenizer.from_pretrained("Sohamb2005/gpt2-finetuned-excuses")  
     tokenizer.pad_token = tokenizer.eos_token
 
     excuse_gen = pipeline("text-generation", model=excuse_model, tokenizer=tokenizer)
