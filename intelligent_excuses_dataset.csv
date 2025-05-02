@@ -1,0 +1,1596 @@
+Scenario,Urgency,Believability,Excuse
+work,high,high,My child broke their arm at school and I had to take them to the emergency room.
+work,high,high,There was a fire in my apartment building and we were evacuated for safety.
+work,high,high,My spouse was hospitalized overnight and I had to stay with them for medical updates.
+work,high,high,My car was involved in a multi-vehicle accident and I had to wait for the police and insurance.
+work,high,high,My elderly parent fell at home and I had to accompany them to the hospital.
+work,high,high,My child had a severe asthma attack and I had to rush them to the ER.
+work,high,high,My pet swallowed a foreign object and I had to take them to emergency surgery.
+work,high,high,There was a gas leak in my building and the fire department evacuated everyone.
+work,high,high,My spouse was in a car accident and needed immediate assistance.
+work,high,high,My child’s school was closed suddenly due to a COVID outbreak and I had to stay home.
+work,high,high,My phone was stolen on my way to work and I had to file a police report.
+work,high,high,There was a fire alarm in my building and we were kept outside for hours.
+work,high,high,My neighbor had a medical emergency and I was the only one available to help.
+work,high,high,"My internet provider scheduled emergency maintenance without notice, leaving me offline."
+work,high,high,I accidentally locked myself out and had to wait for a locksmith.
+work,high,high,My child had a sudden allergic reaction and I had to take them to the ER.
+work,high,high,My car was towed by mistake and I had to spend hours retrieving it.
+work,high,high,My partner’s flight was delayed and I had to pick them up late at night.
+work,high,high,I was called for jury duty with no prior notice.
+work,high,high,My child’s daycare closed suddenly due to a health concern and I had to stay home.
+work,high,high,The power went out in my neighborhood and I couldn’t access any digital tools.
+work,high,high,My elderly parent fell and needed immediate assistance.
+work,high,high,There was a major accident on my commute route causing massive delays.
+work,high,high,My pet needed emergency care and I had to rush to the vet.
+work,high,high,My sibling was in a minor accident and needed a ride home.
+work,high,high,My apartment was broken into and I had to speak with police.
+work,high,high,My child’s babysitter canceled last minute and I couldn’t find a replacement.
+work,high,high,My spouse was unwell and I had to stay home to care for them.
+work,high,high,The subway was shut down due to a security threat.
+work,high,high,I had a dental emergency and needed urgent treatment.
+work,high,high,My car was blocked by a delivery truck for hours.
+work,high,high,My neighbor’s fire alarm went off and I had to help evacuate.
+work,high,high,My home Wi-Fi stopped working and I had to wait for a technician.
+work,high,high,There was a burst pipe in my kitchen and I had to manage repairs.
+work,high,high,My child’s school bus was involved in a minor accident.
+work,high,high,My pet needed an urgent vaccination.
+work,high,high,My building was fumigated unexpectedly and I had to leave.
+work,high,high,My spouse’s car broke down and I had to pick them up.
+work,high,high,My neighbor’s child got locked out and I was the only one home to help.
+work,high,high,My child had a fever and couldn’t go to daycare.
+work,high,high,My apartment complex had a fire drill that lasted hours.
+work,high,high,I lost my house keys and had to wait for a spare set.
+work,high,high,My elderly neighbor fell and I was the only one home to assist.
+work,high,high,My phone crashed and I lost access to important work files.
+work,high,high,My partner had a panic attack and I needed to support them.
+work,high,medium,My neighbor’s pet bit a delivery person and I had to help until animal control arrived.
+work,high,medium,My phone was stolen on my way to work and I had to spend the morning replacing it.
+work,high,medium,My bus broke down in an unfamiliar area and I had to wait for a replacement.
+work,high,medium,My landlord locked me out by mistake and I had to wait for a spare key.
+work,high,medium,My child had a severe allergic reaction to a bee sting and I had to rush home.
+work,high,medium,My spouse’s car broke down on the highway and I had to pick them up.
+work,high,medium,There was a hazardous chemical spill on my street and the fire department told us to shelter in place.
+work,high,medium,My sibling had a panic attack and I needed to stay with them until they calmed down.
+work,high,medium,My roommate was injured in a kitchen accident and I had to drive them to urgent care.
+work,high,medium,My child’s after-school program was canceled due to a staff shortage and I had to arrange care.
+work,high,medium,My pet bird escaped its cage and I spent hours searching the house before finding it.
+work,high,medium,My car keys snapped off in the ignition and I had to wait for a locksmith.
+work,high,medium,"The elevator in my building was stuck between floors with my elderly neighbor inside, so I stayed until emergency crews rescued her."
+work,high,medium,My partner had a dental emergency and I had to drive them to an urgent appointment.
+work,high,medium,My neighbor’s dog bit a delivery person and I had to help handle the situation with animal control.
+work,high,medium,"My spouse’s work called them in for an emergency shift, so I had to stay home with our children."
+work,high,medium,My child’s school bus was delayed for hours due to a major accident on the route.
+work,high,medium,My car’s brakes failed as I was leaving for work and I had to arrange for a tow and repairs.
+work,high,medium,"My apartment’s heating system broke down during a cold snap, and I had to wait for the repair technician."
+work,high,medium,My pet snake escaped its enclosure and I had to find it before it got lost in the building.
+work,high,medium,My partner’s prescription medication ran out unexpectedly and I had to drive across town to get a refill.
+work,high,medium,My spouse fainted while making breakfast and I had to take them to urgent care for observation.
+work,high,medium,My sibling was locked out of their apartment and needed me to bring them a spare key.
+work,high,medium,"My neighbor’s pipes burst and flooded their apartment, and I helped them move valuables before the restoration crew arrived."
+work,high,medium,My child’s after-school club was canceled and I had to pick them up early.
+work,high,medium,My partner’s sibling was in a minor accident and I had to help with hospital paperwork.
+work,high,medium,My spouse’s work called an emergency meeting and I had to stay home to supervise our children.
+work,high,medium,My car’s steering locked up and I had to wait for a tow and emergency repairs.
+work,high,medium,My pet dog was sprayed by a skunk and I had to bathe it before I could leave.
+work,high,medium,My neighbor’s elderly father wandered off and I joined the search party until he was found.
+work,high,medium,My partner’s phone was stolen and I had to help them reset accounts and contact work.
+work,high,medium,"My child’s aftercare program was canceled due to a burst pipe, and I had to make alternate arrangements."
+work,high,medium,My car’s brakes locked up and I had to wait for a mechanic to arrive.
+work,high,medium,My spouse’s friend was hospitalized and I had to help coordinate care and support.
+work,high,medium,My pet lizard escaped and I had to search the apartment for hours before finding it.
+work,high,medium,"My neighbor’s apartment flooded from a broken washing machine, and I helped them move furniture."
+work,high,medium,My child’s school nurse called about a suspected concussion and I had to pick them up for evaluation.
+work,high,medium,My partner’s work had a COVID scare and I had to stay home to care for our kids while they quarantined.
+work,high,medium,My car’s transmission failed on the way to work and I had to call for a tow and arrange repairs.
+work,high,medium,My spouse’s sibling needed emergency childcare and I was the only one available.
+work,high,medium,My child’s school had a gas leak and all students were sent home immediately.
+work,high,medium,My neighbor’s pet parrot escaped and I helped search the neighborhood for it.
+work,high,medium,My partner’s work called an emergency video call and I had to supervise our children while they attended.
+work,high,medium,My car’s alternator failed and I had to wait for a tow truck and mechanic.
+work,high,medium,My apartment’s ceiling collapsed due to a leak and I had to be present for repairs.
+work,high,low,My dog ate my car keys and I had to wait for them to pass before I could leave.
+work,high,low,I was caught in a city-wide zombie walk parade and couldn't get through the crowd.
+work,high,low,The elevator stopped between floors and I was trapped for hours with no phone signal.
+work,high,low,A magician on the subway made my wallet disappear and I had to wait for the trick to end.
+work,high,low,I was abducted by a flash mob and forced to dance in the town square for charity.
+work,high,low,My neighbor’s llama escaped and caused a traffic jam on my street.
+work,high,low,I was locked in my own bathroom by a mischievous cat and couldn't get out until help arrived.
+work,high,low,My parrot flew out the window and led me on a wild chase across the neighborhood.
+work,high,low,I was mistaken for a celebrity by a tour group and had to pose for dozens of photos.
+work,high,low,My shoes were stolen by squirrels and I had to search the park to get them back.
+work,high,low,My neighbor’s goat chewed through my car’s brake line and I had to call for repairs.
+work,high,low,I was accidentally locked inside a convenience store overnight and missed my alarm.
+work,high,low,A street magician challenged me to a card trick contest and I couldn’t leave until I won.
+work,high,low,My pet turtle escaped and led me on a slow chase through the apartment complex.
+work,high,low,My neighbor’s rooster crowed so loudly I lost my hearing for the morning.
+work,high,low,I was stuck in a tree after rescuing a stray kitten and had to wait for the fire department.
+work,high,low,My bicycle was commandeered by a film crew for a movie scene and I had to wait to get it back.
+work,high,low,My pet snake wrapped itself around my steering wheel and I couldn’t drive until animal control arrived.
+work,high,low,I was chosen as a last-minute contestant for a live radio prank and couldn’t leave until it finished.
+work,high,low,"My neighbor’s bees swarmed my car, making it impossible to approach for hours."
+work,high,low,I was locked in a public restroom after the automatic doors malfunctioned.
+work,high,low,My neighbor’s ferret hid my work ID badge and I had to search everywhere to find it.
+work,high,low,I was recruited by a street band to play tambourine in a parade and couldn’t escape the crowd.
+work,high,low,My shoes were glued to the floor by a prankster and I had to wait for help.
+work,high,low,I was stopped by a group of street artists who wanted to paint my portrait for a mural.
+work,high,low,My pet hamster chewed through my phone charger and I had to wait for it to recharge.
+work,high,low,I was locked in my car by a malfunctioning security system and had to wait for a technician.
+work,high,low,My neighbor’s peacock blocked my driveway and refused to move for hours.
+work,high,low,I was delayed by a spontaneous pillow fight in the subway station.
+work,high,low,My cat knocked over my alarm clock and I woke up in a time warp.
+work,high,low,I was called to be an extra in a surprise flash mob commercial and couldn’t leave until filming ended.
+work,high,low,My neighbor’s alpaca spit on my work clothes and I had to change.
+work,high,low,I was challenged to a dance-off by a group of street performers and couldn’t leave until I won.
+work,high,low,My pet piglet escaped and led me on a chase through the farmer’s market.
+work,high,low,I was caught in a spontaneous water balloon fight on my way to the office.
+work,high,low,My neighbor’s parrot mimicked my alarm and tricked me into waking up at the wrong time.
+work,high,low,I was locked out of my building by a malfunctioning fingerprint scanner.
+work,high,low,My shoes were stolen by a raccoon and I had to chase it through the park.
+work,high,low,I was delayed by a street performance that blocked the only exit from my parking garage.
+work,high,low,My neighbor’s goat ate my work notes and I had to rewrite them before leaving.
+work,high,low,I was stopped by a local news crew for an impromptu interview about traffic.
+work,high,low,My pet ferret hid my car keys in a heating vent and I had to call maintenance.
+work,high,low,I was stuck in a revolving door after a prankster jammed it.
+work,high,low,My neighbor’s ducklings blocked my path to the car and I had to herd them to safety.
+work,high,low,I was recruited by a clown troupe for a charity event and couldn’t leave until my act was done.
+work,medium,high,My dentist appointment ran over because they found a cavity that needed immediate filling.
+work,medium,high,My child’s parent-teacher conference was rescheduled for this morning.
+work,medium,high,My car battery died and it took a while to get a jump start from roadside assistance.
+work,medium,high,My pet was sick and I had to take them to the vet for a checkup.
+work,medium,high,There was a water main break on my street and I had to wait for repairs to finish.
+work,medium,high,"My neighbor’s pipes burst and flooded their apartment, and I helped them move valuables before the restoration crew arrived."
+work,medium,high,"My child’s after-school program was canceled due to a staff shortage, and I had to arrange alternate care before coming to work."
+work,medium,high,My phone was stolen while commuting and I had to spend the morning at the police station filing a report and replacing it.
+work,medium,high,My spouse fainted while making breakfast and I had to take them to urgent care for observation and tests.
+work,medium,high,My sibling was locked out of their apartment and needed me to bring them a spare key before I could leave for work.
+work,medium,high,"My neighbor’s apartment flooded from a broken washing machine, and I helped them move furniture."
+work,medium,high,My child’s school nurse called about a suspected concussion and I had to pick them up for evaluation.
+work,medium,high,My partner’s work had a COVID scare and I had to stay home to care for our kids while they quarantined.
+work,medium,high,My car’s transmission failed on the way to work and I had to call for a tow and arrange repairs.
+work,medium,high,My spouse’s sibling needed emergency childcare and I was the only one available.
+work,medium,high,My child’s school had a gas leak and all students were sent home immediately.
+work,medium,high,My neighbor’s pet parrot escaped and I helped search the neighborhood for it.
+work,medium,high,My partner’s work called an emergency video call and I had to supervise our children while they attended.
+work,medium,high,My car’s alternator failed and I had to wait for a tow truck and mechanic.
+work,medium,high,My apartment’s ceiling collapsed due to a leak and I had to be present for repairs.
+work,medium,high,"My spouse’s work called them in for an emergency shift, so I had to stay home with our children."
+work,medium,high,My child’s school bus was delayed for hours due to a major accident on the route.
+work,medium,high,My car’s brakes failed as I was leaving for work and I had to arrange for a tow and repairs.
+work,medium,high,"My apartment’s heating system broke down during a cold snap, and I had to wait for the repair technician."
+work,medium,high,My pet bird escaped its cage and I spent hours searching the house before finding it.
+work,medium,high,My partner’s prescription medication ran out unexpectedly and I had to drive across town to get a refill.
+work,medium,high,My child’s after-school club was canceled and I had to pick them up early.
+work,medium,high,My partner’s sibling was in a minor accident and I had to help with hospital paperwork.
+work,medium,high,My spouse’s work called an emergency meeting and I had to stay home to supervise our children.
+work,medium,high,My car’s steering locked up and I had to wait for a tow and emergency repairs.
+work,medium,high,My pet dog was sprayed by a skunk and I had to bathe it before I could leave.
+work,medium,high,My neighbor’s elderly father wandered off and I joined the search party until he was found.
+work,medium,high,My partner’s phone was stolen and I had to help them reset accounts and contact work.
+work,medium,high,"My child’s aftercare program was canceled due to a burst pipe, and I had to make alternate arrangements."
+work,medium,high,My car’s brakes locked up and I had to wait for a mechanic to arrive.
+work,medium,high,My spouse’s friend was hospitalized and I had to help coordinate care and support.
+work,medium,high,My pet lizard escaped and I had to search the apartment for hours before finding it.
+work,medium,high,My building’s fire alarm malfunctioned and I had to wait for maintenance to reset it.
+work,medium,high,My neighbor’s water heater burst and I helped them mop up the flooding.
+work,medium,high,My partner’s sibling needed a ride to a doctor’s appointment and I was the only one available.
+work,medium,high,My child’s school had a surprise early dismissal and I had to pick them up.
+work,medium,high,My spouse’s friend needed help moving urgently and I was the only one available.
+work,medium,high,My car’s oil light came on and I had to stop for emergency service.
+work,medium,high,My neighbor’s child was locked out and I had to help them until their parent returned.
+work,medium,high,My partner’s work laptop crashed and I had to help them troubleshoot before leaving.
+work,medium,medium,My neighbor needed help moving heavy furniture and I was the only one available.
+work,medium,medium,My friend’s car broke down and I had to give them a ride to work.
+work,medium,medium,My child forgot their lunch and I had to drop it off at school.
+work,medium,medium,My internet was down and I had to wait for the technician to arrive.
+work,medium,medium,I had to wait for a package that required my signature.
+work,medium,medium,My roommate spilled coffee on my work clothes and I had to change.
+work,medium,medium,My pet got stuck behind the washing machine and I had to rescue it.
+work,medium,medium,My neighbor’s car alarm kept going off and I helped them troubleshoot.
+work,medium,medium,My friend’s dog ran away and I joined the search in the neighborhood.
+work,medium,medium,My sibling needed a ride to a last-minute appointment.
+work,medium,medium,My child’s school bus was late and I had to drive them in.
+work,medium,medium,My apartment’s smoke alarm malfunctioned and I had to wait for maintenance.
+work,medium,medium,My friend’s flight was delayed and I had to pick them up from the airport.
+work,medium,medium,My neighbor’s elderly parent needed help with groceries.
+work,medium,medium,My pet had a minor injury and I had to take it to the vet for a checkup.
+work,medium,medium,My friend’s moving truck broke down and I helped them unload by hand.
+work,medium,medium,My child’s backpack was missing and we had to search the house.
+work,medium,medium,My roommate lost their keys and I had to let them in before leaving.
+work,medium,medium,My neighbor’s plumbing burst and I helped them mop up the mess.
+work,medium,medium,My friend’s bike got a flat tire and I gave them a ride.
+work,medium,medium,My sibling needed help finishing a school project due today.
+work,medium,medium,My child’s field trip permission slip was missing and I had to fill it out.
+work,medium,medium,My apartment’s elevator was out of order and I had to help an elderly neighbor.
+work,medium,medium,My friend’s pet escaped and I helped look for it in the neighborhood.
+work,medium,medium,My neighbor’s fence fell over and I helped them prop it up.
+work,medium,medium,My roommate’s car wouldn’t start and I gave them a jump.
+work,medium,medium,My pet bird got out of its cage and I had to catch it before leaving.
+work,medium,medium,My friend’s child was sick and I watched them for an hour.
+work,medium,medium,My sibling’s alarm didn’t go off and I had to wake them up.
+work,medium,medium,My child’s toy was stuck in the toilet and I had to fish it out.
+work,medium,medium,My neighbor’s power went out and I lent them my generator.
+work,medium,medium,My friend’s phone died and I waited for them to charge it before leaving together.
+work,medium,medium,My pet rabbit chewed through my charging cable and I had to get a new one.
+work,medium,medium,My roommate’s package was delivered to the wrong address and I helped retrieve it.
+work,medium,medium,My neighbor’s mailbox was vandalized and I helped them report it.
+work,medium,medium,My friend’s car keys were locked inside their car and I waited for a locksmith.
+work,medium,medium,My sibling’s bike was stolen and I helped them file a police report.
+work,medium,medium,My child’s science project supplies were missing and I had to buy replacements.
+work,medium,medium,My apartment’s heating stopped working and I had to wait for repairs.
+work,medium,medium,My friend’s dog was sick and I walked it for them.
+work,medium,medium,My neighbor’s alarm clock malfunctioned and I helped them get to work on time.
+work,medium,medium,My roommate’s computer crashed and I helped them recover their files.
+work,medium,medium,My pet fish tank leaked and I had to clean up the water.
+work,medium,medium,My friend’s moving company canceled and I helped them carry boxes.
+work,medium,medium,My sibling needed help fixing their laptop before a school assignment was due.
+work,medium,low,My cat hid my shoes and I spent the morning searching for them.
+work,medium,low,I got stuck watching a livestream of my favorite band’s surprise concert.
+work,medium,low,My neighbor’s rooster escaped and I helped wrangle it back home.
+work,medium,low,I lost track of time while reorganizing my sock drawer.
+work,medium,low,I was distracted by a new video game release and lost track of time.
+work,medium,low,My goldfish bowl cracked and I had to find a new container before leaving.
+work,medium,low,My parrot mimicked my alarm and tricked me into waking up at the wrong time.
+work,medium,low,My neighbor’s dog buried my car keys in the backyard and I had to dig them up.
+work,medium,low,I was challenged to a thumb wrestling tournament by my roommate and couldn't leave until I won.
+work,medium,low,My pet turtle blocked the doorway and refused to move for half an hour.
+work,medium,low,My roommate’s hamster escaped and I had to help search the apartment.
+work,medium,low,My friend’s new puppy chewed up my work badge and I had to get a replacement.
+work,medium,low,I was delayed by a spontaneous pillow fight in the hallway.
+work,medium,low,My neighbor’s peacock blocked my driveway and refused to move.
+work,medium,low,"My sibling borrowed my bike and forgot to return it, so I had to walk."
+work,medium,low,My roommate’s alarm clock malfunctioned and I overslept.
+work,medium,low,My pet rabbit got stuck under the bed and I had to coax it out.
+work,medium,low,I got caught up watching a sunrise and lost track of time.
+work,medium,low,My neighbor’s cat stole my lunch and I had to make a new one.
+work,medium,low,My sibling hid my phone as a prank and I had to find it before leaving.
+work,medium,low,My roommate’s plant collection fell over and I helped clean up the mess.
+work,medium,low,My pet gecko escaped and I had to find it before leaving.
+work,medium,low,My friend’s drone landed on my roof and I had to retrieve it.
+work,medium,low,My neighbor’s child challenged me to a hopscotch contest and I couldn’t leave until it was over.
+work,medium,low,My roommate’s bread dough overflowed the bowl and I helped clean up.
+work,medium,low,My pet ferret hid my wallet and I had to search the apartment.
+work,medium,low,My sibling’s science experiment exploded and I helped clean up.
+work,medium,low,My friend’s skateboard rolled under a parked car and I helped retrieve it.
+work,medium,low,My roommate’s alarm went off for an hour and I couldn’t concentrate on getting ready.
+work,medium,low,My pet hamster chewed through my phone charger and I had to buy a new one.
+work,medium,low,My neighbor’s ducklings blocked my path to the car and I had to herd them to safety.
+work,medium,low,My friend’s cat knocked over my coffee and I had to change clothes.
+work,medium,low,My sibling’s video game tournament went late and I was up helping them practice.
+work,medium,low,My roommate’s karaoke machine malfunctioned and I had to help fix it.
+work,medium,low,My pet piglet escaped and I had to chase it through the backyard.
+work,medium,low,My neighbor’s dog chewed up my work shoes and I had to find another pair.
+work,medium,low,My friend’s parrot escaped and I helped search the neighborhood.
+work,medium,low,My roommate’s blender exploded and I helped clean the kitchen.
+work,medium,low,My pet snake wrapped around my doorknob and I had to wait for help.
+work,medium,low,My sibling’s remote-controlled car got stuck in my shoe and I had to get it out.
+work,medium,low,My friend’s alarm clock was set to the wrong time and I missed my ride.
+work,medium,low,My roommate’s dog hid my keys in the laundry basket.
+work,medium,low,My pet raccoon stole my breakfast and I had to make more food.
+work,medium,low,My neighbor’s goat wandered into my yard and I had to guide it home.
+work,low,high,My alarm didn’t go off because of a power outage and I overslept.
+work,low,high,There was a minor fender bender in my parking lot and I had to exchange information.
+work,low,high,My child missed the school bus and I had to drive them in.
+work,low,high,My pet needed a last-minute grooming appointment before an event.
+work,low,high,I had to pick up a prescription before the pharmacy closed.
+work,low,high,My neighbor needed help carrying groceries up the stairs.
+work,low,high,My friend’s car was blocked in and I gave them a ride.
+work,low,high,My sibling forgot their lunch and I had to drop it off at school.
+work,low,high,My pet had a mild stomach ache and I wanted to monitor them for a bit.
+work,low,high,My roommate needed help setting up a new computer before work.
+work,low,high,My child’s field trip permission slip was missing and I had to fill it out.
+work,low,high,My neighbor’s mailbox was knocked over and I helped them fix it.
+work,low,high,My friend’s bike chain broke and I helped them repair it.
+work,low,high,My sibling’s school project was due and I helped them finish it.
+work,low,high,My pet fish tank needed cleaning and I didn’t want to leave it dirty.
+work,low,high,My roommate misplaced their keys and I helped them search the apartment.
+work,low,high,My neighbor needed a ride to a doctor’s appointment.
+work,low,high,My friend’s moving truck arrived late and I helped them unload.
+work,low,high,My sibling’s alarm didn’t go off and I had to wake them up.
+work,low,high,My child’s favorite toy was missing and I helped them look for it.
+work,low,high,My pet bird got out of its cage and I had to catch it before leaving.
+work,low,high,My roommate’s car wouldn’t start and I gave them a jump.
+work,low,high,My neighbor’s child needed a ride to school and I helped out.
+work,low,high,My friend’s phone died and I waited for them to charge it before leaving together.
+work,low,high,My sibling needed help printing an assignment before school.
+work,low,high,My child’s backpack zipper broke and I fixed it before leaving.
+work,low,high,My pet rabbit escaped its pen and I had to catch it in the yard.
+work,low,high,My roommate’s package was delivered to the wrong address and I helped retrieve it.
+work,low,high,My neighbor’s dog got loose and I helped bring it back home.
+work,low,high,My friend’s glasses broke and I helped them tape them up.
+work,low,high,My sibling’s bike tire was flat and I helped pump it up.
+work,low,high,My child’s shoes were missing and I helped them find a pair.
+work,low,high,My pet cat scratched the door and I had to fix it before leaving.
+work,low,high,My roommate’s alarm clock was set incorrectly and I helped reset it.
+work,low,high,My neighbor’s garden hose burst and I helped clean up the water.
+work,low,high,My friend’s umbrella broke and I lent them mine before leaving.
+work,low,high,My sibling’s lunchbox was missing and I helped them pack a new one.
+work,low,high,My child’s homework was left at home and I had to drop it at school.
+work,low,high,My pet hamster escaped and I had to find it before leaving.
+work,low,high,My roommate’s phone charger was missing and I helped them find it.
+work,low,high,My neighbor’s trash can rolled into the street and I moved it back.
+work,low,high,My friend’s jacket was left at my place and I returned it before work.
+work,low,high,My sibling needed help tying a tie for a school event.
+work,low,high,My child’s lunch spilled and I made a new one before leaving.
+work,low,medium,My neighbor asked me to water their plants and I forgot until this morning.
+work,low,medium,I had to wait for a grocery delivery that was running late.
+work,low,medium,My friend needed a ride to a job interview.
+work,low,medium,My child’s science project supplies were missing and I had to buy replacements.
+work,low,medium,I had to help my roommate assemble new furniture before leaving.
+work,low,medium,My pet spilled their food and I cleaned up the mess before work.
+work,low,medium,My sibling borrowed my headphones and I had to track them down.
+work,low,medium,My roommate’s alarm clock was set for the wrong time and I helped fix it.
+work,low,medium,My neighbor’s kid left their bike in my driveway and I had to move it.
+work,low,medium,My friend’s coffee spilled on my work shirt and I had to change.
+work,low,medium,My pet bird knocked over a plant and I had to clean up the dirt.
+work,low,medium,My sibling needed help with a last-minute homework question.
+work,low,medium,My roommate’s shoes were missing and I helped them search.
+work,low,medium,My neighbor’s car was double parked and I waited for them to move it.
+work,low,medium,My friend’s umbrella broke and I lent them mine before leaving.
+work,low,medium,My child’s favorite book was missing and I helped them look for it.
+work,low,medium,My pet rabbit chewed through a phone cord and I had to replace it.
+work,low,medium,My sibling’s lunch was forgotten at home and I had to drop it at school.
+work,low,medium,My roommate’s phone battery died and I waited for them to charge it.
+work,low,medium,My neighbor’s mailbox was knocked over and I helped fix it.
+work,low,medium,My friend’s keys were missing and I helped them search the house.
+work,low,medium,My pet hamster escaped its cage and I had to find it before leaving.
+work,low,medium,My sibling needed help packing for a school trip.
+work,low,medium,My roommate’s laundry was left in the washer and I helped hang it up.
+work,low,medium,My neighbor’s window was stuck and I helped open it.
+work,low,medium,My friend’s dog got out and I helped catch it.
+work,low,medium,My child’s shoes were muddy and I cleaned them before school.
+work,low,medium,My pet cat hid under the bed and I had to coax it out.
+work,low,medium,My sibling’s alarm didn’t go off and I had to wake them up.
+work,low,medium,My roommate needed help finding their wallet before leaving.
+work,low,medium,My neighbor’s garden hose burst and I helped turn off the water.
+work,low,medium,My friend’s lunch spilled and I helped them make a new one.
+work,low,medium,My pet bird escaped its cage and I had to catch it.
+work,low,medium,My sibling’s backpack zipper broke and I fixed it.
+work,low,medium,My roommate’s bike tire was flat and I helped pump it up.
+work,low,medium,My neighbor’s trash can rolled down the street and I brought it back.
+work,low,medium,My friend’s glasses were lost and I helped search.
+work,low,medium,My child’s homework was missing and I helped them rewrite it.
+work,low,medium,My pet fish tank needed cleaning and I did it before leaving.
+work,low,medium,My sibling’s lunchbox was missing and I helped pack a new one.
+work,low,medium,My roommate’s package was delivered to the wrong address and I helped retrieve it.
+work,low,medium,My neighbor’s dog chewed up my work shoes and I had to find another pair.
+work,low,medium,My friend’s skateboard rolled under a parked car and I helped retrieve it.
+work,low,medium,My child’s toy was stuck in the toilet and I had to fish it out.
+work,low,low,I binge-watched an entire season of a show and lost track of time.
+work,low,low,"My horoscope said today was unlucky for travel, so I stayed home longer."
+work,low,low,I was waiting for my bread to rise and lost track of time.
+work,low,low,My goldfish looked sad and I spent the morning cheering it up.
+work,low,low,I was on hold with customer service for hours about a subscription box.
+work,low,low,My cat insisted on sitting on my lap and I couldn’t move for an hour.
+work,low,low,My neighbor’s rooster crowed all night and I barely slept.
+work,low,low,I got caught up watching funny dog videos and lost track of time.
+work,low,low,My roommate challenged me to a pancake-flipping contest and I couldn’t leave until I won.
+work,low,low,My pet turtle blocked the hallway and refused to let me pass.
+work,low,low,My sibling hid my shoes as a prank and I had to find them.
+work,low,low,I was distracted by a squirrel outside my window for half an hour.
+work,low,low,My friend dared me to build a card house and I lost track of time.
+work,low,low,My neighbor’s parrot kept repeating “Don’t go to work!” and I listened.
+work,low,low,My pet hamster fell asleep in my shoe and I didn’t want to disturb it.
+work,low,low,My roommate’s karaoke session ran late and I was too tired to wake up.
+work,low,low,My sibling’s video game tournament went late and I was up helping them practice.
+work,low,low,I was trying to beat my high score on a mobile game and lost track of time.
+work,low,low,My pet rabbit was hiding and I wanted to find it before leaving.
+work,low,low,My friend’s cat knocked over my cereal and I had to clean up.
+work,low,low,My neighbor’s dog howled all night and I couldn’t sleep.
+work,low,low,My roommate’s bread dough overflowed and I helped clean up.
+work,low,low,I was caught up in a group chat and didn’t notice the time.
+work,low,low,My sibling’s alarm clock was set to the wrong time and I overslept.
+work,low,low,My pet gecko escaped and I had to find it before leaving.
+work,low,low,My friend’s skateboard rolled under the couch and I helped retrieve it.
+work,low,low,My roommate’s alarm went off for an hour and I couldn’t concentrate on getting ready.
+work,low,low,My pet ferret hid my wallet and I had to search the apartment.
+work,low,low,My sibling’s science experiment exploded and I helped clean up.
+work,low,low,My friend’s drone landed on my roof and I had to retrieve it.
+work,low,low,My roommate’s blender exploded and I helped clean the kitchen.
+work,low,low,My pet snake wrapped around my doorknob and I had to wait for help.
+work,low,low,My sibling’s remote-controlled car got stuck in my shoe and I had to get it out.
+work,low,low,My friend’s alarm clock was set to the wrong time and I missed my ride.
+work,low,low,My roommate’s dog hid my keys in the laundry basket.
+work,low,low,My pet raccoon stole my breakfast and I had to make more food.
+work,low,low,My neighbor’s goat wandered into my yard and I had to guide it home.
+work,low,low,My sibling challenged me to a staring contest and I lost track of time.
+work,low,low,My friend’s parrot escaped and I helped search the neighborhood.
+work,low,low,My roommate’s karaoke machine malfunctioned and I had to help fix it.
+work,low,low,My pet piglet escaped and I had to chase it through the backyard.
+work,low,low,My neighbor’s dog chewed up my work shoes and I had to find another pair.
+work,low,low,My friend’s umbrella broke and I lent them mine before leaving.
+work,low,low,My sibling’s lunchbox was missing and I helped pack a new one.
+school,high,high,I had a sudden asthma attack and my inhaler was empty so I had to stay home.
+school,high,high,My school bus was in an accident and I had to wait for another to pick us up.
+school,high,high,I woke up with a high fever and my parents took me to the doctor for tests.
+school,high,high,There was a lockdown at my school and we were not allowed to leave until it ended.
+school,high,high,My little brother had a seizure and I had to stay home to help my parents.
+school,high,high,I had a dental emergency and needed to see the dentist urgently.
+school,high,high,My glasses broke and I couldn’t see well enough to attend class.
+school,high,high,My mother was hospitalized and I had to care for my younger sibling.
+school,high,high,There was a water leak in our house and I had to help my parents clean up.
+school,high,high,My father was in a minor accident and I had to go to the hospital with him.
+school,high,high,My neighborhood was on lockdown due to a police incident.
+school,high,high,I had a severe allergic reaction to something I ate for breakfast.
+school,high,high,My sister broke her arm and I had to accompany her to the emergency room.
+school,high,high,My parent was called in for jury duty and I had to stay home to care for my sibling.
+school,high,high,There was a fire alarm in our apartment complex and we were kept outside for hours.
+school,high,high,My mother had a sudden migraine and needed help at home.
+school,high,high,I had to go for a mandatory vaccination appointment.
+school,high,high,My father’s car wouldn’t start and there was no other way to get to school.
+school,high,high,There was a chemical spill near our house and we were told to stay indoors.
+school,high,high,My sister had a panic attack and I had to stay with her until she calmed down.
+school,high,high,My parent was called in for emergency work and I had to watch my younger sibling.
+school,high,high,My school had a bomb threat and all students were sent home immediately.
+school,high,high,I had a fainting spell and my parents kept me home to recover.
+school,high,high,My mother had an anxiety attack and I had to support her.
+school,high,high,My father had a diabetic episode and I had to monitor his condition.
+school,high,high,Our family car broke down and we had to wait for roadside assistance.
+school,high,high,My mother was stuck in traffic and needed me to pick up my sibling.
+school,high,high,My grandmother’s caregiver was sick and I had to fill in.
+school,high,high,My little brother had a fever and I had to stay home to watch him.
+school,high,high,My parent was called to work early and I had to wait for a neighbor to watch my sibling.
+school,high,high,My mother had a dental emergency and couldn’t be left alone.
+school,high,high,My father fainted and I had to stay with him until he recovered.
+school,high,high,My grandmother had a fall and I had to stay with her for observation.
+school,high,high,My mother had a panic attack and I had to support her.
+school,high,high,My father had a panic attack and I had to calm him down.
+school,high,high,My parent was called in for jury duty and I had to stay home to care for my sibling.
+school,high,high,My mother had a severe allergic reaction and I had to rush her to the ER.
+school,high,high,My child had a severe asthma attack and needed close monitoring.
+school,high,high,My father had a heart scare and I accompanied him to the doctor.
+school,high,high,My grandmother had a fainting spell and I had to stay with her.
+school,high,high,My child had a severe ear infection and needed to see a specialist.
+school,high,high,My father had a bad fall and I had to take him for X-rays.
+school,high,high,My child had a seizure and I had to call emergency services.
+school,high,high,My mother had a severe back spasm and needed my help.
+school,high,high,My father had a medical emergency and I had to stay at the hospital all day.
+school,high,medium,My school bus broke down far from campus and there was no way to get another ride.
+school,high,medium,My little brother accidentally spilled juice on my homework and I had to redo it.
+school,high,medium,There was a lockdown drill at our apartment complex and we weren't allowed to leave.
+school,high,medium,My neighbor's child got locked out and I was the only one home to help.
+school,high,medium,My severe migraine made it impossible to attend class.
+school,high,medium,I lost my school ID and couldn't enter the campus until it was sorted.
+school,high,medium,There was a major traffic accident on the main road to school.
+school,high,medium,My parent was in a minor car accident and I had to go to the hospital with them.
+school,high,medium,My school uniform was ruined and I had no spare to wear.
+school,high,medium,We had an unexpected family guest and I had to help prepare breakfast.
+school,high,medium,I had to attend a court hearing as a witness for a friend.
+school,high,medium,My house keys were lost and I had to wait for someone to let me out.
+school,high,medium,I had a nosebleed that wouldn't stop and needed medical attention.
+school,high,medium,My school shoes were soaked from the rain and I couldn't wear them.
+school,high,medium,My neighbor's dog got loose and I spent hours trying to find it.
+school,high,medium,There was a power outage in the neighborhood and the alarm didn't go off.
+school,high,medium,My mother was unwell and I had to take care of my younger sibling.
+school,high,medium,There was a gas leak in our street and we were evacuated for safety.
+school,high,medium,I had to go to the embassy for a visa appointment scheduled months ago.
+school,high,medium,My homework was accidentally thrown away during cleaning.
+school,high,medium,I woke up with a swollen eye and my parents took me to the doctor.
+school,high,medium,Our car wouldn't start and we had to wait for a mechanic.
+school,high,medium,My little brother had a fever and I had to stay home to watch him.
+school,high,medium,I had a sudden allergic reaction to pollen and couldn't stop sneezing.
+school,high,medium,I had to go for a mandatory vaccination appointment.
+school,high,medium,My bus was late due to a marathon blocking the roads.
+school,high,medium,I had to help my grandparents with an urgent task early in the morning.
+school,high,medium,There was a burst water pipe in the kitchen and I had to help clean up.
+school,high,medium,My parent was called into work early and I had to wait for a neighbor to watch my sibling.
+school,high,medium,I had a scheduled therapy session for my mental health.
+school,high,medium,My school bag strap broke and I had to fix it before leaving.
+school,high,medium,My neighbor's baby was crying all night and I barely got any sleep.
+school,high,medium,There was a family emergency involving my cousin and I had to help.
+school,high,medium,My cousin was in a minor accident and needed a ride home.
+school,high,medium,My apartment complex had a fire drill that lasted hours.
+school,high,medium,I lost my house keys and had to wait for a spare set.
+school,high,medium,My elderly neighbor fell and I was the only one home to assist.
+school,high,medium,My phone crashed and I lost access to important work files.
+school,high,medium,My partner had a panic attack and I needed to support them.
+school,high,medium,There was a gas leak in my building and we had to evacuate.
+school,high,medium,My car was vandalized and I had to file a police report.
+school,high,medium,My pet developed sudden symptoms and I had to rush to the vet.
+school,high,medium,My internet router malfunctioned and I had to replace it.
+school,high,medium,My child’s teacher requested an urgent meeting.
+school,high,medium,My apartment was flooded due to a burst pipe above.
+school,high,medium,My neighbor’s elderly parent wandered off and I joined the search.
+school,high,medium,My partner was called into work unexpectedly and I had to watch the kids.
+school,high,low,My alarm didn’t go off because my phone battery died overnight and I overslept.
+school,high,low,I was stuck in traffic due to a parade and couldn’t make it to school on time.
+school,high,low,My pet hamster escaped and I spent the morning searching for it before school.
+school,high,low,"I had a sudden migraine and was sensitive to light and sound,   so I stayed home."
+school,high,low,My younger sibling was sick and I had to stay home to take care of them.
+school,high,low,My school bus broke down and I had to wait for a replacement for over an hour.
+school,high,low,There was a power outage at home and I couldn’t complete my homework or get ready.
+school,high,low,My parents had a family emergency and I had to stay home to help.
+school,high,low,I lost my school ID and couldn’t enter the campus until it was replaced.
+school,high,low,My bike tire went flat on the way to school and I had to walk back home.
+school,high,low,I had a severe allergic reaction to pollen and couldn’t leave the house.
+school,high,low,My pet dog was sick and I had to take it to the vet urgently.
+school,high,low,My school was closed early due to a water main break and I couldn’t attend.
+school,high,low,I had a dentist appointment that ran late and I missed school.
+school,high,low,My parents’ car broke down and I had to wait for roadside assistance.
+school,high,low,I was feeling very anxious and needed a mental health day.
+school,high,low,My younger sibling locked themselves in the bathroom and I had to help them.
+school,high,low,There was a lockdown drill at school and we were not allowed to leave.
+school,high,low,My school bus driver was sick and the bus was canceled.
+school,high,low,I had a stomach bug and couldn’t make it to school.
+school,high,low,My parents had to attend an urgent meeting and couldn’t take me to school.
+school,high,low,My alarm clock malfunctioned and didn’t ring this morning.
+school,high,low,My pet bird escaped and I had to find it before leaving.
+school,high,low,My school had a fire drill that lasted longer than expected.
+school,high,low,I had a severe toothache and had to see the dentist urgently.
+school,high,low,My parents’ car was involved in a minor accident and I had to stay with them.
+school,high,low,My school was closed due to a gas leak and I couldn’t attend.
+school,high,low,I had a fever and was advised by my doctor to rest at home.
+school,high,low,My younger sibling was home sick and I had to take care of them.
+school,high,low,My school bus was rerouted due to road construction and I missed it.
+school,high,low,My parents had a family emergency and I had to stay home.
+school,high,low,I had a migraine and was unable to attend school.
+school,high,low,My bike chain broke and I had to walk to school.
+school,high,low,My school was closed due to severe weather conditions.
+school,high,low,I had a doctor’s appointment that I couldn’t reschedule.
+school,high,low,My parents’ car was in the shop and I had no way to get to school.
+school,high,low,I was feeling unwell and my parents kept me home.
+school,high,low,My school had a lockdown due to a security threat.
+school,high,low,My younger sibling was sick and I had to stay home to care for them.
+school,high,low,My school bus was delayed due to an accident on the route.
+school,high,low,I had a severe allergic reaction and needed medical attention.
+school,high,low,My parents had to attend a funeral and I couldn’t go to school.
+school,high,low,My school was closed due to a power outage.
+school,high,low,I had a stomach virus and was too ill to attend school.
+school,high,low,My parents’ car broke down and I had to wait for a tow truck.
+school,high,low,My school was closed early due to a water main break.
+school,high,low,I had a severe headache and couldn’t concentrate enough to attend school.
+school,high,low,My younger sibling was home sick and I had to stay with them.
+school,medium,high,My dentist appointment took longer than expected and I was late to class.
+school,medium,high,My little brother missed his bus and I had to walk him to school.
+school,medium,high,My school uniform was still wet from the laundry and I had to wait for it to dry.
+school,medium,high,My parent-teacher conference was rescheduled to this morning.
+school,medium,high,My science project supplies were missing and I had to buy replacements before school.
+school,medium,high,My glasses broke and I had to get them fixed before I could see the board.
+school,medium,high,Our car wouldn’t start and we had to wait for a jump.
+school,medium,high,My pet was sick and I had to take it to the vet before class.
+school,medium,high,My bus was late due to a marathon blocking the main road.
+school,medium,high,My neighbor’s child was locked out and I had to help until their parent returned.
+school,medium,high,I had to help my grandparents with an urgent task early in the morning.
+school,medium,high,My alarm didn’t go off because of a power outage and I overslept.
+school,medium,high,My little sister spilled juice on my homework and I had to redo it.
+school,medium,high,My school bus was rerouted due to construction and I missed it.
+school,medium,high,My mother was unwell and I had to take care of my younger sibling.
+school,medium,high,My neighbor’s dog got loose and I helped look for it before school.
+school,medium,high,My school shoes were soaked from the rain and I had to wait for them to dry.
+school,medium,high,My parent was called into work early and I had to wait for a neighbor to watch my sibling.
+school,medium,high,I had to go for a mandatory vaccination appointment before school.
+school,medium,high,My house keys were lost and I had to wait for someone to let me out.
+school,medium,high,My neighbor’s cat was stuck in a tree and I helped get it down.
+school,medium,high,My school bag strap broke and I had to fix it before leaving.
+school,medium,high,My mother had a migraine and needed help at home.
+school,medium,high,My school bus driver was late and I had to wait at the stop.
+school,medium,high,My little brother had a fever and I had to stay home to watch him.
+school,medium,high,There was a burst water pipe in the kitchen and I had to help clean up.
+school,medium,high,My parent was called into work early and I had to wait for a neighbor to watch my sibling.
+school,medium,high,My neighbor’s baby was crying all night and I barely got any sleep.
+school,medium,high,My friend’s bike tire was flat and I helped them fix it before school.
+school,medium,high,My school locker jammed and I had to wait for the janitor to open it.
+school,medium,high,My mother had a doctor’s appointment and I had to go with her.
+school,medium,high,My neighbor needed help moving heavy boxes before school.
+school,medium,high,My little sister’s alarm didn’t go off and I had to wake her up.
+school,medium,high,My school bus was delayed by a flat tire.
+school,medium,high,My neighbor’s car wouldn’t start and I helped them jump it.
+school,medium,high,My parent’s phone died and I had to help them recharge it before leaving.
+school,medium,high,My school shoes were missing and I had to find them before leaving.
+school,medium,high,My little brother needed help with his homework before school.
+school,medium,high,My neighbor’s window was stuck and I helped open it before leaving.
+school,medium,high,My friend’s umbrella broke and I lent them mine before school.
+school,medium,high,My parent needed help carrying groceries in the morning.
+school,medium,high,My school bus was late due to fog and I had to wait at the stop.
+school,medium,high,My little sister’s backpack zipper broke and I fixed it before school.
+school,medium,high,My neighbor’s mailbox was knocked over and I helped fix it before leaving.
+school,medium,medium,My friend’s car broke down and I had to give them a ride to school.
+school,medium,medium,My sibling forgot their homework and I had to drop it off at school.
+school,medium,medium,My neighbor needed help moving some boxes before class.
+school,medium,medium,My alarm clock didn’t go off and I woke up late.
+school,medium,medium,My pet bird escaped its cage and I had to catch it before leaving.
+school,medium,medium,My little brother missed his bus and I had to walk him to school.
+school,medium,medium,My school shoes were muddy and I had to clean them before leaving.
+school,medium,medium,My friend’s bike got a flat tire and I helped them fix it.
+school,medium,medium,My neighbor’s cat was stuck in a tree and I helped get it down.
+school,medium,medium,My sibling needed help with a last-minute science project.
+school,medium,medium,My school bus was late due to traffic and I had to wait at the stop.
+school,medium,medium,My mother needed help setting up her new phone before I left.
+school,medium,medium,My pet rabbit escaped and I had to catch it in the backyard.
+school,medium,medium,My friend’s umbrella broke and I lent them mine before school.
+school,medium,medium,My neighbor’s car was blocked in and I helped them move it.
+school,medium,medium,My little sister’s lunchbox was missing and I helped her pack a new one.
+school,medium,medium,My school bag strap broke and I had to fix it before leaving.
+school,medium,medium,My roommate’s alarm was set for the wrong time and I woke up late.
+school,medium,medium,My pet hamster escaped and I had to find it before leaving.
+school,medium,medium,My friend’s dog got loose and I helped catch it before school.
+school,medium,medium,My neighbor’s window was stuck and I helped open it before leaving.
+school,medium,medium,My sibling needed help packing for a school trip.
+school,medium,medium,My school bus was delayed by a flat tire and I had to wait.
+school,medium,medium,My mother needed help carrying groceries in the morning.
+school,medium,medium,My friend’s lunch spilled and I helped them make a new one.
+school,medium,medium,My neighbor’s mailbox was knocked over and I helped fix it before leaving.
+school,medium,medium,My little brother needed help with his homework before school.
+school,medium,medium,My school locker jammed and I had to wait for the janitor to open it.
+school,medium,medium,My friend’s glasses broke and I helped them tape them up before class.
+school,medium,medium,My neighbor’s garden hose burst and I helped turn off the water.
+school,medium,medium,My sibling’s bike tire was flat and I helped pump it up.
+school,medium,medium,My school shoes were missing and I had to find them before leaving.
+school,medium,medium,My pet cat hid under the bed and I had to coax it out.
+school,medium,medium,My friend’s backpack was missing and I helped them search for it.
+school,medium,medium,My neighbor’s trash can rolled down the street and I brought it back.
+school,medium,medium,My little sister’s alarm didn’t go off and I had to wake her up.
+school,medium,medium,My school bus was late due to fog and I had to wait at the stop.
+school,medium,medium,My mother needed help finding her keys before I left.
+school,medium,medium,My pet fish tank leaked and I had to clean up the water.
+school,medium,medium,My friend’s phone died and I waited for them to charge it before leaving.
+school,medium,medium,My neighbor’s car wouldn’t start and I helped them jump it.
+school,medium,medium,My sibling’s lunch was forgotten at home and I had to drop it at school.
+school,medium,medium,My school backpack zipper broke and I fixed it before leaving.
+school,medium,medium,My roommate’s shoes were missing and I helped them search.
+school,medium,low,My cat hid my homework and I spent the morning searching for it.
+school,medium,low,I got distracted watching a sunrise and lost track of time.
+school,medium,low,My neighbor’s rooster crowed all night and I barely slept.
+school,medium,low,I was late because I was trying to beat my high score on a mobile game.
+school,medium,low,My pet turtle blocked the hallway and refused to let me pass.
+school,medium,low,My sibling dared me to build a card house and I lost track of time.
+school,medium,low,My friend challenged me to a pancake-flipping contest and I couldn’t leave until I won.
+school,medium,low,My goldfish looked sad and I spent the morning cheering it up.
+school,medium,low,My roommate’s karaoke session ran late and I was too tired to wake up.
+school,medium,low,My little brother hid my shoes as a prank and I had to find them.
+school,medium,low,I was distracted by a squirrel outside my window for half an hour.
+school,medium,low,My pet hamster fell asleep in my backpack and I didn’t want to disturb it.
+school,medium,low,My neighbor’s parrot kept repeating “Don’t go to school!” and I listened.
+school,medium,low,My friend dared me to memorize a tongue twister before leaving.
+school,medium,low,My sibling’s video game tournament went late and I was up helping them practice.
+school,medium,low,My pet rabbit was hiding and I wanted to find it before leaving.
+school,medium,low,My friend’s cat knocked over my breakfast and I had to clean up.
+school,medium,low,My neighbor’s dog howled all night and I couldn’t sleep.
+school,medium,low,My roommate’s bread dough overflowed and I helped clean up.
+school,medium,low,I was caught up in a group chat and didn’t notice the time.
+school,medium,low,My sibling’s alarm clock was set to the wrong time and I overslept.
+school,medium,low,My pet gecko escaped and I had to find it before leaving.
+school,medium,low,My friend’s skateboard rolled under the couch and I helped retrieve it.
+school,medium,low,My roommate’s alarm went off for an hour and I couldn’t concentrate on getting ready.
+school,medium,low,My pet ferret hid my lunch and I had to search the apartment.
+school,medium,low,My sibling’s science experiment exploded and I helped clean up.
+school,medium,low,My friend’s drone landed on the roof and I had to retrieve it.
+school,medium,low,My roommate’s blender exploded and I helped clean the kitchen.
+school,medium,low,My pet snake wrapped around my doorknob and I had to wait for help.
+school,medium,low,My sibling’s remote-controlled car got stuck in my backpack and I had to get it out.
+school,medium,low,My friend’s alarm clock was set to the wrong time and I missed my ride.
+school,medium,low,My roommate’s dog hid my notebook in the laundry basket.
+school,medium,low,My pet raccoon stole my breakfast and I had to make more food.
+school,medium,low,My neighbor’s goat wandered into my yard and I had to guide it home.
+school,medium,low,My sibling challenged me to a staring contest and I lost track of time.
+school,medium,low,My friend’s parrot escaped and I helped search the neighborhood.
+school,medium,low,My roommate’s karaoke machine malfunctioned and I had to help fix it.
+school,medium,low,My pet piglet escaped and I had to chase it through the backyard.
+school,medium,low,My neighbor’s dog chewed up my backpack and I had to find another.
+school,medium,low,My friend’s umbrella broke and I lent them mine before leaving.
+school,medium,low,My sibling’s lunchbox was missing and I helped pack a new one.
+school,medium,low,My roommate’s alarm clock malfunctioned and I was late.
+school,medium,low,My pet squirrel hid my pencil case and I had to look everywhere.
+school,medium,low,My neighbor’s ducklings blocked my path and I had to herd them to safety.
+school,low,high,My alarm didn’t go off and I woke up late for school.
+school,low,high,My sibling missed the bus and I had to walk them to school.
+school,low,high,My pet needed a quick vet check before school.
+school,low,high,I had to pick up a prescription for my parent before class.
+school,low,high,My neighbor asked me to help carry groceries before leaving for school.
+school,low,high,My friend’s bike chain broke and I helped them fix it before school.
+school,low,high,My sibling forgot their lunch and I had to drop it off at school.
+school,low,high,My pet cat scratched the door and I fixed it before leaving.
+school,low,high,My roommate misplaced their keys and I helped them search.
+school,low,high,My neighbor needed a ride to a doctor’s appointment.
+school,low,high,My friend’s moving truck arrived late and I helped them unload.
+school,low,high,My sibling’s alarm didn’t go off and I had to wake them up.
+school,low,high,My pet bird got out of its cage and I had to catch it before leaving.
+school,low,high,My roommate’s car wouldn’t start and I gave them a jump.
+school,low,high,My neighbor’s child needed a ride to school and I helped out.
+school,low,high,My friend’s phone died and I waited for them to charge it before leaving together.
+school,low,high,My sibling needed help printing an assignment before school.
+school,low,high,My child’s backpack zipper broke and I fixed it before leaving.
+school,low,high,My pet rabbit escaped its pen and I had to catch it in the yard.
+school,low,high,My roommate’s package was delivered to the wrong address and I helped retrieve it.
+school,low,high,My neighbor’s dog got loose and I helped bring it back home.
+school,low,high,My friend’s glasses broke and I helped them tape them up.
+school,low,high,My sibling’s bike tire was flat and I helped pump it up.
+school,low,high,My child’s shoes were missing and I helped them find a pair.
+school,low,high,My pet cat hid under the bed and I had to coax it out.
+school,low,high,My roommate’s alarm clock was set incorrectly and I helped reset it.
+school,low,high,My neighbor’s garden hose burst and I helped clean up the water.
+school,low,high,My friend’s umbrella broke and I lent them mine before leaving.
+school,low,high,My sibling’s lunchbox was missing and I helped pack a new one.
+school,low,high,My child’s homework was left at home and I had to drop it at school.
+school,low,high,My pet hamster escaped and I had to find it before leaving.
+school,low,high,My roommate’s phone charger was missing and I helped them find it.
+school,low,high,My neighbor’s trash can rolled into the street and I moved it back.
+school,low,high,My friend’s jacket was left at my place and I returned it before school.
+school,low,high,My sibling needed help tying their shoes before leaving.
+school,low,high,My child’s lunch spilled and I made a new one before leaving.
+school,low,high,My pet fish tank needed cleaning and I did it before leaving.
+school,low,high,My roommate needed help finding their wallet before leaving.
+school,low,high,My neighbor’s window was stuck and I helped open it before leaving.
+school,low,high,My friend’s lunch spilled and I helped them make a new one.
+school,low,high,My pet bird escaped its cage and I had to catch it.
+school,low,high,My sibling’s backpack zipper broke and I fixed it.
+school,low,high,My roommate’s bike tire was flat and I helped pump it up.
+school,low,medium,My neighbor asked me to water their plants and I forgot until this morning.
+school,low,medium,I had to wait for a grocery delivery that was running late.
+school,low,medium,My friend needed a ride to a club meeting before school.
+school,low,medium,My sibling borrowed my headphones and I had to track them down.
+school,low,medium,My roommate’s alarm clock was set for the wrong time and I helped fix it.
+school,low,medium,My neighbor’s kid left their bike in my driveway and I had to move it.
+school,low,medium,My friend’s coffee spilled on my shirt and I had to change.
+school,low,medium,My pet bird knocked over a plant and I had to clean up the dirt.
+school,low,medium,My sibling needed help with a last-minute art project.
+school,low,medium,My roommate’s shoes were missing and I helped them search.
+school,low,medium,My neighbor’s car was double parked and I waited for them to move it.
+school,low,medium,My friend’s umbrella broke and I lent them mine before leaving.
+school,low,medium,My child’s favorite book was missing and I helped them look for it.
+school,low,medium,My pet rabbit chewed through a phone cord and I had to replace it.
+school,low,medium,My sibling’s lunch was forgotten at home and I had to drop it at school.
+school,low,medium,My roommate’s phone battery died and I waited for them to charge it.
+school,low,medium,My neighbor’s mailbox was knocked over and I helped fix it.
+school,low,medium,My friend’s keys were missing and I helped them search the house.
+school,low,medium,My pet hamster escaped its cage and I had to find it before leaving.
+school,low,medium,My sibling needed help packing for a school trip.
+school,low,medium,My roommate’s laundry was left in the washer and I helped hang it up.
+school,low,medium,My neighbor’s window was stuck and I helped open it.
+school,low,medium,My friend’s dog got out and I helped catch it.
+school,low,medium,My child’s shoes were muddy and I cleaned them before school.
+school,low,medium,My pet cat hid under the bed and I had to coax it out.
+school,low,medium,My sibling’s alarm didn’t go off and I had to wake them up.
+school,low,medium,My roommate needed help finding their wallet before leaving.
+school,low,medium,My neighbor’s garden hose burst and I helped turn off the water.
+school,low,medium,My friend’s lunch spilled and I helped them make a new one.
+school,low,medium,My pet bird escaped its cage and I had to catch it.
+school,low,medium,My sibling’s backpack zipper broke and I fixed it.
+school,low,medium,My roommate’s bike tire was flat and I helped pump it up.
+school,low,medium,My neighbor’s trash can rolled down the street and I brought it back.
+school,low,medium,My friend’s glasses were lost and I helped search.
+school,low,medium,My child’s homework was missing and I helped them rewrite it.
+school,low,medium,My pet fish tank needed cleaning and I did it before leaving.
+school,low,medium,My sibling’s lunchbox was missing and I helped pack a new one.
+school,low,medium,My roommate’s package was delivered to the wrong address and I helped retrieve it.
+school,low,medium,My neighbor’s dog chewed up my school shoes and I had to find another pair.
+school,low,medium,My friend’s skateboard rolled under a parked car and I helped retrieve it.
+school,low,medium,My child’s toy was stuck in the toilet and I had to fish it out.
+school,low,medium,My sibling needed help finding their school ID before leaving.
+school,low,medium,My roommate’s phone charger was missing and I helped them find it.
+school,low,low,I binge-watched cartoons all night and overslept for school.
+school,low,low,"My horoscope said today was unlucky for learning, so I stayed home longer."
+school,low,low,I was waiting for my bread to rise and lost track of time before school.
+school,low,low,My goldfish looked sad and I spent the morning cheering it up instead of getting ready.
+school,low,low,I was on hold with customer service about a video game for hours.
+school,low,low,My cat insisted on sitting on my homework and I couldn’t move her for an hour.
+school,low,low,My neighbor’s rooster crowed all night and I barely slept.
+school,low,low,I got caught up watching funny dog videos and lost track of time.
+school,low,low,My roommate challenged me to a pancake-flipping contest and I couldn’t leave until I won.
+school,low,low,My pet turtle blocked the hallway and refused to let me pass.
+school,low,low,My sibling hid my shoes as a prank and I had to find them.
+school,low,low,I was distracted by a squirrel outside my window for half an hour.
+school,low,low,My friend dared me to build a card house and I lost track of time.
+school,low,low,My neighbor’s parrot kept repeating “Don’t go to school!” and I listened.
+school,low,low,My pet hamster fell asleep in my backpack and I didn’t want to disturb it.
+school,low,low,My roommate’s karaoke session ran late and I was too tired to wake up.
+school,low,low,My sibling’s video game tournament went late and I was up helping them practice.
+school,low,low,I was trying to beat my high score on a mobile game and lost track of time.
+school,low,low,My pet rabbit was hiding and I wanted to find it before leaving.
+school,low,low,My friend’s cat knocked over my cereal and I had to clean up.
+school,low,low,My neighbor’s dog howled all night and I couldn’t sleep.
+school,low,low,My roommate’s bread dough overflowed and I helped clean up.
+school,low,low,I was caught up in a group chat and didn’t notice the time.
+school,low,low,My sibling’s alarm clock was set to the wrong time and I overslept.
+school,low,low,My pet gecko escaped and I had to find it before leaving.
+school,low,low,My friend’s skateboard rolled under the couch and I helped retrieve it.
+school,low,low,My roommate’s alarm went off for an hour and I couldn’t concentrate on getting ready.
+school,low,low,My pet ferret hid my lunch and I had to search the apartment.
+school,low,low,My sibling’s science experiment exploded and I helped clean up.
+school,low,low,My friend’s drone landed on the roof and I had to retrieve it.
+school,low,low,My roommate’s blender exploded and I helped clean the kitchen.
+school,low,low,My pet snake wrapped around my doorknob and I had to wait for help.
+school,low,low,My sibling’s remote-controlled car got stuck in my backpack and I had to get it out.
+school,low,low,My friend’s alarm clock was set to the wrong time and I missed my ride.
+school,low,low,My roommate’s dog hid my notebook in the laundry basket.
+school,low,low,My pet raccoon stole my breakfast and I had to make more food.
+school,low,low,My neighbor’s goat wandered into my yard and I had to guide it home.
+school,low,low,My sibling challenged me to a staring contest and I lost track of time.
+school,low,low,My friend’s parrot escaped and I helped search the neighborhood.
+school,low,low,My roommate’s karaoke machine malfunctioned and I had to help fix it.
+school,low,low,My pet piglet escaped and I had to chase it through the backyard.
+school,low,low,My neighbor’s dog chewed up my backpack and I had to find another.
+school,low,low,My friend’s umbrella broke and I lent them mine before leaving.
+school,low,low,My sibling’s lunchbox was missing and I helped pack a new one.
+social,high,high,My friend had a panic attack and I needed to stay with them until they felt safe.
+social,high,high,My sibling was in a minor car accident and I had to rush to the hospital.
+social,high,high,My partner fainted unexpectedly and I had to take them to urgent care.
+social,high,high,My neighbor’s apartment caught fire and I helped them evacuate.
+social,high,high,My pet swallowed something dangerous and I had to take them to the emergency vet.
+social,high,high,My roommate had a severe allergic reaction and I had to administer their EpiPen.
+social,high,high,My child had a high fever and I had to take them to the doctor immediately.
+social,high,high,My elderly parent fell and I had to help them until the ambulance arrived.
+social,high,high,My friend’s child got sick and I was the only one available to babysit.
+social,high,high,My partner’s flight was canceled and I had to pick them up from a different airport.
+social,high,high,My sibling had a sudden asthma attack and I had to run to the pharmacy for medication.
+social,high,high,My neighbor’s dog escaped and I spent hours searching the neighborhood.
+social,high,high,My friend’s car broke down in a remote area and I had to pick them up.
+social,high,high,My roommate’s parent was hospitalized and I had to help manage their affairs.
+social,high,high,My partner’s work called them in for an emergency shift and I had to watch the kids.
+social,high,high,My child’s school called about a medical emergency and I had to leave immediately.
+social,high,high,My friend’s sibling was stranded at the airport and I had to pick them up.
+social,high,high,My elderly neighbor was locked out and I was the only one who could help.
+social,high,high,My pet developed sudden symptoms and I had to rush to the vet for an emergency checkup.
+social,high,high,My roommate’s car was stolen and I had to help them file a police report.
+social,high,high,My partner’s parent had a fall and I had to help with emergency arrangements.
+social,high,high,My child’s babysitter canceled last minute and I had to stay home.
+social,high,high,My friend’s child was injured and I had to take them to urgent care.
+social,high,high,My sibling had a severe migraine and needed my help.
+social,high,high,My neighbor’s power went out and I helped them set up emergency lighting.
+social,high,high,My friend’s pet was bitten by another animal and needed immediate care.
+social,high,high,My roommate’s sibling was in a minor accident and I had to help with hospital paperwork.
+social,high,high,My partner’s work called an emergency meeting and I had to supervise our children.
+social,high,high,My child’s school bus was in an accident and I had to pick them up.
+social,high,high,My friend’s parent had a medical emergency and I had to help coordinate care.
+social,high,high,My elderly neighbor’s caretaker was sick and I had to fill in.
+social,high,high,My pet got sick and I had to stay home to monitor them.
+social,high,high,My roommate’s friend was hospitalized and I had to help coordinate support.
+social,high,high,My partner’s sibling needed emergency childcare and I was the only one available.
+social,high,high,My child’s after-school program was canceled and I had to make alternate arrangements.
+social,high,high,My friend’s dog was hit by a car and I had to help get it to the vet.
+social,high,high,My sibling’s apartment flooded and I had to help move valuables.
+social,high,high,My neighbor’s elderly parent wandered off and I joined the search.
+social,high,high,My friend’s spouse was in a minor accident and I had to help with paperwork.
+social,high,high,My roommate’s pet developed sudden symptoms and needed emergency care.
+social,high,high,My partner’s cousin was hospitalized and I had to help with arrangements.
+social,high,high,My child’s teacher called about a sudden health issue and I had to leave.
+social,high,high,My friend’s car was towed and I had to help retrieve it.
+social,high,high,My elderly parent’s medication ran out and I had to get a refill urgently.
+social,high,high,My roommate’s sibling had a panic attack and I had to stay with them.
+social,high,medium,My friend’s car broke down on the way to the event and I had to help them get home.
+social,high,medium,My neighbor’s child got locked out and I was the only one nearby to assist.
+social,high,medium,My roommate accidentally spilled coffee on my outfit and I had to find something else to wear.
+social,high,medium,My sibling’s pet escaped and I helped search the neighborhood.
+social,high,medium,My partner’s cousin needed a ride to the hospital and I was the only one available.
+social,high,medium,My friend’s phone was stolen and I had to help them file a police report.
+social,high,medium,My roommate’s parent needed help with groceries and I was the only one free.
+social,high,medium,My neighbor’s elderly mother fell and I stayed until paramedics arrived.
+social,high,medium,My child’s friend was sick and I had to watch them while their parent went to the doctor.
+social,high,medium,My sibling’s car was blocked in and I had to help move it.
+social,high,medium,My partner’s friend was stranded at the airport and I had to pick them up.
+social,high,medium,My friend’s pet rabbit escaped and I helped search the backyard.
+social,high,medium,My roommate’s sibling needed a ride to a job interview and I was the only one available.
+social,high,medium,My neighbor’s pipes burst and I helped them manage the flooding.
+social,high,medium,My child’s after-school activity was canceled and I had to pick them up early.
+social,high,medium,My sibling’s friend was in a minor accident and I had to help with arrangements.
+social,high,medium,My partner’s coworker needed help moving and I was the only one available.
+social,high,medium,My roommate’s pet gecko escaped and I had to find it before leaving.
+social,high,medium,My friend’s sibling needed help with a flat tire and I was the only one nearby.
+social,high,medium,My neighbor’s alarm went off and I had to wait for the fire department.
+social,high,medium,My child’s teacher called about a sudden behavioral issue and I had to address it.
+social,high,medium,My sibling’s roommate was sick and I had to bring them medicine.
+social,high,medium,My partner’s friend needed a ride to the train station and I was available.
+social,high,medium,My roommate’s cousin was in a minor accident and I had to help with paperwork.
+social,high,medium,My neighbor’s pet parrot escaped and I helped search for it.
+social,high,medium,My friend’s dog was lost and I joined the search party.
+social,high,medium,My roommate’s friend needed a place to stay and I had to prepare our guest room.
+social,high,medium,My sibling’s friend’s bike was stolen and I helped file a report.
+social,high,medium,My partner’s coworker was stranded after a breakdown and I picked them up.
+social,high,medium,My child’s babysitter was late and I had to stay home until they arrived.
+social,high,medium,My neighbor’s heating failed and I helped them set up space heaters.
+social,high,medium,My friend’s car was blocked by a delivery truck and I assisted.
+social,high,medium,My roommate’s sibling needed help with a school project and I was the only one available.
+social,high,medium,My sibling’s friend’s pet was sick and I had to take it to the vet.
+social,high,medium,My partner’s cousin needed help moving furniture and I was able to assist.
+social,high,medium,My friend’s pet turtle escaped and I helped search the garden.
+social,high,medium,My roommate’s cousin was locked out and I brought them a spare key.
+social,high,medium,My neighbor’s child needed help with homework and I was the only one available.
+social,high,medium,My child’s friend’s parent was late and I had to watch them after school.
+social,high,medium,My sibling’s coworker needed a ride to work and I was nearby.
+social,high,medium,My partner’s friend’s car broke down and I had to help with a jump start.
+social,high,medium,My roommate’s friend needed help with a flat tire and I assisted.
+social,high,medium,My neighbor’s elderly father needed help with groceries and I was available.
+social,high,medium,My friend’s sibling needed a ride to the doctor and I was the only one free.
+social,high,low,I got locked in a public restroom and had to wait for someone to rescue me.
+social,high,low,My neighbor’s parrot flew into my apartment and refused to leave until I bribed it with crackers.
+social,high,low,I was caught in a spontaneous pillow fight flash mob on my street and couldn’t get out.
+social,high,low,My friend challenged me to a dance-off in the park and I couldn’t leave until I won.
+social,high,low,My pet turtle escaped and led me on a chase through the neighborhood.
+social,high,low,My roommate’s cat knocked over a jar of marbles and I had to pick them all up before leaving.
+social,high,low,My sibling’s hamster hid my keys and I had to search the entire apartment.
+social,high,low,I was mistaken for a street performer and had to act in a skit before I could leave.
+social,high,low,My friend’s drone landed on my roof and I had to wait for help to retrieve it.
+social,high,low,My neighbor’s goat blocked my driveway and refused to move for an hour.
+social,high,low,I was recruited by a clown troupe for a charity event and couldn’t leave until my act was done.
+social,high,low,My roommate’s karaoke machine malfunctioned and I had to help fix it before leaving.
+social,high,low,My pet snake wrapped itself around my doorknob and I had to wait for animal control.
+social,high,low,My sibling’s remote-controlled car got stuck in my backpack and I had to get it out.
+social,high,low,My friend’s skateboard rolled under a parked car and I helped retrieve it.
+social,high,low,My neighbor’s ducklings blocked my path and I had to herd them to safety.
+social,high,low,My roommate’s bread dough overflowed and I helped clean up before leaving.
+social,high,low,My pet hamster chewed through my phone charger and I had to buy a new one.
+social,high,low,My sibling’s science experiment exploded and I helped clean up the mess.
+social,high,low,My friend’s cat knocked over my breakfast and I had to clean up.
+social,high,low,My neighbor’s rooster crowed all night and I barely slept.
+social,high,low,I was challenged to a thumb wrestling tournament by my roommate and couldn’t leave until I won.
+social,high,low,My pet piglet escaped and I had to chase it through the backyard.
+social,high,low,My roommate’s dog hid my keys in the laundry basket.
+social,high,low,My friend’s alarm clock was set to the wrong time and I missed my ride.
+social,high,low,My neighbor’s goat chewed up my shoes and I had to find another pair.
+social,high,low,My sibling’s lunchbox was missing and I helped pack a new one.
+social,high,low,My roommate’s karaoke session ran late and I was too tired to leave.
+social,high,low,My pet raccoon stole my wallet and I had to search the house.
+social,high,low,My friend dared me to build a card house and I lost track of time.
+social,high,low,My neighbor’s parrot kept repeating “Don’t go out!” and I listened.
+social,high,low,My pet hamster fell asleep in my shoe and I didn’t want to disturb it.
+social,high,low,I was distracted by a squirrel outside my window for half an hour.
+social,high,low,My roommate challenged me to a pancake-flipping contest and I couldn’t leave until I won.
+social,high,low,My goldfish looked sad and I spent the morning cheering it up.
+social,high,low,I was on hold with customer service for hours about a subscription box.
+social,high,low,My cat insisted on sitting on my lap and I couldn’t move for an hour.
+social,high,low,My friend’s umbrella broke and I lent them mine before leaving.
+social,high,low,My sibling’s alarm clock was set to the wrong time and I overslept.
+social,high,low,My roommate’s blender exploded and I helped clean the kitchen.
+social,high,low,My pet snake wrapped around my doorknob and I had to wait for help.
+social,high,low,My neighbor’s dog chewed up my shoes and I had to find another pair.
+social,high,low,My roommate’s alarm went off for an hour and I couldn’t concentrate on getting ready.
+social,medium,high,My friend’s car battery died and I had to give them a jump start before meeting up.
+social,medium,high,My sibling needed help moving furniture and I was the only one available.
+social,medium,high,My roommate’s bike tire was flat and I helped them fix it before leaving.
+social,medium,high,My neighbor’s child was locked out and I waited with them until their parent got home.
+social,medium,high,My pet dog was sick and I had to take it to the vet before seeing friends.
+social,medium,high,My partner’s parent needed groceries and I helped carry them in.
+social,medium,high,My friend’s umbrella broke and I lent them mine before heading out.
+social,medium,high,My roommate’s alarm clock malfunctioned and I helped them reset it.
+social,medium,high,My sibling’s homework was missing and I helped them rewrite it before leaving.
+social,medium,high,My neighbor’s garden hose burst and I helped turn off the water.
+social,medium,high,My friend’s phone died and I waited for them to charge it before leaving together.
+social,medium,high,My roommate’s package was delivered to the wrong address and I helped retrieve it.
+social,medium,high,My sibling’s lunchbox was missing and I helped pack a new one before going out.
+social,medium,high,My pet rabbit escaped its pen and I had to catch it in the yard.
+social,medium,high,My neighbor’s dog got loose and I helped bring it back home.
+social,medium,high,My friend’s glasses broke and I helped them tape them up before meeting.
+social,medium,high,My roommate’s car wouldn’t start and I gave them a jump before leaving.
+social,medium,high,My sibling needed help printing an assignment before I could leave.
+social,medium,high,My partner’s friend needed a ride to the train station and I was available.
+social,medium,high,My neighbor’s trash can rolled into the street and I moved it back.
+social,medium,high,My friend’s jacket was left at my place and I returned it before going out.
+social,medium,high,My roommate needed help finding their wallet before leaving.
+social,medium,high,My sibling’s bike tire was flat and I helped pump it up before going out.
+social,medium,high,My pet cat hid under the bed and I had to coax it out.
+social,medium,high,My friend’s lunch spilled and I helped them make a new one before meeting.
+social,medium,high,My neighbor’s window was stuck and I helped open it before leaving.
+social,medium,high,My roommate’s bike tire was flat and I helped pump it up.
+social,medium,high,My sibling’s backpack zipper broke and I fixed it before leaving.
+social,medium,high,My partner’s cousin needed help moving furniture and I was able to assist.
+social,medium,high,My friend’s pet turtle escaped and I helped search the garden.
+social,medium,high,My roommate’s cousin was locked out and I brought them a spare key.
+social,medium,high,My neighbor’s child needed help with homework and I was the only one available.
+social,medium,high,My friend’s sibling needed a ride to the doctor and I was the only one free.
+social,medium,high,My roommate’s friend needed help with a flat tire and I assisted.
+social,medium,high,My sibling’s coworker needed a ride to work and I was nearby.
+social,medium,high,My partner’s friend’s car broke down and I had to help with a jump start.
+social,medium,high,My neighbor’s elderly father needed help with groceries and I was available.
+social,medium,high,My friend’s sibling needed help with a flat tire and I was the only one nearby.
+social,medium,high,My roommate’s friend needed a place to stay and I had to prepare our guest room.
+social,medium,high,My sibling’s friend’s bike was stolen and I helped file a report.
+social,medium,high,My partner’s coworker was stranded after a breakdown and I picked them up.
+social,medium,high,My child’s babysitter was late and I had to stay home until they arrived.
+social,medium,high,My neighbor’s heating failed and I helped them set up space heaters.
+social,medium,medium,My friend’s pet rabbit escaped and I helped search the backyard before meeting up.
+social,medium,medium,My roommate’s sibling needed help with a school project and I was the only one available.
+social,medium,medium,My neighbor’s child needed help with homework and I was the only one available.
+social,medium,medium,My sibling’s friend’s pet was sick and I took it to the vet before our plans.
+social,medium,medium,My partner’s cousin needed help moving furniture and I lent a hand.
+social,medium,medium,My friend’s pet turtle escaped and I helped search the garden before heading out.
+social,medium,medium,My roommate’s cousin was locked out and I brought them a spare key.
+social,medium,medium,My neighbor’s dog got loose and I helped bring it back home before leaving.
+social,medium,medium,My friend’s glasses broke and I helped them tape them up before meeting.
+social,medium,medium,My roommate’s car wouldn’t start and I gave them a jump before leaving.
+social,medium,medium,My sibling needed help printing an assignment before I could leave.
+social,medium,medium,My partner’s friend needed a ride to the train station and I was available.
+social,medium,medium,My neighbor’s trash can rolled into the street and I moved it back before going out.
+social,medium,medium,My friend’s jacket was left at my place and I returned it before our plans.
+social,medium,medium,My roommate needed help finding their wallet before leaving.
+social,medium,medium,My sibling’s bike tire was flat and I helped pump it up before going out.
+social,medium,medium,My pet cat hid under the bed and I had to coax it out before leaving.
+social,medium,medium,My friend’s lunch spilled and I helped them make a new one before meeting.
+social,medium,medium,My neighbor’s window was stuck and I helped open it before leaving.
+social,medium,medium,My roommate’s bike tire was flat and I helped pump it up before heading out.
+social,medium,medium,My sibling’s backpack zipper broke and I fixed it before leaving.
+social,medium,medium,My partner’s cousin needed help moving furniture and I was able to assist.
+social,medium,medium,My friend’s pet gecko escaped and I had to find it before leaving.
+social,medium,medium,My roommate’s cousin was locked out and I brought them a spare key before going out.
+social,medium,medium,My neighbor’s child needed help with homework and I was the only one available before our plans.
+social,medium,medium,My friend’s sibling needed a ride to the doctor and I was the only one free.
+social,medium,medium,My roommate’s friend needed help with a flat tire and I assisted before meeting up.
+social,medium,medium,My sibling’s coworker needed a ride to work and I was nearby.
+social,medium,medium,My partner’s friend’s car broke down and I had to help with a jump start before socializing.
+social,medium,medium,My neighbor’s elderly father needed help with groceries and I was available before leaving.
+social,medium,medium,My friend’s sibling needed help with a flat tire and I was the only one nearby.
+social,medium,medium,My roommate’s friend needed a place to stay and I had to prepare our guest room before heading out.
+social,medium,medium,My sibling’s friend’s bike was stolen and I helped file a report before our plans.
+social,medium,medium,My partner’s coworker was stranded after a breakdown and I picked them up before meeting friends.
+social,medium,medium,My child’s babysitter was late and I had to stay home until they arrived before going out.
+social,medium,medium,My neighbor’s heating failed and I helped them set up space heaters before leaving.
+social,medium,medium,My friend’s car was blocked by a delivery truck and I assisted before our plans.
+social,medium,medium,My roommate’s friend needed help with a school project and I was the only one available before meeting up.
+social,medium,medium,My sibling’s friend’s pet was sick and I took it to the vet before seeing friends.
+social,medium,medium,My partner’s cousin needed help moving furniture and I lent a hand before socializing.
+social,medium,medium,My friend’s pet turtle escaped and I helped search the garden before heading out.
+social,medium,medium,My roommate’s cousin was locked out and I brought them a spare key before our plans.
+social,medium,medium,My neighbor’s child needed help with homework and I was the only one available before meeting up.
+social,medium,low,My cat hid my phone and I spent the morning searching for it before meeting up.
+social,medium,low,I got distracted watching a sunrise and lost track of time before the event.
+social,medium,low,"My neighbor’s rooster crowed all night and I barely slept, so I was late."
+social,medium,low,I was late because I was trying to beat my high score on a mobile game.
+social,medium,low,My pet turtle blocked the hallway and refused to let me pass until I fed it.
+social,medium,low,My sibling dared me to build a card house and I lost track of time.
+social,medium,low,My friend challenged me to a pancake-flipping contest and I couldn’t leave until I won.
+social,medium,low,My goldfish looked sad and I spent the morning cheering it up.
+social,medium,low,My roommate’s karaoke session ran late and I was too tired to wake up.
+social,medium,low,My little brother hid my shoes as a prank and I had to find them before leaving.
+social,medium,low,I was distracted by a squirrel outside my window for half an hour.
+social,medium,low,My pet hamster fell asleep in my backpack and I didn’t want to disturb it.
+social,medium,low,My neighbor’s parrot kept repeating “Don’t go out!” and I listened.
+social,medium,low,My friend dared me to memorize a tongue twister before leaving.
+social,medium,low,My sibling’s video game tournament went late and I was up helping them practice.
+social,medium,low,My pet rabbit was hiding and I wanted to find it before leaving.
+social,medium,low,My friend’s cat knocked over my breakfast and I had to clean up.
+social,medium,low,My neighbor’s dog howled all night and I couldn’t sleep.
+social,medium,low,My roommate’s bread dough overflowed and I helped clean up before leaving.
+social,medium,low,I was caught up in a group chat and didn’t notice the time.
+social,medium,low,My sibling’s alarm clock was set to the wrong time and I overslept.
+social,medium,low,My pet gecko escaped and I had to find it before leaving.
+social,medium,low,My friend’s skateboard rolled under the couch and I helped retrieve it.
+social,medium,low,My roommate’s alarm went off for an hour and I couldn’t concentrate on getting ready.
+social,medium,low,My pet ferret hid my wallet and I had to search the apartment.
+social,medium,low,My sibling’s science experiment exploded and I helped clean up.
+social,medium,low,My friend’s drone landed on the roof and I had to retrieve it.
+social,medium,low,My roommate’s blender exploded and I helped clean the kitchen.
+social,medium,low,My pet snake wrapped around my doorknob and I had to wait for help.
+social,medium,low,My sibling’s remote-controlled car got stuck in my backpack and I had to get it out.
+social,medium,low,My friend’s alarm clock was set to the wrong time and I missed my ride.
+social,medium,low,My roommate’s dog hid my keys in the laundry basket.
+social,medium,low,My pet raccoon stole my breakfast and I had to make more food.
+social,medium,low,My neighbor’s goat wandered into my yard and I had to guide it home.
+social,medium,low,My sibling challenged me to a staring contest and I lost track of time.
+social,medium,low,My friend’s parrot escaped and I helped search the neighborhood.
+social,medium,low,My roommate’s karaoke machine malfunctioned and I had to help fix it.
+social,medium,low,My pet piglet escaped and I had to chase it through the backyard.
+social,medium,low,My neighbor’s dog chewed up my shoes and I had to find another pair.
+social,medium,low,My friend’s umbrella broke and I lent them mine before leaving.
+social,medium,low,My sibling’s lunchbox was missing and I helped pack a new one.
+social,medium,low,My roommate’s alarm clock malfunctioned and I was late.
+social,medium,low,My pet squirrel hid my wallet and I had to look everywhere.
+social,medium,low,My neighbor’s ducklings blocked my path and I had to herd them to safety.
+social,low,high,My alarm didn’t go off and I woke up late for the gathering.
+social,low,high,My sibling needed a ride to their club meeting before I could leave.
+social,low,high,My pet needed a quick checkup at the vet before I could meet friends.
+social,low,high,I had to pick up a prescription for my parent before heading out.
+social,low,high,My neighbor asked me to help carry groceries before I left for the event.
+social,low,high,My friend’s bike chain broke and I helped them fix it before leaving.
+social,low,high,My sibling forgot their lunch and I had to drop it off at their school.
+social,low,high,My pet cat scratched the door and I fixed it before heading out.
+social,low,high,My roommate misplaced their keys and I helped them search.
+social,low,high,My neighbor needed a ride to a doctor’s appointment before I could go out.
+social,low,high,My friend’s moving truck arrived late and I helped them unload before meeting up.
+social,low,high,My sibling’s alarm didn’t go off and I had to wake them up.
+social,low,high,My pet bird got out of its cage and I had to catch it before leaving.
+social,low,high,My roommate’s car wouldn’t start and I gave them a jump before heading out.
+social,low,high,My neighbor’s child needed a ride to an activity and I helped out.
+social,low,high,My friend’s phone died and I waited for them to charge it before leaving together.
+social,low,high,My sibling needed help printing an assignment before I could leave.
+social,low,high,My child’s backpack zipper broke and I fixed it before leaving.
+social,low,high,My pet rabbit escaped its pen and I had to catch it in the yard.
+social,low,high,My roommate’s package was delivered to the wrong address and I helped retrieve it.
+social,low,high,My neighbor’s dog got loose and I helped bring it back home.
+social,low,high,My friend’s glasses broke and I helped them tape them up before meeting.
+social,low,high,My sibling’s bike tire was flat and I helped pump it up before going out.
+social,low,high,My child’s shoes were missing and I helped them find a pair before leaving.
+social,low,high,My pet cat hid under the bed and I had to coax it out.
+social,low,high,My roommate’s alarm clock was set incorrectly and I helped reset it.
+social,low,high,My neighbor’s garden hose burst and I helped clean up the water.
+social,low,high,My friend’s umbrella broke and I lent them mine before leaving.
+social,low,high,My sibling’s lunchbox was missing and I helped pack a new one.
+social,low,high,My child’s homework was left at home and I had to drop it at school before meeting friends.
+social,low,high,My pet hamster escaped and I had to find it before leaving.
+social,low,high,My roommate’s phone charger was missing and I helped them find it.
+social,low,high,My neighbor’s trash can rolled into the street and I moved it back.
+social,low,high,My friend’s jacket was left at my place and I returned it before going out.
+social,low,high,My sibling needed help tying their shoes before leaving.
+social,low,high,My child’s lunch spilled and I made a new one before leaving.
+social,low,high,My pet fish tank needed cleaning and I did it before heading out.
+social,low,high,My roommate needed help finding their wallet before leaving.
+social,low,high,My neighbor’s window was stuck and I helped open it before leaving.
+social,low,high,My friend’s lunch spilled and I helped them make a new one before meeting.
+social,low,high,My pet bird escaped its cage and I had to catch it before leaving.
+social,low,high,My sibling’s backpack zipper broke and I fixed it before going out.
+social,low,high,My roommate’s bike tire was flat and I helped pump it up before leaving.
+social,low,medium,My neighbor asked me to water their plants and I forgot until this morning.
+social,low,medium,I had to wait for a grocery delivery that was running late before meeting friends.
+social,low,medium,My friend needed a ride to a club meeting before we could hang out.
+social,low,medium,My sibling borrowed my headphones and I had to track them down.
+social,low,medium,My roommate’s alarm clock was set for the wrong time and I helped fix it.
+social,low,medium,My neighbor’s kid left their bike in my driveway and I had to move it before leaving.
+social,low,medium,My friend’s coffee spilled on my shirt and I had to change before going out.
+social,low,medium,My pet bird knocked over a plant and I had to clean up the dirt before leaving.
+social,low,medium,My sibling needed help with a last-minute art project before I could leave.
+social,low,medium,My roommate’s shoes were missing and I helped them search before heading out.
+social,low,medium,My neighbor’s car was double parked and I waited for them to move it before going out.
+social,low,medium,My friend’s umbrella broke and I lent them mine before leaving.
+social,low,medium,My child’s favorite book was missing and I helped them look for it before leaving.
+social,low,medium,My pet rabbit chewed through a phone cord and I had to replace it before meeting up.
+social,low,medium,My sibling’s lunch was forgotten at home and I had to drop it at school before going out.
+social,low,medium,My roommate’s phone battery died and I waited for them to charge it before leaving.
+social,low,medium,My neighbor’s mailbox was knocked over and I helped fix it before heading out.
+social,low,medium,My friend’s keys were missing and I helped them search the house before leaving.
+social,low,medium,My pet hamster escaped its cage and I had to find it before leaving.
+social,low,medium,My sibling needed help packing for a trip before our plans.
+social,low,medium,My roommate’s laundry was left in the washer and I helped hang it up before going out.
+social,low,medium,My neighbor’s window was stuck and I helped open it before leaving.
+social,low,medium,My friend’s dog got out and I helped catch it before meeting.
+social,low,medium,My child’s shoes were muddy and I cleaned them before leaving.
+social,low,medium,My pet cat hid under the bed and I had to coax it out before heading out.
+social,low,medium,My sibling’s alarm didn’t go off and I had to wake them up before leaving.
+social,low,medium,My roommate needed help finding their wallet before leaving.
+social,low,medium,My neighbor’s garden hose burst and I helped turn off the water before going out.
+social,low,medium,My friend’s lunch spilled and I helped them make a new one before hanging out.
+social,low,medium,My pet bird escaped its cage and I had to catch it before leaving.
+social,low,medium,My sibling’s backpack zipper broke and I fixed it before going out.
+social,low,medium,My roommate’s bike tire was flat and I helped pump it up before leaving.
+social,low,medium,My neighbor’s trash can rolled down the street and I brought it back before going out.
+social,low,medium,My friend’s glasses were lost and I helped search before meeting.
+social,low,medium,My child’s homework was missing and I helped them rewrite it before leaving.
+social,low,medium,My pet fish tank needed cleaning and I did it before heading out.
+social,low,medium,My sibling’s lunchbox was missing and I helped pack a new one before leaving.
+social,low,medium,My roommate’s package was delivered to the wrong address and I helped retrieve it before going out.
+social,low,medium,My neighbor’s dog chewed up my shoes and I had to find another pair before leaving.
+social,low,medium,My friend’s skateboard rolled under a parked car and I helped retrieve it before meeting.
+social,low,medium,My child’s toy was stuck in the toilet and I had to fish it out before leaving.
+social,low,medium,My sibling needed help finding their club ID before leaving.
+social,low,medium,My roommate’s phone charger was missing and I helped them find it before going out.
+social,low,low,I binge-watched a whole TV series and lost track of time before meeting up.
+social,low,low,"My horoscope said today was unlucky for socializing, so I stayed home longer."
+social,low,low,I was waiting for my bread to rise and forgot about my plans.
+social,low,low,My goldfish looked sad and I spent the morning cheering it up instead of getting ready.
+social,low,low,I was on hold with customer service about a video game for hours.
+social,low,low,My cat insisted on sitting on my lap and I couldn’t move for an hour.
+social,low,low,"My neighbor’s rooster crowed all night and I barely slept, so I was late."
+social,low,low,I got caught up watching funny dog videos and lost track of time.
+social,low,low,My roommate challenged me to a pancake-flipping contest and I couldn’t leave until I won.
+social,low,low,My pet turtle blocked the hallway and refused to let me pass until I fed it.
+social,low,low,My sibling hid my shoes as a prank and I had to find them before leaving.
+social,low,low,I was distracted by a squirrel outside my window for half an hour.
+social,low,low,My friend dared me to build a card house and I lost track of time.
+social,low,low,My neighbor’s parrot kept repeating “Don’t go out!” and I listened.
+social,low,low,My pet hamster fell asleep in my shoe and I didn’t want to disturb it.
+social,low,low,My roommate’s karaoke session ran late and I was too tired to leave.
+social,low,low,My sibling’s video game tournament went late and I was up helping them practice.
+social,low,low,I was trying to beat my high score on a mobile game and lost track of time.
+social,low,low,My pet rabbit was hiding and I wanted to find it before leaving.
+social,low,low,My friend’s cat knocked over my cereal and I had to clean up before going out.
+social,low,low,My neighbor’s dog howled all night and I couldn’t sleep.
+social,low,low,My roommate’s bread dough overflowed and I helped clean up before leaving.
+social,low,low,I was caught up in a group chat and didn’t notice the time.
+social,low,low,My sibling’s alarm clock was set to the wrong time and I overslept.
+social,low,low,My pet gecko escaped and I had to find it before leaving.
+social,low,low,My friend’s skateboard rolled under the couch and I helped retrieve it.
+social,low,low,My roommate’s alarm went off for an hour and I couldn’t concentrate on getting ready.
+social,low,low,My pet ferret hid my wallet and I had to search the apartment.
+social,low,low,My sibling’s science experiment exploded and I helped clean up.
+social,low,low,My friend’s drone landed on the roof and I had to retrieve it.
+social,low,low,My roommate’s blender exploded and I helped clean the kitchen.
+social,low,low,My pet snake wrapped around my doorknob and I had to wait for help.
+social,low,low,My sibling’s remote-controlled car got stuck in my backpack and I had to get it out.
+social,low,low,My friend’s alarm clock was set to the wrong time and I missed my ride.
+social,low,low,My roommate’s dog hid my keys in the laundry basket.
+social,low,low,My pet raccoon stole my breakfast and I had to make more food.
+social,low,low,My neighbor’s goat wandered into my yard and I had to guide it home before leaving.
+social,low,low,My sibling challenged me to a staring contest and I lost track of time.
+social,low,low,My friend’s parrot escaped and I helped search the neighborhood.
+social,low,low,My roommate’s karaoke machine malfunctioned and I had to help fix it before going out.
+social,low,low,My pet piglet escaped and I had to chase it through the backyard before leaving.
+social,low,low,My neighbor’s dog chewed up my shoes and I had to find another pair before leaving.
+social,low,low,My friend’s umbrella broke and I lent them mine before leaving.
+social,low,low,My sibling’s lunchbox was missing and I helped pack a new one before going out.
+family,high,high,My child had a severe asthma attack and I had to take them to the emergency room.
+family,high,high,My spouse was hospitalized unexpectedly and I stayed with them overnight.
+family,high,high,My elderly parent fell at home and I had to help them until the ambulance arrived.
+family,high,high,My sibling was in a car accident and I had to rush to the hospital to assist.
+family,high,high,My partner fainted suddenly and I had to take them to urgent care.
+family,high,high,My child’s school called about a medical emergency and I had to leave immediately.
+family,high,high,My spouse’s parent had a stroke and I had to help coordinate care.
+family,high,high,My child broke their arm at the playground and I had to take them to the ER.
+family,high,high,My partner’s flight was canceled and I had to pick them up from a different airport.
+family,high,high,My sibling had a severe allergic reaction and I had to rush them to the doctor.
+family,high,high,My parent’s medication ran out and I had to get a refill urgently.
+family,high,high,My spouse had a panic attack and I needed to stay with them until they felt safe.
+family,high,high,My child’s babysitter canceled last minute and I had to stay home.
+family,high,high,My partner’s work called them in for an emergency shift and I had to watch the kids.
+family,high,high,My elderly parent’s caretaker was sick and I had to fill in.
+family,high,high,My sibling’s child was injured and I had to take them to urgent care.
+family,high,high,My spouse’s car broke down on the highway and I had to pick them up.
+family,high,high,My child’s after-school program was canceled and I had to make alternate arrangements.
+family,high,high,My partner’s parent was hospitalized and I had to help manage their affairs.
+family,high,high,My spouse had a severe migraine and needed my help at home.
+family,high,high,My sibling’s child was sick and I was the only one available to babysit.
+family,high,high,My child’s school bus was in an accident and I had to pick them up.
+family,high,high,My parent’s house was flooded and I had to help move valuables.
+family,high,high,My spouse’s sibling needed emergency childcare and I was the only one available.
+family,high,high,My child’s teacher called about a sudden health issue and I had to leave.
+family,high,high,My partner’s cousin was hospitalized and I had to help with arrangements.
+family,high,high,My sibling’s apartment flooded and I had to help clean up.
+family,high,high,My spouse’s friend was hospitalized and I had to help coordinate support.
+family,high,high,My parent’s car broke down and I had to arrange a tow and repairs.
+family,high,high,My child developed a high fever and I had to monitor them closely.
+family,high,high,My partner’s work called an emergency meeting and I had to supervise our children.
+family,high,high,My spouse’s parent had a fall and I had to help with emergency arrangements.
+family,high,high,My sibling had a panic attack and I needed to support them.
+family,high,high,My child’s friend was sick and I had to watch them while their parent went to the doctor.
+family,high,high,My parent’s power went out and I helped them set up emergency lighting.
+family,high,high,My spouse’s car was stolen and I had to help file a police report.
+family,high,high,My sibling’s pet was bitten by another animal and needed immediate care.
+family,high,high,My partner’s friend’s child was injured and I had to take them to urgent care.
+family,high,high,My child’s teacher called about a sudden behavioral issue and I had to address it.
+family,high,high,My parent’s neighbor was locked out and I was the only one who could help.
+family,high,high,My spouse’s cousin needed a ride to the hospital and I was the only one available.
+family,high,high,My child’s friend’s parent was late and I had to watch them after school.
+family,high,high,My sibling’s coworker needed a ride to work and I was nearby.
+family,high,high,My partner’s friend’s car broke down and I had to help with a jump start.
+family,high,high,My parent’s elderly friend needed groceries and I helped carry them in.
+family,high,medium,My child had a mild fever and I had to keep them home for observation.
+family,high,medium,My spouse was called into work unexpectedly and I had to watch the kids.
+family,high,medium,My elderly parent needed help with medication and I stayed with them.
+family,high,medium,My sibling was in a minor car accident and I had to assist with paperwork.
+family,high,medium,My partner had a dental emergency and I had to take them to the clinic.
+family,high,medium,My child’s school called about a minor injury and I had to pick them up.
+family,high,medium,My spouse’s parent was feeling unwell and I had to help care for them.
+family,high,medium,My child had a severe allergic reaction and I had to take them to urgent care.
+family,high,medium,My sibling’s child was sick and I was the only one available to babysit.
+family,high,medium,My partner’s work called an emergency meeting and I had to stay home.
+family,high,medium,My elderly parent had a fall and I had to help them until help arrived.
+family,high,medium,My child’s daycare closed suddenly and I had to stay home with them.
+family,high,medium,My spouse was hospitalized for a minor surgery and I stayed overnight.
+family,high,medium,My sibling was called away for a family emergency and I had to cover for them.
+family,high,medium,My partner’s car broke down and I had to pick them up.
+family,high,medium,My child had a dental emergency and I had to take them to the dentist.
+family,high,medium,My spouse’s sibling was in the hospital and I had to help with arrangements.
+family,high,medium,My elderly parent needed transportation to a medical appointment.
+family,high,medium,My child had a sudden asthma attack and I had to administer medication.
+family,high,medium,My partner’s parent was admitted to the hospital and I had to assist.
+family,high,medium,My sibling’s child had a fever and I had to stay home to care for them.
+family,high,medium,My spouse had a migraine and needed help at home.
+family,high,medium,My child’s school was closed due to a health concern and I had to stay home.
+family,high,medium,My elderly parent was recovering from surgery and needed assistance.
+family,high,medium,My partner was called into work unexpectedly and I had to watch the children.
+family,high,medium,My sibling was involved in a minor accident and I had to help with insurance.
+family,high,medium,My child had a severe ear infection and needed urgent care.
+family,high,medium,My spouse’s parent was ill and I had to help with their care.
+family,high,medium,My elderly parent had a fall and I stayed with them until help arrived.
+family,high,medium,My child’s babysitter canceled last minute and I had to stay home.
+family,high,medium,My partner’s sibling was hospitalized and I had to assist with arrangements.
+family,high,medium,My child had a severe allergic reaction and I had to take them to the ER.
+family,high,medium,My spouse was called into work for an emergency and I had to watch the kids.
+family,high,medium,My elderly parent needed help with daily tasks and I stayed home.
+family,high,medium,My sibling’s child was sick and I was the only one available to care for them.
+family,high,medium,My partner’s parent had a medical emergency and I had to help.
+family,high,medium,My child’s school called about a health issue and I had to leave immediately.
+family,high,medium,My spouse’s car broke down and I had to pick them up.
+family,high,medium,My elderly parent was admitted to the hospital and I had to stay overnight.
+family,high,medium,My child had a seizure and I had to call emergency services.
+family,high,medium,My partner’s work called them in for an emergency shift and I had to stay home.
+family,high,medium,My sibling was called away for a family emergency and I had to cover for them.
+family,high,medium,My child had a severe migraine and needed care at home.
+family,high,medium,My spouse’s parent was hospitalized and I had to help coordinate care.
+family,high,medium,My elderly parent needed help with medication and I stayed with them.
+family,high,medium,My child’s daycare closed suddenly and I had to stay home with them.
+family,high,medium,My partner had a dental emergency and I had to take them to the clinic.
+family,high,medium,My sibling was in a minor car accident and I had to assist with paperwork.
+family,high,low,My pet iguana escaped and I had to search the neighborhood before I could leave.
+family,high,low,My sibling’s hamster hid my car keys and I had to search the whole house.
+family,high,low,My cousin’s parrot flew out the window and I had to help catch it.
+family,high,low,My uncle’s goat blocked our driveway and we couldn’t leave for hours.
+family,high,low,My aunt’s cat locked itself in the bathroom and I had to wait for a locksmith.
+family,high,low,My little brother glued my shoes to the floor as a prank and I had to get new ones.
+family,high,low,My grandma’s rooster escaped and I had to chase it around the yard.
+family,high,low,My cousin’s dog buried my phone in the garden and I had to dig it up.
+family,high,low,My sibling’s turtle crawled under the fridge and I had to rescue it.
+family,high,low,My nephew’s rabbit chewed through the TV cord and I had to fix it.
+family,high,low,My aunt’s ferret hid the house keys and I had to search everywhere.
+family,high,low,My cousin’s snake wrapped around the doorknob and I had to wait for help.
+family,high,low,My grandma’s cat knocked over a vase and I had to clean up the mess.
+family,high,low,My sibling’s goldfish jumped out of the bowl and I had to save it.
+family,high,low,My uncle’s parakeet mimicked the fire alarm and caused a panic.
+family,high,low,My cousin’s guinea pig escaped and I had to find it before leaving.
+family,high,low,My little sister hid my backpack as a joke and I had to find it.
+family,high,low,My brother’s dog chewed up my homework and I had to redo it.
+family,high,low,My aunt’s cat spilled milk on my laptop and I had to dry it out.
+family,high,low,My cousin’s hamster got stuck in a shoe and I had to get it out.
+family,high,low,My grandma’s dog howled all night and I couldn’t sleep.
+family,high,low,My sibling’s frog escaped and I had to search the bathroom.
+family,high,low,My nephew’s turtle blocked the hallway and wouldn’t move.
+family,high,low,My aunt’s rabbit hid my lunch and I had to search for it.
+family,high,low,My cousin’s snake escaped and I had to help find it before leaving.
+family,high,low,My grandma’s parrot kept repeating “Don’t go out!” and I listened.
+family,high,low,My sibling’s hamster fell asleep in my shoe and I didn’t want to disturb it.
+family,high,low,My uncle’s goat wandered into the neighbor’s yard and I had to bring it back.
+family,high,low,My cousin’s cat hid my phone and I had to search everywhere.
+family,high,low,My little brother spilled juice on my homework and I had to redo it.
+family,high,low,My sister’s dog got stuck under the couch and I had to get it out.
+family,high,low,My aunt’s ferret escaped and I had to find it before leaving.
+family,high,low,My cousin’s rabbit chewed up my shoelaces and I had to find another pair.
+family,high,low,My grandma’s rooster crowed all night and I barely slept.
+family,high,low,My sibling’s goldfish looked sad and I spent the morning cheering it up.
+family,high,low,My uncle’s parakeet escaped and I had to help find it.
+family,high,low,My cousin’s guinea pig hid in the laundry basket and I had to find it.
+family,high,low,My little sister challenged me to a pancake-flipping contest and I couldn’t leave until I won.
+family,high,low,My brother’s hamster chewed through my phone charger and I had to buy a new one.
+family,high,low,My aunt’s cat spilled water on my homework and I had to redo it.
+family,high,low,My cousin’s snake wrapped around my backpack and I had to wait for help.
+family,high,low,My grandma’s dog hid my shoes and I had to find them before leaving.
+family,high,low,My sibling’s frog escaped into the kitchen and I had to catch it.
+family,high,low,My nephew’s turtle blocked the bathroom door and I had to wait.
+family,high,low,My aunt’s rabbit hid my keys and I had to search everywhere.
+family,medium,high,My sibling needed a ride to a doctor’s appointment and I was the only one available.
+family,medium,high,My child’s school conference was rescheduled for this morning and I had to attend.
+family,medium,high,My spouse had a minor dental procedure and I stayed home to help them recover.
+family,medium,high,My elderly parent needed help setting up a new medical device.
+family,medium,high,My partner’s car battery died and I had to give them a jump before work.
+family,medium,high,My child’s backpack zipper broke and I had to fix it before school.
+family,medium,high,My sibling’s alarm didn’t go off and I had to wake them up before leaving.
+family,medium,high,My spouse’s friend needed a ride to the airport and I was available.
+family,medium,high,My parent’s neighbor needed help moving furniture and I was the only one available.
+family,medium,high,My child’s shoes were missing and I helped them find a pair before leaving.
+family,medium,high,My sibling’s pet needed a last-minute vet checkup and I had to take it.
+family,medium,high,My spouse needed help printing an important document before leaving.
+family,medium,high,My elderly parent needed groceries and I helped carry them in.
+family,medium,high,My partner’s sibling needed a ride to a job interview and I was free.
+family,medium,high,My child’s friend was locked out and I waited with them until their parent got home.
+family,medium,high,My sibling’s homework was missing and I helped them rewrite it before leaving.
+family,medium,high,My spouse’s alarm clock malfunctioned and I helped reset it before leaving.
+family,medium,high,My parent’s car wouldn’t start and I gave them a jump before heading out.
+family,medium,high,My child’s lunch spilled and I made a new one before leaving.
+family,medium,high,My sibling needed help packing for a school trip before I could leave.
+family,medium,high,My spouse’s cousin needed a ride to a medical appointment and I was available.
+family,medium,high,My elderly parent’s heating failed and I helped set up space heaters.
+family,medium,high,My partner’s friend’s bike was stolen and I helped file a report.
+family,medium,high,My child’s teacher called for a parent meeting and I had to attend.
+family,medium,high,My sibling’s pet rabbit escaped and I helped search the backyard.
+family,medium,high,My spouse’s friend needed help moving and I lent a hand before leaving.
+family,medium,high,My parent’s neighbor’s car was blocked and I helped them move it.
+family,medium,high,My child’s school bus was late and I had to drive them in.
+family,medium,high,My sibling’s glasses broke and I helped tape them up before leaving.
+family,medium,high,My spouse needed help finding their wallet before leaving.
+family,medium,high,My elderly parent’s garden hose burst and I helped turn off the water.
+family,medium,high,My partner’s cousin needed help moving furniture and I was able to assist.
+family,medium,high,My child’s friend’s parent was late and I had to watch them after school.
+family,medium,high,My sibling’s coworker needed a ride to work and I was nearby.
+family,medium,high,My spouse’s friend’s car broke down and I had to help with a jump start.
+family,medium,high,My parent’s elderly friend needed groceries and I helped carry them in.
+family,medium,high,My child’s babysitter was late and I had to stay home until they arrived.
+family,medium,high,My sibling’s friend needed help with a flat tire and I was available.
+family,medium,high,My spouse’s cousin was locked out and I brought them a spare key.
+family,medium,high,My parent’s neighbor’s child needed help with homework and I was the only one available.
+family,medium,high,My child’s backpack was missing and I helped them look for it before leaving.
+family,medium,high,My sibling’s alarm clock was set incorrectly and I helped reset it.
+family,medium,high,My spouse’s friend needed a ride to the train station and I was free.
+family,medium,high,My parent’s car keys were missing and I helped search before leaving.
+family,medium,medium,My sibling forgot their lunch and I had to drop it off at their school.
+family,medium,medium,My spouse needed help assembling new furniture before I could leave.
+family,medium,medium,My parent’s neighbor asked me to water their plants and I forgot until this morning.
+family,medium,medium,My child’s favorite book was missing and I helped them look for it before leaving.
+family,medium,medium,My partner’s cousin needed help moving boxes and I lent a hand.
+family,medium,medium,My sibling’s bike tire was flat and I helped pump it up before leaving.
+family,medium,medium,My spouse’s friend’s umbrella broke and I lent them mine before leaving.
+family,medium,medium,My parent’s car was double parked and I waited for them to move it.
+family,medium,medium,My child’s shoes were muddy and I cleaned them before heading out.
+family,medium,medium,My sibling’s alarm didn’t go off and I had to wake them up before leaving.
+family,medium,medium,My spouse’s package was delivered to the wrong address and I helped retrieve it.
+family,medium,medium,My parent’s neighbor’s dog got out and I helped catch it before leaving.
+family,medium,medium,My child’s backpack zipper broke and I fixed it before leaving.
+family,medium,medium,My partner’s friend needed help with a last-minute art project.
+family,medium,medium,My sibling’s lunchbox was missing and I helped pack a new one before leaving.
+family,medium,medium,My spouse’s laundry was left in the washer and I helped hang it up.
+family,medium,medium,My parent’s window was stuck and I helped open it before leaving.
+family,medium,medium,My child’s pet hamster escaped and I had to find it before leaving.
+family,medium,medium,My sibling needed help packing for a trip before I could leave.
+family,medium,medium,My spouse’s alarm clock was set for the wrong time and I helped fix it.
+family,medium,medium,My parent’s garden hose burst and I helped turn off the water.
+family,medium,medium,My child’s friend’s lunch spilled and I helped make a new one before leaving.
+family,medium,medium,My sibling’s backpack was missing and I helped them search for it.
+family,medium,medium,My spouse’s bike tire was flat and I helped pump it up before leaving.
+family,medium,medium,My parent’s trash can rolled down the street and I brought it back before leaving.
+family,medium,medium,My child’s homework was missing and I helped them rewrite it before leaving.
+family,medium,medium,My sibling’s glasses were lost and I helped search before leaving.
+family,medium,medium,My spouse’s pet bird escaped its cage and I had to catch it before leaving.
+family,medium,medium,My parent’s phone battery died and I waited for it to charge before leaving.
+family,medium,medium,My child’s friend needed a ride to an activity and I helped out before leaving.
+family,medium,medium,My sibling’s lunch was forgotten at home and I had to drop it at school before leaving.
+family,medium,medium,My spouse’s shoes were missing and I helped them search before leaving.
+family,medium,medium,My parent’s mailbox was knocked over and I helped fix it before leaving.
+family,medium,medium,My child’s pet rabbit chewed through a phone cord and I had to replace it before leaving.
+family,medium,medium,My sibling’s alarm clock malfunctioned and I was late.
+family,medium,medium,My spouse’s friend’s dog chewed up my shoes and I had to find another pair.
+family,medium,medium,My parent’s neighbor’s cat hid my keys and I had to search everywhere.
+family,medium,medium,My child’s toy was stuck in the toilet and I had to fish it out before leaving.
+family,medium,medium,My sibling needed help finding their backpack before leaving.
+family,medium,medium,My spouse’s phone charger was missing and I helped them find it before leaving.
+family,medium,medium,My parent’s friend’s skateboard rolled under a parked car and I helped retrieve it.
+family,medium,medium,My child’s pet fish tank needed cleaning and I did it before leaving.
+family,medium,medium,My sibling’s lunchbox zipper broke and I fixed it before leaving.
+family,medium,medium,My spouse’s package was delayed and I had to wait for delivery.
+family,medium,medium,My parent’s friend’s umbrella broke and I lent them mine before leaving.
+family,medium,low,My cousin’s hamster hid my phone and I spent the morning searching for it.
+family,medium,low,I got distracted watching a sunrise and lost track of time before our family outing.
+family,medium,low,"My uncle’s rooster crowed all night and I barely slept, so I was late."
+family,medium,low,I was late because I was trying to beat my high score on a mobile game.
+family,medium,low,My sibling’s turtle blocked the hallway and refused to let me pass until I fed it.
+family,medium,low,My aunt dared me to build a card house and I lost track of time.
+family,medium,low,My cousin challenged me to a pancake-flipping contest and I couldn’t leave until I won.
+family,medium,low,My grandma’s goldfish looked sad and I spent the morning cheering it up.
+family,medium,low,My sibling’s karaoke session ran late and I was too tired to wake up.
+family,medium,low,My little brother hid my shoes as a prank and I had to find them before leaving.
+family,medium,low,I was distracted by a squirrel outside my window for half an hour.
+family,medium,low,My cousin’s hamster fell asleep in my backpack and I didn’t want to disturb it.
+family,medium,low,My aunt’s parrot kept repeating “Don’t go out!” and I listened.
+family,medium,low,My sibling dared me to memorize a tongue twister before leaving.
+family,medium,low,My cousin’s video game tournament went late and I was up helping them practice.
+family,medium,low,My grandma’s rabbit was hiding and I wanted to find it before leaving.
+family,medium,low,My uncle’s cat knocked over my breakfast and I had to clean up.
+family,medium,low,My sibling’s dog howled all night and I couldn’t sleep.
+family,medium,low,My cousin’s bread dough overflowed and I helped clean up before leaving.
+family,medium,low,I was caught up in a family group chat and didn’t notice the time.
+family,medium,low,My sibling’s alarm clock was set to the wrong time and I overslept.
+family,medium,low,My cousin’s gecko escaped and I had to find it before leaving.
+family,medium,low,My aunt’s skateboard rolled under the couch and I helped retrieve it.
+family,medium,low,My sibling’s alarm went off for an hour and I couldn’t concentrate on getting ready.
+family,medium,low,My cousin’s ferret hid my wallet and I had to search the house.
+family,medium,low,My sibling’s science experiment exploded and I helped clean up.
+family,medium,low,My cousin’s drone landed on the roof and I had to retrieve it.
+family,medium,low,My aunt’s blender exploded and I helped clean the kitchen.
+family,medium,low,My sibling’s snake wrapped around my doorknob and I had to wait for help.
+family,medium,low,My cousin’s remote-controlled car got stuck in my backpack and I had to get it out.
+family,medium,low,My aunt’s alarm clock was set to the wrong time and I missed my ride.
+family,medium,low,My sibling’s dog hid my keys in the laundry basket.
+family,medium,low,My cousin’s raccoon stole my breakfast and I had to make more food.
+family,medium,low,My uncle’s goat wandered into my yard and I had to guide it home before leaving.
+family,medium,low,My sibling challenged me to a staring contest and I lost track of time.
+family,medium,low,My cousin’s parrot escaped and I helped search the neighborhood.
+family,medium,low,My aunt’s karaoke machine malfunctioned and I had to help fix it.
+family,medium,low,My sibling’s piglet escaped and I had to chase it through the backyard.
+family,medium,low,My cousin’s dog chewed up my shoes and I had to find another pair.
+family,medium,low,My aunt’s umbrella broke and I lent them mine before leaving.
+family,medium,low,My sibling’s lunchbox was missing and I helped pack a new one before leaving.
+family,medium,low,My cousin’s alarm clock malfunctioned and I was late.
+family,medium,low,My sibling’s squirrel hid my wallet and I had to look everywhere.
+family,medium,low,My uncle’s ducklings blocked my path and I had to herd them to safety.
+family,low,high,My alarm didn’t go off and I woke up late for our family gathering.
+family,low,high,My sibling needed a ride to their club meeting before I could leave.
+family,low,high,My pet needed a quick checkup at the vet before I could join the family.
+family,low,high,I had to pick up a prescription for my parent before heading out.
+family,low,high,My cousin asked me to help carry groceries before I left for the event.
+family,low,high,My uncle’s bike chain broke and I helped him fix it before leaving.
+family,low,high,My sibling forgot their lunch and I had to drop it off at their school.
+family,low,high,My pet cat scratched the door and I fixed it before heading out.
+family,low,high,My aunt misplaced her keys and I helped her search.
+family,low,high,My cousin needed a ride to a doctor’s appointment before I could go out.
+family,low,high,My sibling’s moving truck arrived late and I helped them unload before joining the family.
+family,low,high,My pet bird got out of its cage and I had to catch it before leaving.
+family,low,high,My uncle’s car wouldn’t start and I gave him a jump before heading out.
+family,low,high,My cousin’s child needed a ride to an activity and I helped out.
+family,low,high,My sibling’s phone died and I waited for them to charge it before leaving together.
+family,low,high,My aunt needed help printing an assignment before I could leave.
+family,low,high,My cousin’s backpack zipper broke and I fixed it before leaving.
+family,low,high,My pet rabbit escaped its pen and I had to catch it in the yard.
+family,low,high,My sibling’s package was delivered to the wrong address and I helped retrieve it.
+family,low,high,My uncle’s dog got loose and I helped bring it back home.
+family,low,high,My cousin’s glasses broke and I helped tape them up before leaving.
+family,low,high,My sibling’s bike tire was flat and I helped pump it up before going out.
+family,low,high,My aunt’s shoes were missing and I helped her find a pair before leaving.
+family,low,high,My pet cat hid under the bed and I had to coax it out before leaving.
+family,low,high,My cousin’s alarm clock was set incorrectly and I helped reset it.
+family,low,high,My uncle’s garden hose burst and I helped clean up the water.
+family,low,high,My aunt’s umbrella broke and I lent her mine before leaving.
+family,low,high,My sibling’s lunchbox was missing and I helped pack a new one.
+family,low,high,My cousin’s homework was left at home and I had to drop it at school before joining the family.
+family,low,high,My pet hamster escaped and I had to find it before leaving.
+family,low,high,My sibling’s phone charger was missing and I helped them find it.
+family,low,high,My uncle’s trash can rolled into the street and I moved it back.
+family,low,high,My cousin’s jacket was left at my place and I returned it before going out.
+family,low,high,My sibling needed help tying their shoes before leaving.
+family,low,high,My aunt’s lunch spilled and I made a new one before leaving.
+family,low,high,My pet fish tank needed cleaning and I did it before heading out.
+family,low,high,My cousin needed help finding their wallet before leaving.
+family,low,high,My uncle’s window was stuck and I helped open it before leaving.
+family,low,high,My sibling’s lunch spilled and I helped them make a new one before leaving.
+family,low,high,My pet bird escaped its cage and I had to catch it before leaving.
+family,low,high,My cousin’s backpack zipper broke and I fixed it before going out.
+family,low,high,My aunt’s bike tire was flat and I helped pump it up before leaving.
+family,low,medium,My cousin asked me to water their plants and I forgot until this morning.
+family,low,medium,I had to wait for a grocery delivery that was running late before our family plans.
+family,low,medium,My sibling needed a ride to a club meeting before we could meet up.
+family,low,medium,My aunt borrowed my headphones and I had to track them down.
+family,low,medium,My uncle’s alarm clock was set for the wrong time and I helped fix it.
+family,low,medium,My cousin’s kid left their bike in my driveway and I had to move it before leaving.
+family,low,medium,My sibling’s coffee spilled on my shirt and I had to change before going out.
+family,low,medium,My pet bird knocked over a plant and I had to clean up the dirt before leaving.
+family,low,medium,My aunt needed help with a last-minute art project before I could leave.
+family,low,medium,My cousin’s shoes were missing and I helped them search before heading out.
+family,low,medium,My uncle’s car was double parked and I waited for them to move it before going out.
+family,low,medium,My sibling’s umbrella broke and I lent them mine before leaving.
+family,low,medium,My child’s favorite book was missing and I helped them look for it before leaving.
+family,low,medium,My pet rabbit chewed through a phone cord and I had to replace it before meeting up.
+family,low,medium,My cousin’s lunch was forgotten at home and I had to drop it at school before going out.
+family,low,medium,My sibling’s phone battery died and I waited for them to charge it before leaving.
+family,low,medium,My aunt’s mailbox was knocked over and I helped fix it before heading out.
+family,low,medium,My cousin’s keys were missing and I helped them search the house before leaving.
+family,low,medium,My pet hamster escaped its cage and I had to find it before leaving.
+family,low,medium,My sibling needed help packing for a trip before our plans.
+family,low,medium,My aunt’s laundry was left in the washer and I helped hang it up before going out.
+family,low,medium,My uncle’s window was stuck and I helped open it before leaving.
+family,low,medium,My cousin’s dog got out and I helped catch it before meeting.
+family,low,medium,My child’s shoes were muddy and I cleaned them before leaving.
+family,low,medium,My pet cat hid under the bed and I had to coax it out before heading out.
+family,low,medium,My sibling’s alarm didn’t go off and I had to wake them up before leaving.
+family,low,medium,My cousin needed help finding their wallet before leaving.
+family,low,medium,My aunt’s garden hose burst and I helped turn off the water before going out.
+family,low,medium,My sibling’s lunch spilled and I helped them make a new one before hanging out.
+family,low,medium,My pet bird escaped its cage and I had to catch it before leaving.
+family,low,medium,My cousin’s backpack zipper broke and I fixed it before going out.
+family,low,medium,My aunt’s bike tire was flat and I helped pump it up before leaving.
+family,low,medium,My uncle’s trash can rolled down the street and I brought it back before going out.
+family,low,medium,My sibling’s glasses were lost and I helped search before meeting.
+family,low,medium,My child’s homework was missing and I helped them rewrite it before leaving.
+family,low,medium,My pet fish tank needed cleaning and I did it before heading out.
+family,low,medium,My cousin’s lunchbox was missing and I helped pack a new one before leaving.
+family,low,medium,My aunt’s package was delivered to the wrong address and I helped retrieve it before going out.
+family,low,medium,My uncle’s dog chewed up my shoes and I had to find another pair before leaving.
+family,low,medium,My sibling’s skateboard rolled under a parked car and I helped retrieve it before meeting.
+family,low,medium,My child’s toy was stuck in the toilet and I had to fish it out before leaving.
+family,low,medium,My cousin needed help finding their club ID before leaving.
+family,low,medium,My aunt’s phone charger was missing and I helped her find it before going out.
+family,low,low,I binge-watched old family movies and lost track of time before our plans.
+family,low,low,"My horoscope said today was unlucky for family gatherings, so I stayed home longer."
+family,low,low,I was waiting for my bread to rise and forgot about our family brunch.
+family,low,low,My goldfish looked sad and I spent the morning cheering it up instead of getting ready.
+family,low,low,I was on hold with customer service about a board game for hours.
+family,low,low,My cat insisted on sitting on my lap and I couldn’t move for an hour.
+family,low,low,"My cousin’s rooster crowed all night and I barely slept, so I was late."
+family,low,low,I got caught up watching funny dog videos and lost track of time.
+family,low,low,My sibling challenged me to a pancake-flipping contest and I couldn’t leave until I won.
+family,low,low,My pet turtle blocked the hallway and refused to let me pass until I fed it.
+family,low,low,My little brother hid my shoes as a prank and I had to find them before leaving.
+family,low,low,I was distracted by a squirrel outside my window for half an hour.
+family,low,low,My aunt dared me to build a card house and I lost track of time.
+family,low,low,My cousin’s parrot kept repeating “Don’t go out!” and I listened.
+family,low,low,My pet hamster fell asleep in my shoe and I didn’t want to disturb it.
+family,low,low,My sibling’s karaoke session ran late and I was too tired to leave.
+family,low,low,My cousin’s video game tournament went late and I was up helping them practice.
+family,low,low,I was trying to beat my high score on a mobile game and lost track of time.
+family,low,low,My grandma’s rabbit was hiding and I wanted to find it before leaving.
+family,low,low,My uncle’s cat knocked over my cereal and I had to clean up before going out.
+family,low,low,My sibling’s dog howled all night and I couldn’t sleep.
+family,low,low,My cousin’s bread dough overflowed and I helped clean up before leaving.
+family,low,low,I was caught up in a family group chat and didn’t notice the time.
+family,low,low,My sibling’s alarm clock was set to the wrong time and I overslept.
+family,low,low,My cousin’s gecko escaped and I had to find it before leaving.
+family,low,low,My aunt’s skateboard rolled under the couch and I helped retrieve it.
+family,low,low,My sibling’s alarm went off for an hour and I couldn’t concentrate on getting ready.
+family,low,low,My cousin’s ferret hid my wallet and I had to search the house.
+family,low,low,My sibling’s science experiment exploded and I helped clean up.
+family,low,low,My cousin’s drone landed on the roof and I had to retrieve it.
+family,low,low,My aunt’s blender exploded and I helped clean the kitchen.
+family,low,low,My sibling’s snake wrapped around my doorknob and I had to wait for help.
+family,low,low,My cousin’s remote-controlled car got stuck in my backpack and I had to get it out.
+family,low,low,My aunt’s alarm clock was set to the wrong time and I missed my ride.
+family,low,low,My sibling’s dog hid my keys in the laundry basket.
+family,low,low,My cousin’s raccoon stole my breakfast and I had to make more food.
+family,low,low,My uncle’s goat wandered into my yard and I had to guide it home before leaving.
+family,low,low,My sibling challenged me to a staring contest and I lost track of time.
+family,low,low,My cousin’s parrot escaped and I helped search the neighborhood.
+family,low,low,My aunt’s karaoke machine malfunctioned and I had to help fix it before going out.
+family,low,low,My sibling’s piglet escaped and I had to chase it through the backyard before leaving.
+family,low,low,My cousin’s dog chewed up my shoes and I had to find another pair before leaving.
+family,low,low,My aunt’s umbrella broke and I lent her mine before leaving.
+family,low,low,My sibling’s lunchbox was missing and I helped pack a new one before going out.
