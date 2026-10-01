@@ -1,0 +1,286 @@
+Type,Situation,Apology
+professional,being late to the meeting,I apologise for being late to this morning's meeting; I've gone through the notes and will make sure I'm on time from now on.
+professional,arriving late to the meeting,I'm sorry for arriving late to the meeting and holding up the discussion; I'll plan my schedule better so it doesn't happen again.
+professional,joining the call late,Apologies for joining the call late; I've caught up on the recording and I'm ready with my updates.
+professional,being late to the meeting,Please accept my apology for being late to the meeting; I know it disrupted the agenda and I'll be punctual going forward.
+professional,arriving late to the meeting,I regret arriving late to the meeting today; I should have left earlier and I'll be there on time next week.
+professional,joining the call late,"Sorry for joining the call late; my previous call overran, but I should have let the team know in advance."
+informal,being late to the meeting,"Sorry for being late to the meeting, guys! Totally my bad, I'll grab the notes from someone."
+informal,arriving late to the meeting,"Oops, sorry I rolled into the meeting late; next time I'm setting two alarms."
+informal,joining the call late,"Sorry for joining the call late, my last call dragged on forever. Did I miss anything important?"
+informal,being late to the meeting,My bad for being late to the meeting today; coffee's on me next time.
+informal,arriving late to the meeting,"Really sorry I showed up late to the meeting, I'll be there early next time, promise."
+informal,joining the call late,"Sorry for hopping on the call late! I'm here now, can someone fill me in?"
+professional,missing the deadline,I apologise for missing the deadline; I take full responsibility and will have the completed work to you by tomorrow morning.
+professional,submitting the report late,"I'm sorry for submitting the report late; it's attached now, and I've put a checklist in place to avoid future delays."
+professional,delaying the project,Please accept my apology for delaying the project; I've reworked my schedule to recover the lost time this week.
+professional,missing the deadline,I regret missing the agreed deadline and the inconvenience it caused; I'll share daily progress updates until the work is complete.
+professional,submitting the report late,"My apologies for the late submission of the report; I should have flagged the delay earlier, and I will do so in future."
+professional,delaying the project,I sincerely apologise for holding up the project; I've identified what slowed me down and I'm addressing it immediately.
+informal,missing the deadline,"Sorry I missed the deadline, I totally underestimated how long it would take. Sending it tonight!"
+informal,submitting the report late,"My bad for submitting the report late, I'll be quicker next time."
+informal,delaying the project,"Sorry for holding up the project, guys; I'm on it now and will catch up by the weekend."
+informal,missing the deadline,"Really sorry about missing the deadline, I owe you one for covering for me."
+informal,submitting the report late,"Oops, the report went in late, sorry about that! Won't happen again."
+informal,delaying the project,"Sorry I delayed the project, I know it put extra pressure on everyone."
+emotional,missing the deadline,I'm truly sorry for missing the deadline; I know you were counting on me and I let you down.
+emotional,submitting the report late,"I feel terrible about submitting the report late after you trusted me with it, and I'm sorry."
+emotional,delaying the project,I'm so sorry for delaying the project; I know how much work you put into it and I hate that I held you back.
+emotional,missing the deadline,I'm sorry I missed the deadline; you deserved better from me and I'll make it right.
+emotional,submitting the report late,"I regret handing in the report late so much; it wasn't fair to you, and I'm sorry."
+emotional,delaying the project,I'm deeply sorry for delaying the project; I should have asked for help instead of struggling alone.
+emotional,forgetting your birthday,I'm so sorry for forgetting your birthday; you mean so much to me and I hate that I let the day pass.
+emotional,missing your birthday,I'm truly sorry for missing your birthday; you deserved to feel special and I wasn't there.
+emotional,not wishing you on your birthday,"I'm sorry for not wishing you on your birthday; it wasn't because I don't care, and I want to make it up to you."
+emotional,forgetting your birthday,"Forgetting your birthday was careless of me, and I'm really sorry I hurt you."
+emotional,missing your birthday,I'm heartbroken that I missed your birthday; please let me take you out to celebrate properly.
+emotional,not wishing you on your birthday,I'm sorry I didn't wish you on your special day; you always remember mine and I should have done the same.
+informal,forgetting your birthday,"Sorry I forgot your birthday! Happy belated birthday, the treat is on me this weekend."
+informal,missing your birthday,"So sorry I missed your birthday, I'm the worst. Cake and coffee on me?"
+informal,not wishing you on your birthday,"Sorry for not wishing you yesterday! Happy belated birthday, hope it was awesome."
+informal,forgetting your birthday,"I can't believe I forgot your birthday, sorry! Let's celebrate this weekend."
+informal,missing your birthday,"My bad for missing your birthday, I owe you a big party."
+informal,not wishing you on your birthday,"Sorry I didn't wish you on time! Happy birthday, a day late but with double the wishes."
+emotional,not replying to your messages,"I'm sorry for not replying to your messages; I've been overwhelmed, but you didn't deserve to feel ignored."
+emotional,ignoring your texts,"I'm really sorry for ignoring your texts; I know it made you feel like I didn't care, and that isn't true."
+emotional,taking so long to reply,I'm sorry for taking so long to reply; you matter to me and I should have made time for you.
+emotional,not replying to your messages,I'm so sorry I went quiet on you; I should have at least told you I needed some time.
+emotional,ignoring your texts,"I feel bad for ignoring your texts when you needed someone to talk to, and I'm sorry."
+emotional,taking so long to reply,I'm sorry for leaving you waiting so long for a reply; I'll do better at staying in touch.
+informal,not replying to your messages,"Sorry for not replying to your messages, this week has been crazy!"
+informal,ignoring your texts,"My bad for ignoring your texts, I saw them and then totally forgot to reply."
+informal,taking so long to reply,"Sorry for the super late reply, I'm alive, I promise!"
+informal,not replying to your messages,"Sorry I went missing on chat, let's catch up this weekend?"
+informal,ignoring your texts,"Oops, sorry I left your texts unanswered, I'm all yours now."
+informal,taking so long to reply,"So sorry for taking forever to reply, my phone and I need to have a talk."
+professional,not replying to your messages,I apologise for not replying to your messages sooner; I've reviewed everything and will respond to each point today.
+professional,ignoring your texts,"I'm sorry if it seemed I was ignoring your texts; I was in workshops all day, and I'll respond to everything this evening."
+professional,taking so long to reply,Please accept my apologies for taking so long to reply; I've set aside time this afternoon to address your queries.
+professional,not replying to your messages,I apologise for not responding to your messages promptly; I understand the delay may have held up your work.
+professional,ignoring your texts,I'm sorry for leaving your messages unanswered; your concerns are important and I'm looking into them now.
+professional,taking so long to reply,My apologies for the slow reply; I should have at least acknowledged your message while I gathered the details.
+emotional,cancelling plans at the last minute,I'm really sorry for cancelling our plans at the last minute; I know you were looking forward to it and I let you down.
+emotional,bailing on dinner,I'm sorry for bailing on dinner; you had planned everything so nicely and I feel awful about it.
+emotional,backing out of our trip,"I'm so sorry for backing out of our trip; I know how much it meant to you, and I hate that I disappointed you."
+emotional,cancelling plans at the last minute,"Cancelling on you at the last minute was unfair, and I'm truly sorry for the trouble it caused."
+emotional,bailing on dinner,I'm sorry I bailed on dinner; you deserved more consideration from me.
+emotional,backing out of our trip,I'm deeply sorry for pulling out of our trip; I want to plan another one with you soon.
+informal,cancelling plans at the last minute,Sorry for cancelling last minute! Rain check? Next plan is on me.
+informal,bailing on dinner,"My bad for bailing on dinner, I owe you one."
+informal,backing out of our trip,"Sorry for backing out of the trip, guys; send me all the pictures!"
+informal,cancelling plans at the last minute,"So sorry I flaked at the last minute, I'll make it up to you this weekend."
+informal,bailing on dinner,"Sorry I skipped dinner, next time I'm paying."
+informal,backing out of our trip,"Really sorry for dropping out of the trip, I'm already jealous of you all."
+emotional,snapping at you,"I'm sorry for snapping at you; you didn't deserve that, and I was letting my stress out on you."
+emotional,raising my voice during the argument,"I'm truly sorry for raising my voice during our argument; it was wrong, and I want to listen to you properly."
+emotional,being rude to you yesterday,I'm sorry for being rude to you yesterday; you've always been kind to me and I hurt you.
+emotional,snapping at you,"I regret snapping at you so much; you were only trying to help, and I'm sorry."
+emotional,raising my voice during the argument,I'm sorry I shouted during the argument; I should have stayed calm and respected your feelings.
+emotional,being rude to you yesterday,I'm really sorry for how rudely I spoke to you yesterday; can we talk about it?
+informal,snapping at you,"Sorry for snapping at you earlier, I was just tired. We're good?"
+informal,raising my voice during the argument,"My bad for getting loud in the argument, I overreacted."
+informal,being rude to you yesterday,"Sorry I was rude yesterday, I was in a terrible mood. Coffee on me?"
+informal,snapping at you,"Hey, sorry for biting your head off earlier, that wasn't cool of me."
+informal,raising my voice during the argument,"Sorry for yelling during our argument, I was out of line."
+informal,being rude to you yesterday,"Sorry about yesterday, I was a grump and you didn't deserve it."
+professional,snapping at you,"I apologise for snapping at you during the discussion; it was unprofessional, and I appreciate your patience."
+professional,raising my voice during the argument,I'm sorry for raising my voice in the meeting; it was inappropriate and I'll keep our discussions respectful.
+professional,being rude to you yesterday,I apologise for my rude tone yesterday; it doesn't reflect how much I value working with you.
+professional,snapping at you,"Please accept my apology for snapping at you; I was under pressure, but that's no excuse."
+professional,raising my voice during the argument,I regret raising my voice during our disagreement; I'd like to revisit your points calmly.
+professional,being rude to you yesterday,I'm sorry for being curt with you yesterday; I'll make sure my feedback is constructive in future.
+professional,the mistake in the report,I apologise for the mistake in the report; I've corrected the figures and attached the revised version.
+professional,the error in the invoice,Please accept my apologies for the error in the invoice; a corrected invoice has been sent to your email.
+professional,sending incorrect figures,I'm sorry for sending incorrect figures earlier; the updated numbers are attached and I've double-checked them.
+professional,the mistake in the report,I take full responsibility for the mistake in the report and have added a review step to stop it from happening again.
+professional,the error in the invoice,I'm sorry for the error in your invoice and the confusion it caused; the excess amount has been adjusted in the revised bill.
+professional,sending incorrect figures,My apologies for sharing incorrect figures in yesterday's update; the correct data is now in the shared sheet.
+professional,the mistake in the report,I regret the mistake in the report and any inconvenience it caused your team; the attached note walks through the corrections.
+professional,the error in the invoice,We apologise for the error on the invoice; our billing team has fixed it and you don't need to take any further action.
+professional,sending incorrect figures,"I'm sorry for the incorrect figures I sent; I misread the source file, and I've now verified every number."
+emotional,missing your call,I'm sorry for missing your call; I know you wanted to talk and I wasn't there for you.
+emotional,not picking up your calls,"I'm really sorry for not picking up your calls; I hope you're okay, and I'm here now."
+emotional,missing the scheduled call,I'm sorry for missing our call; I was really looking forward to talking to you.
+emotional,missing your call,I feel bad about missing your call when you needed me; please call me whenever you're free.
+emotional,not picking up your calls,I'm so sorry I didn't pick up; I never want you to feel like you can't reach me.
+emotional,missing the scheduled call,I'm sorry I missed our call; you're important to me and I'll be there next time.
+informal,missing your call,Sorry I missed your call! Call me back whenever you're free.
+informal,not picking up your calls,"My bad for not picking up, my phone was on silent. What's up?"
+informal,missing the scheduled call,"Sorry for missing our call, can we do it tomorrow instead?"
+informal,missing your call,"Missed your call, sorry! I'm free now if you want to talk."
+informal,not picking up your calls,"Sorry for not picking up all day, I was stuck at work."
+informal,missing the scheduled call,"Oops, I totally missed our call, sorry! Same time tomorrow?"
+professional,missing your call,I apologise for missing your call; please let me know a convenient time to reconnect today.
+professional,not picking up your calls,"I'm sorry for not picking up your calls this morning; I was in a client session, and I'm available now."
+professional,missing the scheduled call,Please accept my apologies for missing our scheduled call; I've sent a new invite for tomorrow at the same time.
+professional,missing your call,I regret missing your call and any delay it caused; I'll respond to your query by the end of the day.
+professional,not picking up your calls,I'm sorry for being unavailable when you called; I've set up call forwarding so it doesn't happen again.
+professional,missing the scheduled call,My apologies for missing the scheduled call; it was an oversight on my part and I'll be on time for the rescheduled one.
+emotional,breaking your phone,"I'm so sorry for breaking your phone; I know how much you rely on it, and I'll pay for the repair."
+emotional,damaging your laptop,I'm really sorry for damaging your laptop; I should have been more careful with something so important to you.
+emotional,breaking your favourite mug,"I'm sorry I broke your favourite mug; I know it was special to you, and I feel terrible."
+emotional,breaking your phone,I feel awful about breaking your phone; please let me replace it.
+emotional,damaging your laptop,I'm sorry for being careless with your laptop; I'll get it fixed as soon as possible.
+emotional,breaking your favourite mug,"I'm truly sorry about your mug; I know it was a gift, and I wish I could undo it."
+informal,breaking your phone,Sorry I cracked your phone screen! I'll take it to the repair shop tomorrow.
+informal,damaging your laptop,"My bad, I spilled coffee on your laptop. I'll get it fixed, promise!"
+informal,breaking your favourite mug,"Oops, sorry about your mug! I'll buy you a new one, an even better one."
+informal,breaking your phone,"So sorry about your phone, I'm covering the repair, no arguments."
+informal,damaging your laptop,"Sorry for messing up your laptop, I'll sort it out today."
+informal,breaking your favourite mug,Sorry I broke your mug! A replacement is coming your way.
+emotional,forgetting our anniversary,I'm so sorry for forgetting our anniversary; you mean everything to me and I let you down.
+emotional,missing our anniversary dinner,I'm truly sorry for missing our anniversary dinner; you planned it so beautifully and I wasn't there.
+emotional,forgetting our special day,I'm sorry for forgetting our special day; it doesn't reflect how much I love you.
+emotional,forgetting our anniversary,"Forgetting our anniversary was careless and hurtful, and I'm deeply sorry."
+emotional,missing our anniversary dinner,I'm so sorry I missed our dinner; let me plan a special evening to make it up to you.
+emotional,forgetting our special day,"I'm sorry I forgot our day; every year with you is precious, and I should have shown it."
+emotional,forgetting our anniversary,"I hate that I forgot our anniversary; I'm sorry, and I promise I'll never take you for granted."
+emotional,missing our anniversary dinner,I'm sorry for spoiling our anniversary dinner by not showing up; you deserved so much better.
+emotional,forgetting our special day,"I'm sorry I let our special day pass without celebrating you; I'll make it up to you, I promise."
+professional,not doing my share of the project,I apologise for not doing my share of the project; I'll complete my sections by Thursday and review the rest with you.
+professional,leaving you to handle the work alone,"I'm sorry for leaving you to handle the work alone; it wasn't fair, and I'll take on the next task myself."
+professional,not contributing to the group assignment,Please accept my apologies for not contributing to the group assignment; I've written up the research section today.
+professional,not doing my share of the project,I regret not pulling my weight on the project; I'll set up a task list so the work is shared fairly from now on.
+professional,leaving you to handle the work alone,I'm sorry you had to carry the workload alone; I appreciate your effort and I'll handle the final review.
+professional,not contributing to the group assignment,I apologise for my lack of contribution to the assignment; I'm committed to finishing the remaining parts this week.
+informal,not doing my share of the project,"Sorry for slacking on my part of the project, I'll finish it tonight."
+informal,leaving you to handle the work alone,"My bad for leaving all the work to you, I owe you big time."
+informal,not contributing to the group assignment,"Sorry I didn't do much for the group assignment, I'll take the presentation part."
+informal,not doing my share of the project,"Really sorry for being useless on the project this week, I'm on it now."
+informal,leaving you to handle the work alone,"Sorry you got stuck doing everything, the next round is all mine."
+informal,not contributing to the group assignment,"Sorry for disappearing on the group assignment, I'll make up for it."
+professional,interrupting you in the meeting,I apologise for interrupting you during the meeting; your point was important and I should have let you finish.
+professional,talking over you during the presentation,"I'm sorry for talking over you during your presentation; it was disrespectful, and I'd like to hear the rest of your ideas."
+professional,dismissing your idea in the meeting,"I apologise for dismissing your idea in the meeting; after thinking about it, I believe it deserves a proper discussion."
+professional,interrupting you in the meeting,Please accept my apology for interrupting you repeatedly; I'll be more mindful in our next meeting.
+professional,talking over you during the presentation,I regret talking over you during the presentation; you'd prepared well and deserved the team's full attention.
+professional,dismissing your idea in the meeting,I'm sorry for being dismissive of your suggestion; I'd like to set up time to go through it properly.
+professional,interrupting you in the meeting,I'm sorry for cutting you off in the meeting; I'll make sure everyone gets to finish their thoughts.
+professional,talking over you during the presentation,I apologise for interrupting your presentation; I've asked for ten minutes in the next meeting so you can finish.
+professional,dismissing your idea in the meeting,I regret how quickly I dismissed your idea; it was a good suggestion and I'd like to support it.
+emotional,missing your dance recital,I'm so sorry I missed your dance recital; I know how hard you practised and I wish I had been there to cheer for you.
+emotional,not coming to your match,I'm really sorry for not coming to your match; you deserved to see me in the stands.
+emotional,missing your graduation,"I'm sorry I missed your graduation; I'm so proud of you, and I hate that I wasn't there."
+emotional,missing your dance recital,"I'm sorry I wasn't at your recital; please show me the video, I want to see every moment."
+emotional,not coming to your match,I'm sorry for missing your match after promising to be there; I let you down.
+emotional,missing your graduation,Missing your graduation is something I truly regret; I'm so proud of everything you've achieved.
+informal,missing your dance recital,Sorry I missed your recital! Heard you were amazing though.
+informal,not coming to your match,"My bad for missing the match, did you win? Treat's on me either way."
+informal,missing your graduation,"So sorry I missed your graduation! Congrats, let's celebrate this weekend."
+informal,missing your dance recital,"Sorry I couldn't make it to your recital, send me the video!"
+informal,not coming to your match,"Sorry for missing your match, I'll be in the front row next time."
+informal,missing your graduation,"Sorry I missed your big day! Congrats, graduate!"
+professional,sending the wrong file,I apologise for sending the wrong file earlier; please find the correct version attached.
+professional,emailing the wrong client,"I'm sorry for emailing you by mistake; that message was meant for another client, so please disregard it."
+professional,attaching the wrong document,Apologies for attaching the wrong document; the correct contract is attached to this email.
+professional,sending the wrong file,Please accept my apologies for sending the wrong file; I've updated the shared folder with the right version.
+professional,emailing the wrong client,"I'm sorry for the mix-up in my earlier email; it was sent to you in error, and I've informed our team."
+professional,attaching the wrong document,My apologies for the incorrect attachment; I've double-checked this one and it's the final version.
+professional,sending the wrong file,"I regret the confusion caused by the wrong file; the corrected one is attached, and I'll review attachments carefully before sending."
+professional,emailing the wrong client,"I apologise for my previous email, which was meant for a different client; please delete it at your convenience."
+professional,attaching the wrong document,"I'm sorry for attaching an outdated document; the latest version, with your requested changes, is attached."
+emotional,forgetting to pick you up,"I'm so sorry for forgetting to pick you up; you must have felt so let down, and I hate that I did that."
+emotional,leaving you waiting at the station,I'm really sorry for leaving you waiting at the station; you were tired and I should have been there.
+emotional,not picking you up from the airport,I'm sorry I didn't pick you up from the airport after such a long flight; you deserved a warm welcome.
+emotional,forgetting to pick you up,"Forgetting you was careless of me, and I'm truly sorry you had to find your own way home."
+emotional,leaving you waiting at the station,I'm sorry you had to wait so long at the station because of me; it won't happen again.
+emotional,not picking you up from the airport,I'm so sorry I wasn't at the airport; I know you were counting on me.
+informal,forgetting to pick you up,Sorry I forgot to pick you up! The cab fare is on me.
+informal,leaving you waiting at the station,"My bad for leaving you waiting at the station, I owe you dinner."
+informal,not picking you up from the airport,"So sorry I wasn't at the airport, I mixed up the flight times!"
+informal,forgetting to pick you up,"Sorry for forgetting you, I'm the worst. Ice cream on me?"
+informal,leaving you waiting at the station,"Sorry you got stuck at the station, next pickup I'll be early."
+informal,not picking you up from the airport,"Sorry about the airport mix-up, I'll make it up to you."
+emotional,breaking my promise,I'm truly sorry for breaking my promise; I know trust is earned and I want to earn yours back.
+emotional,not keeping my word,"I'm sorry for not keeping my word; you counted on me, and I failed you."
+emotional,letting you down,"I'm so sorry for letting you down; you deserve someone you can rely on, and I'll prove I can be that."
+emotional,breaking my promise,"Breaking my promise to you was wrong, and I'm deeply sorry for the hurt it caused."
+emotional,not keeping my word,I'm sorry I didn't do what I said I would; I'll show you through my actions that I've changed.
+emotional,letting you down,I'm sorry I let you down when it mattered most; I understand if you need some time.
+emotional,breaking my promise,"I hate that I broke my promise; you've always kept yours, and I'm sorry."
+emotional,not keeping my word,I'm sorry for going back on my word; I should have been honest with you from the start.
+emotional,letting you down,I'm so sorry for disappointing you again; I want to make things right between us.
+emotional,the hurtful joke,"I'm sorry for the hurtful joke I made; it wasn't funny, and I never want to make you feel small."
+emotional,making fun of you in front of everyone,I'm truly sorry for making fun of you in front of everyone; it was unkind and you didn't deserve it.
+emotional,teasing you too much,I'm sorry for teasing you so much; I didn't realise how much it was hurting you.
+emotional,the hurtful joke,"I regret that joke so much; I hurt someone I care about, and I'm sorry."
+emotional,making fun of you in front of everyone,I'm sorry I embarrassed you in front of our friends; I'll make sure it never happens again.
+emotional,teasing you too much,I'm sorry for crossing the line with my teasing; your feelings matter to me.
+informal,the hurtful joke,"Sorry about that joke, it was dumb and I took it too far."
+informal,making fun of you in front of everyone,"My bad for roasting you in front of everyone, that wasn't cool."
+informal,teasing you too much,"Sorry for teasing you so much, I'll tone it down."
+informal,the hurtful joke,"Hey, sorry about the joke earlier, I didn't mean to upset you."
+informal,making fun of you in front of everyone,"Sorry for making you the punchline yesterday, I owe you one."
+informal,teasing you too much,"Sorry I went overboard with the teasing, we good?"
+professional,the delay in delivery,We apologise for the delay in delivery; your order has now been dispatched and should reach you within two days.
+professional,the late shipment of your order,I'm sorry for the late shipment of your order; we've upgraded it to express delivery at no extra cost.
+professional,the delay in the project handover,Please accept our apologies for the delay in the project handover; the final build will be shared with you by Friday.
+professional,the delay in delivery,We sincerely apologise for the delay in delivering your order and the inconvenience it has caused.
+professional,the late shipment of your order,I'm sorry your order has been delayed; I've personally followed up with the courier and will update you by tomorrow.
+professional,the delay in the project handover,I apologise for the delay in handing over the project; we underestimated the testing time and have added more people to finish it.
+professional,the delay in delivery,"We regret the delay in your delivery; as a gesture of goodwill, we've applied a discount to your next purchase."
+professional,the late shipment of your order,"I'm sorry for the late shipment; a warehouse issue held up several orders, and yours is now on its way."
+professional,the delay in the project handover,Our apologies for the delayed handover; I've attached a revised timeline with clear milestones.
+emotional,losing your book,"I'm so sorry for losing your book; I know it was special to you, and I'll find you another copy."
+emotional,losing the charger you lent me,I'm sorry I lost the charger you lent me; you were kind enough to help me and I was careless.
+emotional,misplacing your notes,I'm really sorry for misplacing your notes before your exam; I know how much work went into them.
+emotional,losing your book,I feel terrible about losing your book; please let me replace it.
+emotional,losing the charger you lent me,I'm sorry for losing your charger; you trusted me with it and I'll buy you a new one.
+emotional,misplacing your notes,I'm so sorry about your notes; I'll help you rewrite them however I can.
+informal,losing your book,Sorry I lost your book! I'm ordering you a new copy.
+informal,losing the charger you lent me,"My bad, I lost your charger. A new one is coming your way!"
+informal,misplacing your notes,"Sorry I misplaced your notes, I'll get you photocopies from someone else."
+informal,losing your book,"Oops, your book is missing, sorry! I'll replace it this week."
+informal,losing the charger you lent me,"Sorry about the charger, I owe you one."
+informal,misplacing your notes,"Sorry I lost your notes, coffee and new notes are on me."
+emotional,not being there for you,"I'm sorry for not being there for you; you were going through so much, and I should have shown up."
+emotional,not supporting you when you needed me,I'm truly sorry for not supporting you when you needed me most; I want to be better for you.
+emotional,being distant lately,"I'm sorry for being so distant lately; it's not about you, and I don't want you to feel alone."
+emotional,not being there for you,I regret not being there when you were struggling; I'm here now and I'm listening.
+emotional,not supporting you when you needed me,I'm sorry I let you down when you needed a friend; you deserved my support.
+emotional,being distant lately,I'm sorry for pulling away lately; you matter to me and I miss us.
+emotional,not being there for you,I'm sorry for not checking on you when things were hard; I should have noticed.
+emotional,not supporting you when you needed me,"I'm sorry I wasn't the support you needed; I'll do better, starting today."
+emotional,being distant lately,I'm sorry for being so wrapped up in my own life lately; I want to make time for you again.
+professional,not informing you about my leave,I apologise for not informing you about my leave in advance; it was a lapse on my part and I'll follow the process from now on.
+professional,being absent without notice,I'm sorry for being absent without notice yesterday; I understand it affected the team's planning.
+professional,missing my shift,Please accept my apologies for missing my shift; I've arranged with a colleague to cover the extra hours this week.
+professional,not informing you about my leave,I regret not letting you know about my leave earlier; I'll submit all future requests at least a week ahead.
+professional,being absent without notice,"I apologise for my unannounced absence; I should have called in, even briefly, and I will in future."
+professional,missing my shift,I'm sorry for missing my shift and leaving the team short-staffed; I'll make up the hours on Saturday.
+professional,not informing you about my leave,I'm sorry I didn't inform you before taking leave; I've updated the team calendar and handed over my pending tasks.
+professional,being absent without notice,I apologise for being absent without notice; I've caught up on my pending work and spoken with my teammates.
+professional,missing my shift,"My apologies for missing my shift; it won't happen again, and I've set reminders for my roster."
+emotional,telling your secret,I'm so sorry for telling your secret; you trusted me and I broke that trust.
+emotional,sharing what you told me in confidence,I'm truly sorry for sharing what you told me in confidence; it was not my story to tell.
+emotional,spoiling the surprise,I'm sorry for spoiling the surprise you worked so hard on; I feel awful about it.
+emotional,telling your secret,I regret telling your secret more than anything; I'll do whatever it takes to earn your trust back.
+emotional,sharing what you told me in confidence,I'm sorry I repeated what you told me privately; you deserved a friend who keeps their word.
+emotional,spoiling the surprise,I'm sorry I ruined the surprise; you'd planned it so carefully and I let it slip.
+informal,telling your secret,"Sorry I let your secret slip, I wasn't thinking."
+informal,sharing what you told me in confidence,"My bad for blabbing, that was totally not okay."
+informal,spoiling the surprise,"Oops, sorry I spoiled the surprise! I'll help you plan a new one."
+informal,telling your secret,"Sorry for spilling the beans, I owe you big time."
+informal,sharing what you told me in confidence,"Sorry I said too much, I'll keep my mouth shut from now on."
+informal,spoiling the surprise,"Sorry for ruining the surprise, I'm the worst at keeping secrets."
+informal,the noise last night,"Sorry about the noise last night, we got a bit carried away. Won't happen again!"
+informal,the loud party,"Sorry for the loud party, neighbour! Here are some leftover sweets as a peace offering."
+informal,disturbing you late at night,"Sorry for disturbing you so late, we'll keep it down from now on."
+informal,the noise last night,"Hey, sorry about all the noise last night, I'll make sure we're quieter."
+informal,the loud party,"Sorry the party got so loud, I should have given you a heads-up."
+informal,disturbing you late at night,"Sorry for waking you up last night, totally my fault."
+professional,the noise last night,I apologise for the noise from my flat last night; I understand it was disruptive and I'll make sure it doesn't recur.
+professional,the loud party,Please accept my apologies for the loud gathering; we ended later than planned and I should have informed the neighbours.
+professional,disturbing you late at night,I'm sorry for disturbing you late at night; I'll make sure all work at home ends by nine from now on.
+professional,the noise last night,My apologies for the noise last night; I've spoken to my guests and we'll be more considerate.
+professional,the loud party,I apologise for the disturbance caused by the party; please let me know if there's anything I can do to make amends.
+professional,disturbing you late at night,I'm sorry for the late-night disturbance; the renovation team will only work during the day from now on.
+professional,the poor service you received,We sincerely apologise for the poor service you received; your feedback has been shared with our team and we're taking steps to improve.
+professional,the long waiting time,"I'm sorry for the long waiting time you experienced; we were short-staffed, and we're adding more support hours."
+professional,the billing error on your account,Please accept our apologies for the billing error on your account; the incorrect charge has been reversed.
+professional,the poor service you received,I apologise for the experience you had with our service; I'd like to personally make sure your issue is resolved today.
+professional,the long waiting time,We regret the long wait you faced and appreciate your patience; your request is now our top priority.
+professional,the billing error on your account,I'm sorry for the billing mistake; I've corrected your account and sent you an updated statement.
+professional,the poor service you received,"We're sorry the service fell short of what you expected; as an apology, your next visit is on us."
+professional,the long waiting time,I apologise for keeping you waiting so long; I've escalated your case so it's handled without further delay.
+professional,the billing error on your account,We apologise for the error on your bill; a refund for the extra amount will reach your account within three working days.

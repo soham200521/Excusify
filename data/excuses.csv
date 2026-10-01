@@ -1,0 +1,865 @@
+Scenario,Situation,Urgency,Believability,Excuse
+work,late for work,low,high,"Sorry for coming in late, my alarm didn't go off this morning and I overslept by half an hour."
+work,running late to the office,low,high,I'm running about twenty minutes behind because the traffic at the main signal is completely jammed today.
+work,late for my shift,low,high,"Apologies for being late to my shift, I missed my usual bus and had to wait for the next one."
+work,reached office late today,low,high,I reached late today because my phone switched off overnight and the alarm never rang.
+work,late for work,low,medium,"Sorry I'm late, my neighbour's car was parked across my gate and I had to wait for him to move it."
+work,running late to the office,low,medium,I'm running behind because the lift in my building was stuck and I had to walk down eleven floors with my laptop.
+work,late for my shift,low,medium,I'm late for my shift because a wedding procession blocked the whole road outside my lane for half an hour.
+work,reached office late today,low,medium,"Sorry for coming in late today, my auto driver took a wrong turn and we ended up on the other side of the flyover."
+work,late for work,low,low,"Sorry I'm late, my cat hid my car keys inside the sofa and it took me forty minutes to find them."
+work,running late to the office,low,low,I'm running late because a pigeon decided to nest on my scooter seat and refused to leave.
+work,late for my shift,low,low,"I would have been on time for my shift, but a stranger at the bus stop was convinced I was his long-lost cousin."
+work,reached office late today,low,low,I reached late today because I wore two different shoes and had to go all the way back home to change.
+work,late for work,medium,high,"Sorry for the late start, my car wouldn't start this morning and I had to wait for a mechanic."
+work,running late to the office,medium,high,"The metro has been stopped for thirty minutes because of a signal failure, so I'll reach the office a bit late."
+work,late for my shift,medium,high,I'm late for my shift because there was a power cut all night and my phone and alarm both ran out of charge.
+work,reached office late today,medium,high,"I reached office late today because of heavy waterlogging after the rain, and the bus had to take a long detour."
+work,late for work,medium,low,I'm late for work because a stray cow settled behind my car in the parking and refused to move for an hour.
+work,running late to the office,medium,low,I'm running late to the office because a bird flew into my car through the window and I had to stop and gently get it out.
+work,late for my shift,medium,low,I'm late for my shift because my smart lock installed an update this morning and kept me inside my own house until it finished.
+work,reached office late today,medium,low,I reached office late today because a film crew was shooting on my street and wouldn't let anyone leave until the scene was done.
+work,late for work,medium,medium,I'm late because a water pipe burst in my flat this morning and I had to wait for the plumber to shut it off.
+work,running late to the office,medium,medium,I'm running late to the office because my bike chain snapped halfway and I had to push it to the nearest repair shop.
+work,late for my shift,medium,medium,I'm late for my shift because a road accident ahead of me closed both lanes of the highway for a while.
+work,reached office late today,medium,medium,I reached office late today because my landlord turned up for a repair inspection and I couldn't leave on time.
+work,late for work,high,high,"Sorry for being late, my father felt dizzy this morning and I took him to the clinic before coming in."
+work,running late to the office,high,high,I'm running late to the office because my son woke up with a high fever and I'm waiting for the doctor to see him.
+work,late for my shift,high,high,"I'm late for my shift because I was in a minor accident on the way; I'm fine, but I had to stay and give details to the police."
+work,reached office late today,high,high,I reached office late today because a gas leak alarm went off in my building and all of us were kept outside until it was cleared.
+work,late for work,high,medium,I'm late for work because a tree fell on the road in front of my bus during the storm and everyone had to get off and walk.
+work,running late to the office,high,medium,I'm running late to the office because my elderly neighbour fell in the corridor and I stayed with her until the ambulance arrived.
+work,late for my shift,high,medium,I'm late for my shift because a small fire started in the shop below my flat and the fire brigade kept the building closed for an hour.
+work,reached office late today,high,medium,I reached office late today because my train stopped between stations with a technical fault and we were stuck inside for almost an hour.
+work,late for work,high,low,I'm late for work because a monkey grabbed my bag at the station and I chased it across three rooftops to get my office ID back.
+work,running late to the office,high,low,I'm running late to the office because my neighbour's pet python escaped into my kitchen and we had to wait for the rescue team.
+work,late for my shift,high,low,I'm late for my shift because a swarm of bees settled on my windshield and I couldn't drive until a beekeeper removed them.
+work,reached office late today,high,low,I reached office late today because the door handle of a public washroom broke and I was locked inside until someone forced it open.
+work,missed the team meeting,low,high,"Sorry I missed the team meeting, the invite went to my old email address so it never showed up in my calendar."
+work,missed the morning standup,low,high,I missed the morning standup because I was on a call with a vendor that ran over time.
+work,missed the client meeting,low,high,"Apologies for missing the client meeting, I had it down as 3 pm instead of 2 pm."
+work,skipped the review meeting,low,high,I missed the review meeting because my laptop restarted for updates just as it was starting.
+work,missed the team meeting,low,medium,I missed the team meeting because I had last week's link and was waiting alone in an empty call.
+work,missed the morning standup,low,medium,"Sorry I missed the standup, my headphones connected to my neighbour's laptop instead of mine and I couldn't hear anything."
+work,missed the client meeting,low,medium,I missed the client meeting because I went to the wrong conference room on the fourth floor and waited there.
+work,skipped the review meeting,low,medium,I missed the review meeting because the security gate rejected my ID card and I was stuck at reception.
+work,missed the team meeting,low,low,I missed the team meeting because I was so focused on my spreadsheet that I forgot meetings existed.
+work,missed the morning standup,low,low,"Sorry I missed the standup, my parrot kept unmuting me so I decided it was safer to stay away."
+work,missed the client meeting,low,low,I missed the client meeting because I fell asleep in the cab and woke up at the last stop on the route.
+work,skipped the review meeting,low,low,I missed the review meeting because my chair broke and I spent the whole hour searching the office for a new one.
+work,missed the team meeting,medium,high,I missed the team meeting because my internet went down and the service provider is still fixing the line.
+work,missed the morning standup,medium,high,"Sorry I missed the standup, there was a power cut in my area and my laptop battery ran out."
+work,missed the client meeting,medium,high,I missed the client meeting because my flight was delayed by two hours and I had no signal on board.
+work,skipped the review meeting,medium,high,I missed the review meeting because I was fixing an urgent production issue that couldn't wait.
+work,missed the team meeting,medium,medium,I missed the team meeting because I got stuck in the lift for twenty minutes with no network.
+work,missed the morning standup,medium,medium,"Sorry for missing the standup, my laptop slipped off the desk and the screen cracked, so I had to borrow a spare one."
+work,missed the client meeting,medium,medium,I missed the client meeting because the cab broke down on the highway and I couldn't find another ride.
+work,skipped the review meeting,medium,medium,I missed the review meeting because maintenance shut off the power on our floor without any notice.
+work,missed the team meeting,medium,low,I missed the team meeting because a squirrel ran into my room and I had to chase it out before it broke something.
+work,missed the morning standup,medium,low,"Sorry I missed the standup, my video filter got stuck on a potato face and I couldn't turn it off."
+work,missed the client meeting,medium,low,I missed the client meeting because a street performer pulled me into his dance act in front of a crowd.
+work,skipped the review meeting,medium,low,I missed the review meeting because my cat locked herself in the room with my laptop and I couldn't open the door.
+work,missed the team meeting,high,high,I missed the team meeting because my mother had to be taken to the hospital this morning and I stayed with her.
+work,missed the morning standup,high,high,"Sorry I missed the standup, my child got hurt at school and I had to rush there."
+work,missed the client meeting,high,high,I missed the client meeting because I came down with food poisoning and couldn't leave the house.
+work,skipped the review meeting,high,high,I missed the review meeting because my car was hit from behind on the way in and I had to deal with the police report.
+work,missed the team meeting,high,medium,I missed the team meeting because the fire alarm went off and the whole building was evacuated for almost an hour.
+work,missed the morning standup,high,medium,"Sorry I missed the standup, a pipe burst above my flat and water was pouring onto the electrical sockets."
+work,missed the client meeting,high,medium,I missed the client meeting because flooding on the tracks stopped my train and we were stuck for hours.
+work,skipped the review meeting,high,medium,I missed the review meeting because my grandfather fell at home and I had to arrange a doctor right away.
+work,missed the team meeting,high,low,I missed the team meeting because a bull wandered into our lane and I was trapped in my car until it left.
+work,missed the morning standup,high,low,"Sorry I missed the standup, a hailstorm smashed my window and my laptop got soaked."
+work,missed the client meeting,high,low,I missed the client meeting because I got locked in the office storeroom and nobody heard me knocking.
+work,skipped the review meeting,high,low,I missed the review meeting because a beehive fell onto our balcony and we had to shut ourselves inside.
+work,forgot to submit the report,low,high,"Sorry, I forgot to submit the report yesterday because I thought the deadline was today; I'll send it within the hour."
+work,missed the project deadline,low,high,I missed the project deadline because the data from the other team reached me only last night.
+work,the report is late,low,high,"The report is late because I was waiting for the final numbers from finance, and they came in only this morning."
+work,didn't finish the presentation on time,low,high,I couldn't finish the presentation on time because two slides needed updated figures that weren't ready yet.
+work,forgot to submit the report,low,medium,I forgot to submit the report because it was sitting in my drafts and I was sure I had already sent it.
+work,missed the project deadline,low,medium,I missed the project deadline because the shared drive was locked for maintenance the entire evening.
+work,the report is late,low,medium,The report is late because my document crashed and autosave had only kept a version from two days ago.
+work,didn't finish the presentation on time,low,medium,I didn't finish the presentation on time because my design software licence expired and the renewal took hours.
+work,forgot to submit the report,low,low,I forgot to submit the report because my dog sat on my laptop and closed the file without saving.
+work,missed the project deadline,low,low,I missed the project deadline because I misread the date and planned everything for next month.
+work,the report is late,low,low,The report is late because my little sister borrowed my laptop for her school drawing and covered the keyboard in glitter.
+work,didn't finish the presentation on time,low,low,I didn't finish the presentation on time because my cat walked across the keyboard and deleted half the slides.
+work,forgot to submit the report,medium,high,I forgot to submit the report because I was pulled into an urgent client issue the whole afternoon.
+work,missed the project deadline,medium,high,I missed the project deadline because my laptop crashed last night and I had to recover the files from backup.
+work,the report is late,medium,high,The report is late because the internet in my area was down from evening until this morning.
+work,didn't finish the presentation on time,medium,high,I didn't finish the presentation on time because a power outage lasted the whole night.
+work,forgot to submit the report,medium,medium,I forgot to submit the report because my hard drive failed and the repair shop is still recovering the files.
+work,missed the project deadline,medium,medium,I missed the project deadline because the email with my final draft bounced back and I noticed only this morning.
+work,the report is late,medium,medium,The report is late because the printer jammed on the final copy and the office had closed by the time it was fixed.
+work,didn't finish the presentation on time,medium,medium,I didn't finish the presentation on time because my laptop charger burned out and I couldn't get a new one until today.
+work,forgot to submit the report,medium,low,I forgot to submit the report because a power surge turned my laptop into a very expensive paperweight.
+work,missed the project deadline,medium,low,I missed the project deadline because a storm knocked out the mobile tower in my area and I was offline for a day.
+work,the report is late,medium,low,The report is late because the only copy was on a pen drive that went through the washing machine.
+work,didn't finish the presentation on time,medium,low,I didn't finish the presentation on time because my neighbour's renovation drilling went on all night and I couldn't think.
+work,forgot to submit the report,high,high,I forgot to submit the report because my father had a health emergency and I spent the night at the hospital.
+work,missed the project deadline,high,high,I missed the project deadline because I was admitted to the hospital with a high fever over the weekend.
+work,the report is late,high,high,The report is late because my child fell ill suddenly and I had to take care of him all day.
+work,didn't finish the presentation on time,high,high,I didn't finish the presentation on time because I had a severe migraine and the doctor advised complete rest.
+work,forgot to submit the report,high,medium,I forgot to submit the report because our house flooded in the heavy rain and we spent the night moving things.
+work,missed the project deadline,high,medium,I missed the project deadline because a short circuit started a small fire in my room and damaged my laptop.
+work,the report is late,high,medium,The report is late because I had to travel home overnight for a family emergency.
+work,didn't finish the presentation on time,high,medium,I didn't finish the presentation on time because I had a minor accident and my laptop broke in the fall.
+work,forgot to submit the report,high,low,I forgot to submit the report because a monkey took my laptop bag from the balcony and I only just got it back.
+work,missed the project deadline,high,low,I missed the project deadline because lightning struck our building and fried every device in my flat.
+work,the report is late,high,low,The report is late because a goat walked into my house and ate the printed draft before I could scan it.
+work,didn't finish the presentation on time,high,low,I didn't finish the presentation on time because my laptop fell into the lake during the team outing.
+work,can't come to work today,low,high,I can't come to work today because I have a doctor's appointment that was only available this morning.
+work,need to leave work early,low,high,I need to leave work early today because the plumber can only come between four and six.
+work,taking a sick day,low,high,I'm taking a sick day because I have a bad cold and don't want to spread it around the office.
+work,need the afternoon off,low,high,"I need the afternoon off to finish my bank paperwork, which can only be done at the branch."
+work,can't come to work today,low,medium,I can't come to work today because the society has shut the water supply and I have to be home for the repair team.
+work,need to leave work early,low,medium,I need to leave work early because my landlord is showing my flat to the new owner this evening.
+work,taking a sick day,low,medium,I'm taking a sick day because I hurt my back moving a cupboard last night.
+work,need the afternoon off,low,medium,I need the afternoon off because my passport verification appointment got moved to today.
+work,can't come to work today,low,low,I can't come to work today because I locked myself out and the only spare key is with my friend in another city.
+work,need to leave work early,low,low,I need to leave work early because my goldfish has been acting strange and I want to check on him.
+work,taking a sick day,low,low,I'm taking a sick day because I laughed so hard at a comedy show last night that I pulled a muscle in my stomach.
+work,need the afternoon off,low,low,I need the afternoon off because my horoscope strongly advised against using computers after lunch.
+work,can't come to work today,medium,high,I can't come to work today because I have a high fever and the doctor told me to rest.
+work,need to leave work early,medium,high,I need to leave work early because my child's school called and he isn't feeling well.
+work,taking a sick day,medium,high,I'm taking a sick day because I've had a stomach infection since last night.
+work,need the afternoon off,medium,high,I need the afternoon off because my mother has a hospital check-up and there's nobody else to take her.
+work,can't come to work today,medium,medium,I can't come to work today because my car broke down and the service centre needs me there for the inspection.
+work,need to leave work early,medium,medium,I need to leave work early because the gas cylinder delivery is coming and someone has to be at home.
+work,taking a sick day,medium,medium,I'm taking a sick day because I sprained my ankle on the stairs this morning.
+work,need the afternoon off,medium,medium,I need the afternoon off because my house is being fumigated and I have to move my things out.
+work,can't come to work today,medium,low,I can't come to work today because a family of pigeons has nested inside my car engine and the rescue team can only come today.
+work,need to leave work early,medium,low,I need to leave work early because my grandmother entered me in a local cooking competition without asking.
+work,taking a sick day,medium,low,I'm taking a sick day because I ate thirty momos in an eating challenge last night and I'm still recovering.
+work,need the afternoon off,medium,low,I need the afternoon off because a TV crew wants to interview me about the giant pumpkin I grew.
+work,can't come to work today,high,high,I can't come to work today because my father is having a minor surgery and I need to be at the hospital.
+work,need to leave work early,high,high,I need to leave work early because my wife has gone into labour.
+work,taking a sick day,high,high,I'm taking a sick day because I've been diagnosed with dengue and the doctor has advised complete bed rest.
+work,need the afternoon off,high,high,I need the afternoon off because my son was injured at sports practice and needs an X-ray.
+work,can't come to work today,high,medium,I can't come to work today because part of my building's ceiling collapsed and residents have to stay for the inspection.
+work,need to leave work early,high,medium,I need to leave work early because a pipe burst at home and my flat is flooding right now.
+work,taking a sick day,high,medium,I'm taking a sick day because I fainted at home this morning and the doctor wants me to rest and get tests done.
+work,need the afternoon off,high,medium,I need the afternoon off because my grandfather is being shifted to another hospital and I have to help.
+work,can't come to work today,high,low,I can't come to work today because a sinkhole opened in front of my building and nobody is allowed out.
+work,need to leave work early,high,low,I need to leave work early because a crocodile was spotted in the lake near my house and the colony is being evacuated.
+work,taking a sick day,high,low,I'm taking a sick day because I was stung by a swarm of wasps while rescuing my neighbour's kite.
+work,need the afternoon off,high,low,I need the afternoon off because a beehive fell into my car through the sunroof.
+work,missed the client call,low,high,"Sorry I missed the client call, my phone was on silent after the morning meeting and I forgot to switch it back."
+work,didn't reply to my manager's email,low,high,I didn't reply to your email because it went to my spam folder; I've just seen it and I'm on it now.
+work,missed my boss's calls,low,high,"Sorry for missing your calls, I was driving and couldn't pick up safely."
+work,didn't answer the work phone,low,high,I didn't answer the work phone because I was away from my desk collecting documents from the print room.
+work,missed the client call,low,medium,I missed the client call because my phone updated overnight and reset all my notification settings.
+work,didn't reply to my manager's email,low,medium,I didn't reply to your email because my mailbox was full and new messages weren't coming in.
+work,missed my boss's calls,low,medium,"Sorry I missed your calls, my phone was in my bag on the other side of a very loud workshop."
+work,didn't answer the work phone,low,medium,I didn't answer the work phone because the line was forwarded to the wrong extension after the system change.
+work,missed the client call,low,low,I missed the client call because my toddler hid my phone in the toy box.
+work,didn't reply to my manager's email,low,low,"Sorry I didn't reply to your email, I wrote the answer in my head and genuinely believed I had sent it."
+work,missed my boss's calls,low,low,I missed your calls because my phone was in the fridge; I put it there by mistake with the groceries.
+work,didn't answer the work phone,low,low,I didn't answer the work phone because I thought the ringing was part of the song I was listening to.
+work,missed the client call,medium,high,I missed the client call because my network was down for the whole afternoon.
+work,didn't reply to my manager's email,medium,high,I didn't reply to your email because I was in back-to-back meetings and only saw it now.
+work,missed my boss's calls,medium,high,"Sorry I missed your calls, my phone's battery ran out and I didn't have a charger with me."
+work,didn't answer the work phone,medium,high,I didn't answer the work phone because I was helping IT restore the server after the outage.
+work,missed the client call,medium,medium,I missed the client call because my phone screen cracked and the touch stopped working.
+work,didn't reply to my manager's email,medium,medium,I didn't reply to your email because my laptop picked up a virus and IT had to wipe it.
+work,missed my boss's calls,medium,medium,"Sorry I missed your calls, I was in an underground parking lot with no signal for an hour."
+work,didn't answer the work phone,medium,medium,I didn't answer the work phone because the cable was cut during the renovation work near my desk.
+work,missed the client call,medium,low,I missed the client call because a crow flew off with my earphones and I chased it around the park.
+work,didn't reply to my manager's email,medium,low,I didn't reply to your email because my keyboard stopped typing the letter E and every reply looked like a secret code.
+work,missed my boss's calls,medium,low,"Sorry I missed your calls, my phone slipped into a pot of dal while I was cooking."
+work,didn't answer the work phone,medium,low,I didn't answer the work phone because a lizard was sitting on the receiver and I didn't dare touch it.
+work,missed the client call,high,high,I missed the client call because I had to rush my mother to the emergency room this afternoon.
+work,didn't reply to my manager's email,high,high,I didn't reply to your email because I was at the hospital with my child all day.
+work,missed my boss's calls,high,high,"Sorry I missed your calls, I was with the doctor and phones weren't allowed inside."
+work,didn't answer the work phone,high,high,I didn't answer the work phone because I suddenly felt very sick and had to leave for the clinic.
+work,missed the client call,high,medium,I missed the client call because there was a fire drill and we had to leave our phones behind.
+work,didn't reply to my manager's email,high,medium,I didn't reply to your email because a storm knocked out the power and internet in my whole area.
+work,missed my boss's calls,high,medium,"Sorry I missed your calls, my grandmother fell at home and I was arranging a doctor."
+work,didn't answer the work phone,high,medium,I didn't answer the work phone because our floor was evacuated after someone reported a gas smell.
+work,missed the client call,high,low,I missed the client call because a cow knocked the phone out of my hand and stepped on it.
+work,didn't reply to my manager's email,high,low,"I didn't reply to your email because a lightning strike fried my router, my laptop and my phone at the same time."
+work,missed my boss's calls,high,low,"Sorry I missed your calls, a monkey snatched my phone and sat with it on the water tank for two hours."
+work,didn't answer the work phone,high,low,I didn't answer the work phone because a bird built a nest on it over the weekend and we waited for it to leave.
+work,can't work this weekend,low,high,I can't work this weekend because I've already booked tickets to visit my parents.
+work,can't stay late tonight,low,high,I can't stay late tonight because I have to pick up my daughter from her tuition class.
+work,can't cover the extra shift,low,high,I can't cover the extra shift because I have an exam for my evening course tomorrow.
+work,can't attend the training session,low,high,I can't attend the training session because it clashes with the client presentation I'm leading.
+work,can't work this weekend,low,medium,I can't work this weekend because my flat is being painted and I need to be there to supervise.
+work,can't stay late tonight,low,medium,I can't stay late tonight because the last bus on my route leaves at eight.
+work,can't cover the extra shift,low,medium,I can't cover the extra shift because I promised to help my friend move into his new house.
+work,can't attend the training session,low,medium,I can't attend the training session because my laptop doesn't support the software they're using.
+work,can't work this weekend,low,low,I can't work this weekend because I've finally agreed to judge my nephew's very serious chess tournament.
+work,can't stay late tonight,low,low,I can't stay late tonight because my plants need watering and they get dramatic if I'm late.
+work,can't cover the extra shift,low,low,I can't cover the extra shift because I promised my grandmother I'd teach her video calls and she's been practising all week.
+work,can't attend the training session,low,low,I can't attend the training session because I'm afraid I'll fall asleep and snore in front of everyone.
+work,can't work this weekend,medium,high,I can't work this weekend because I'm not feeling well and need to rest so I recover properly.
+work,can't stay late tonight,medium,high,I can't stay late tonight because my mother is unwell and I need to take her to the doctor.
+work,can't cover the extra shift,medium,high,I can't cover the extra shift because my child has a fever and there's nobody else at home.
+work,can't attend the training session,medium,high,I can't attend the training session because I'm handling the urgent client escalation that came in this morning.
+work,can't work this weekend,medium,medium,I can't work this weekend because my car is in the workshop and I have no way to reach the office.
+work,can't stay late tonight,medium,medium,I can't stay late tonight because the water tanker is coming and I need to be home to receive it.
+work,can't cover the extra shift,medium,medium,I can't cover the extra shift because I injured my wrist and can't type for long.
+work,can't attend the training session,medium,medium,I can't attend the training session because the venue was moved to another city at short notice.
+work,can't work this weekend,medium,low,I can't work this weekend because I'm the only person in my building who can catch the escaped rabbit.
+work,can't stay late tonight,medium,low,I can't stay late tonight because I'm hosting a surprise birthday party for my neighbour's dog.
+work,can't cover the extra shift,medium,low,I can't cover the extra shift because I've been chosen to referee the colony's annual cricket final.
+work,can't attend the training session,medium,low,I can't attend the training session because my car horn is stuck on and the neighbours are close to a revolt.
+work,can't work this weekend,high,high,I can't work this weekend because my grandfather is in the hospital and the family is taking turns to stay with him.
+work,can't stay late tonight,high,high,I can't stay late tonight because my wife isn't well and I need to take her for a check-up.
+work,can't cover the extra shift,high,high,I can't cover the extra shift because I'm still recovering from a fever and the doctor has advised rest.
+work,can't attend the training session,high,high,I can't attend the training session because I have to be with my father for his scheduled surgery.
+work,can't work this weekend,high,medium,I can't work this weekend because heavy flooding has cut off the roads around my area.
+work,can't stay late tonight,high,medium,I can't stay late tonight because there's a power failure at home and my elderly parents are alone.
+work,can't cover the extra shift,high,medium,I can't cover the extra shift because my brother had an accident and I need to travel to see him.
+work,can't attend the training session,high,medium,I can't attend the training session because my building's fire safety system failed and every resident must be present for the inspection.
+work,can't work this weekend,high,low,I can't work this weekend because my village has asked me to lead the search for a missing prize-winning buffalo.
+work,can't stay late tonight,high,low,I can't stay late tonight because a snake has taken over my bathroom and the rescue team arrives at seven.
+work,can't cover the extra shift,high,low,I can't cover the extra shift because a storm blew the roof off my garden shed and my chickens are loose.
+work,can't attend the training session,high,low,I can't attend the training session because an elephant from the temple procession is parked in front of my gate.
+school,late for class,low,high,"Sorry I'm late for class, the college bus left early today and I had to take an auto."
+school,late for the first lecture,low,high,I was late for the first lecture because my phone restarted overnight and the alarm didn't ring.
+school,late for school,low,high,I'm late for school because the traffic at the main junction was completely stuck.
+school,late to the lab session,low,high,"Sorry for coming late to the lab session, I was submitting my assignment at the department office."
+school,late for class,low,medium,I was late for class because the gate guard wouldn't let me in until I showed my fee receipt.
+school,late for the first lecture,low,medium,"Sorry I'm late for the first lecture, I got on the right bus going in the wrong direction."
+school,late for school,low,medium,I'm late for school because the road outside my house was dug up overnight and I had to go the long way around.
+school,late to the lab session,low,medium,I was late to the lab session because the library lift got stuck and I had to wait for the technician.
+school,late for class,low,low,I'm late for class because my shoelace got caught in the escalator and half the mall came to help me.
+school,late for the first lecture,low,low,I was late for the first lecture because I was sure today was Sunday until my mom woke me up.
+school,late for school,low,low,I'm late for school because our dog ran off with my left shoe and I had to find another pair.
+school,late to the lab session,low,low,I was late to the lab session because I followed a cat I was sure belonged to our professor.
+school,late for class,medium,high,I'm late for class because the metro was stopped for twenty minutes with a technical fault.
+school,late for the first lecture,medium,high,I was late for the first lecture because my scooter got a flat tyre on the way.
+school,late for school,medium,high,I'm late for school because of heavy rain; the roads near my house were flooded.
+school,late to the lab session,medium,high,I was late to the lab session because I had a bad headache and had to stop at the medical room.
+school,late for class,medium,medium,I'm late for class because my bicycle chain broke and I had to walk the last two kilometres.
+school,late for the first lecture,medium,medium,I was late for the first lecture because a power cut stopped our building's electric gate from opening.
+school,late for school,medium,medium,I'm late for school because the school van broke down and we had to wait for another one.
+school,late to the lab session,medium,medium,I was late to the lab session because I spilled ink on my lab coat and had to go back and change.
+school,late for class,medium,low,I'm late for class because a peacock was sitting in the middle of the campus road and nobody dared to pass it.
+school,late for the first lecture,medium,low,I was late for the first lecture because the college gardener accidentally sprayed me with the hose.
+school,late for school,medium,low,I'm late for school because a group of goats blocked our lane and wouldn't move.
+school,late to the lab session,medium,low,I was late to the lab session because a bird flew into the corridor and the whole floor was trying to guide it out.
+school,late for class,high,high,I'm late for class because my younger brother fell sick and I had to take him to the doctor first.
+school,late for the first lecture,high,high,I was late for the first lecture because I saw a road accident and stayed to help until the ambulance came.
+school,late for school,high,high,I'm late for school because my grandmother wasn't well and nobody else was at home with her.
+school,late to the lab session,high,high,I was late to the lab session because I felt faint after skipping breakfast and the nurse made me rest.
+school,late for class,high,medium,I'm late for class because a tree fell across the road during the storm and all buses were stopped.
+school,late for the first lecture,high,medium,I was late for the first lecture because a fire in the market near the station closed the road.
+school,late for school,high,medium,I'm late for school because my mother cut her hand while cooking and I helped her get it bandaged.
+school,late to the lab session,high,medium,I was late to the lab session because the chemistry lab was evacuated after a gas smell and we waited outside.
+school,late for class,high,low,I'm late for class because a monkey stole my bag at the bus stop and I had to chase it to get my notebooks back.
+school,late for the first lecture,high,low,I was late for the first lecture because a swarm of bees took over the bus stop and we all had to hide.
+school,late for school,high,low,I'm late for school because a buffalo sat down in the middle of the road and traffic stopped for an hour.
+school,late to the lab session,high,low,I was late to the lab session because I got locked in the washroom when the door handle came off.
+school,didn't submit the assignment,low,high,I didn't submit the assignment because I misread the deadline as Friday instead of Wednesday.
+school,forgot my homework,low,high,"Sorry, I forgot my homework on my study table at home; I can bring it tomorrow morning."
+school,late submitting the essay,low,high,I'm late submitting the essay because the online portal kept showing an error last night.
+school,lab report not done,low,high,My lab report isn't done because I'm still waiting for my partner to send the readings.
+school,didn't submit the assignment,low,medium,I didn't submit the assignment because I uploaded the wrong file and only realised it this morning.
+school,forgot my homework,low,medium,I forgot my homework because it ended up in my brother's school bag by mistake.
+school,late submitting the essay,low,medium,I'm late submitting the essay because my laptop updated overnight and wouldn't start this morning.
+school,lab report not done,low,medium,My lab report isn't done because the graph software crashed and deleted all my plots.
+school,didn't submit the assignment,low,low,"I didn't submit the assignment because my dog actually chewed it this time, and I've brought the pages to show you."
+school,forgot my homework,low,low,I forgot my homework because I was so proud of it that I pinned it on my wall and left it there.
+school,late submitting the essay,low,low,I'm late submitting the essay because my cat sat on the keyboard and typed three pages of nonsense over it.
+school,lab report not done,low,low,My lab report isn't done because I spilled tea on it and the ink turned it into abstract art.
+school,didn't submit the assignment,medium,high,I didn't submit the assignment because there was a power cut all evening and I couldn't use my computer.
+school,forgot my homework,medium,high,I forgot my homework because I was up late looking after my sick mother and rushed out this morning.
+school,late submitting the essay,medium,high,I'm late submitting the essay because our internet was down for the whole weekend.
+school,lab report not done,medium,high,My lab report isn't done because I was down with a fever for the last two days.
+school,didn't submit the assignment,medium,medium,I didn't submit the assignment because my laptop's hard disk crashed and I lost my files.
+school,forgot my homework,medium,medium,I forgot my homework because our house is being repainted and all my books are packed in boxes.
+school,late submitting the essay,medium,medium,I'm late submitting the essay because the printer at the cyber cafe broke down halfway through my copy.
+school,lab report not done,medium,medium,My lab report isn't done because the instrument gave wrong readings and I have to redo the experiment.
+school,didn't submit the assignment,medium,low,I didn't submit the assignment because the rain soaked my bag and the pages turned into paper pulp.
+school,forgot my homework,medium,low,I forgot my homework because my little sister folded it into paper boats.
+school,late submitting the essay,medium,low,I'm late submitting the essay because a squirrel ran off with my pen drive from the balcony.
+school,lab report not done,medium,low,My lab report isn't done because my neighbour's parrot copied my alarm tone and I kept waking up at the wrong time.
+school,didn't submit the assignment,high,high,I didn't submit the assignment because my father was hospitalised and I stayed with him all week.
+school,forgot my homework,high,high,I forgot my homework because of a family emergency last night; we were at the hospital until late.
+school,late submitting the essay,high,high,I'm late submitting the essay because I had a bad infection and the doctor advised rest.
+school,lab report not done,high,high,My lab report isn't done because I fell off my bicycle and hurt my writing hand.
+school,didn't submit the assignment,high,medium,I didn't submit the assignment because water leaked from the ceiling onto my desk and ruined my laptop.
+school,forgot my homework,high,medium,I forgot my homework because we had to leave home in a hurry when the building's fire alarm went off.
+school,late submitting the essay,high,medium,I'm late submitting the essay because I had to travel to my village suddenly for a family emergency.
+school,lab report not done,high,medium,My lab report isn't done because a short circuit in my room damaged my laptop and charger.
+school,didn't submit the assignment,high,low,I didn't submit the assignment because a gust of wind blew it off the bus and into the river.
+school,forgot my homework,high,low,I forgot my homework because a monkey grabbed it from my window and ran off with it.
+school,late submitting the essay,high,low,I'm late submitting the essay because lightning struck our building and every device stopped working.
+school,lab report not done,high,low,My lab report isn't done because a goat walked into our house and ate half of it.
+school,missed the exam,low,high,I missed the exam because I had the date written down wrong in my planner.
+school,missed the quiz,low,high,"Sorry I missed the quiz, I was at the dentist for an appointment booked weeks ago."
+school,missed the viva,low,high,I missed the viva because the schedule was changed and I didn't see the notice on the board.
+school,couldn't take the test,low,high,I couldn't take the test because I was representing the college at the inter-college sports meet.
+school,missed the exam,low,medium,"I missed the exam because I went to the hall in the old building, where it was held last semester."
+school,missed the quiz,low,medium,"Sorry I missed the quiz, my bus broke down halfway and there was no other transport."
+school,missed the viva,low,medium,I missed the viva because my name was missing from the list and I was told to wait outside.
+school,couldn't take the test,low,medium,I couldn't take the test because my admit card printout was smudged and they wouldn't let me in.
+school,missed the exam,low,low,I missed the exam because I studied so hard that I fell asleep at my desk and woke up after it was over.
+school,missed the quiz,low,low,"Sorry I missed the quiz, I got locked inside the library after closing time."
+school,missed the viva,low,low,I missed the viva because I was practising my answers in the mirror and lost track of time.
+school,couldn't take the test,low,low,I couldn't take the test because I fell asleep revising on the train and woke up in the next city.
+school,missed the exam,medium,high,I missed the exam because I had a high fever and the doctor asked me to stay in bed.
+school,missed the quiz,medium,high,"Sorry I missed the quiz, I've had a bad stomach infection since the morning."
+school,missed the viva,medium,high,I missed the viva because my train was cancelled and I couldn't reach college in time.
+school,couldn't take the test,medium,high,I couldn't take the test because I had a migraine attack and had to go to the medical room.
+school,missed the exam,medium,medium,I missed the exam because my scooter skidded on the wet road and I had to get my scrapes cleaned at the clinic.
+school,missed the quiz,medium,medium,"Sorry I missed the quiz, the road to college was blocked by a festival procession."
+school,missed the viva,medium,medium,I missed the viva because I got stuck in a lift at the metro station for half an hour.
+school,couldn't take the test,medium,medium,I couldn't take the test because my laptop crashed in the middle of the online test and wouldn't restart.
+school,missed the exam,medium,low,I missed the exam because a bull was standing at our gate and nobody in the house could get out.
+school,missed the quiz,medium,low,"Sorry I missed the quiz, a kite string got tangled in my scooter wheel and I had to cut it free."
+school,missed the viva,medium,low,I missed the viva because the auto driver insisted on stopping at his favourite tea stall first.
+school,couldn't take the test,medium,low,I couldn't take the test because my glasses fell into a drain and I couldn't read anything.
+school,missed the exam,high,high,I missed the exam because my grandfather was admitted to the ICU last night and I was at the hospital with my family.
+school,missed the quiz,high,high,"Sorry I missed the quiz, I was in a minor accident on the way and had to get stitches."
+school,missed the viva,high,high,I missed the viva because I was diagnosed with chickenpox and couldn't come to college.
+school,couldn't take the test,high,high,I couldn't take the test because my mother had emergency surgery and I had to stay with her.
+school,missed the exam,high,medium,I missed the exam because floods cut off our area and no buses were running.
+school,missed the quiz,high,medium,"Sorry I missed the quiz, there was a fire in our apartment block and we were evacuated."
+school,missed the viva,high,medium,I missed the viva because I fainted from the heat at the bus stop and was taken to a clinic.
+school,couldn't take the test,high,medium,I couldn't take the test because my younger brother got lost at the market and the whole family was searching for him.
+school,missed the exam,high,low,I missed the exam because a crocodile was spotted near the college pond and the main gate was closed.
+school,missed the quiz,high,low,"Sorry I missed the quiz, a beehive fell on our bus and everyone had to stay inside with the windows shut."
+school,missed the viva,high,low,I missed the viva because a herd of wild elephants crossed the highway and traffic was stopped for hours.
+school,couldn't take the test,high,low,I couldn't take the test because a snake slid into the exam hall and they made our batch wait outside until it was caught.
+school,absent from school yesterday,low,high,I was absent from school yesterday because I had a doctor's appointment for my eyes.
+school,skipped the lecture,low,high,I skipped the lecture because I had to submit my scholarship documents at the office before noon.
+school,missed classes this week,low,high,I missed classes this week because I had a viral fever and was resting at home.
+school,absent from the practical,low,high,I was absent from the practical because I had to attend my cousin's wedding out of town.
+school,absent from school yesterday,low,medium,I was absent yesterday because our area had no water supply and my parents needed help fetching water.
+school,skipped the lecture,low,medium,I skipped the lecture because my ID card expired and I had to get it renewed at the admin office.
+school,missed classes this week,low,medium,I missed classes this week because I was helping my family shift to a new house.
+school,absent from the practical,low,medium,I was absent from the practical because my lab coat was torn and they don't allow students without one.
+school,absent from school yesterday,low,low,I was absent yesterday because I was convinced it was a holiday and nobody at home corrected me.
+school,skipped the lecture,low,low,I skipped the lecture because I was locked in a long argument with a vending machine that took my money.
+school,missed classes this week,low,low,I missed classes this week because my parents took me to a wedding that lasted five full days.
+school,absent from the practical,low,low,I was absent from the practical because I was worried the frog from last week's dissection would recognise me.
+school,absent from school yesterday,medium,high,I was absent yesterday because I had a high fever and the doctor told me to stay home.
+school,skipped the lecture,medium,high,I skipped the lecture because I had an allergic reaction and had to go to the clinic.
+school,missed classes this week,medium,high,I missed classes this week because I had food poisoning and couldn't leave the house.
+school,absent from the practical,medium,high,I was absent from the practical because I hurt my ankle playing football.
+school,absent from school yesterday,medium,medium,I was absent yesterday because our house flooded after the rain and we spent the whole day cleaning up.
+school,skipped the lecture,medium,medium,I skipped the lecture because my bike broke down and the repair shop took the whole morning.
+school,missed classes this week,medium,medium,I missed classes this week because I had an eye infection and the doctor said not to strain my eyes.
+school,absent from the practical,medium,medium,I was absent from the practical because the buses were on strike and I had no way to reach college.
+school,absent from school yesterday,medium,low,I was absent yesterday because a family of bats moved into our living room and we spent the day getting them out.
+school,skipped the lecture,medium,low,I skipped the lecture because a group of tourists kept asking me for one more selfie with them.
+school,missed classes this week,medium,low,I missed classes this week because our street hosted a five-day festival and nobody could get out.
+school,absent from the practical,medium,low,I was absent from the practical because a stray cat had kittens inside my lab bag.
+school,absent from school yesterday,high,high,I was absent yesterday because my mother was admitted to the hospital and I was taking care of her.
+school,skipped the lecture,high,high,I skipped the lecture because my little sister fell down the stairs and we rushed her to the doctor.
+school,missed classes this week,high,high,I missed classes this week because I had dengue and was on complete bed rest.
+school,absent from the practical,high,high,I was absent from the practical because I was in a minor accident and had to get an X-ray.
+school,absent from school yesterday,high,medium,I was absent yesterday because there was a fire in our building and we had to stay with relatives.
+school,skipped the lecture,high,medium,I skipped the lecture because my grandfather fell ill suddenly and I had to take him to the clinic.
+school,missed classes this week,high,medium,I missed classes this week because a storm damaged our roof and we had to move out for repairs.
+school,absent from the practical,high,medium,I was absent from the practical because I slipped on the wet stairs and sprained my wrist.
+school,absent from school yesterday,high,low,I was absent yesterday because a snake was found under my bed and the rescuers took the whole day.
+school,skipped the lecture,high,low,I skipped the lecture because a herd of buffaloes surrounded our bus and nobody could get off.
+school,missed classes this week,high,low,I missed classes this week because a landslide blocked the only road out of our town.
+school,absent from the practical,high,low,I was absent from the practical because a hailstorm smashed our windows and we had to board them up.
+school,missed the group project meeting,low,high,I missed the group project meeting because it clashed with my extra class and I couldn't leave early.
+school,didn't do my part of the group project,low,high,"Sorry I haven't done my part of the group project yet, I thought the deadline was next week."
+school,late for the project discussion,low,high,I was late for the project discussion because my previous lecture ended fifteen minutes late.
+school,missed the presentation rehearsal,low,high,I missed the presentation rehearsal because I was at the doctor for a routine check-up.
+school,missed the group project meeting,low,medium,I missed the group project meeting because the location in the group chat was wrong and I waited at the other canteen.
+school,didn't do my part of the group project,low,medium,I haven't done my part of the group project because the shared document wouldn't let me edit it.
+school,late for the project discussion,low,medium,I was late for the project discussion because the lift was out of order and I had to climb eight floors.
+school,missed the presentation rehearsal,low,medium,I missed the presentation rehearsal because my phone was stuck in airplane mode and I never got the message.
+school,missed the group project meeting,low,low,I missed the group project meeting because I fell asleep in the library while reading about the project topic.
+school,didn't do my part of the group project,low,low,I didn't do my part of the group project because I wrote it on the back of a receipt and threw it away.
+school,late for the project discussion,low,low,I was late for the project discussion because I was rehearsing my lines with my cat.
+school,missed the presentation rehearsal,low,low,I missed the presentation rehearsal because I got stuck in a very long queue for free samosas.
+school,missed the group project meeting,medium,high,I missed the group project meeting because I had a high fever and couldn't get out of bed.
+school,didn't do my part of the group project,medium,high,I didn't do my part of the group project because my laptop crashed and I lost my draft.
+school,late for the project discussion,medium,high,I was late for the project discussion because my bus broke down on the highway.
+school,missed the presentation rehearsal,medium,high,I missed the presentation rehearsal because the internet in my area was down all evening.
+school,missed the group project meeting,medium,medium,I missed the group project meeting because I was stuck at home waiting for the electrician after a short circuit.
+school,didn't do my part of the group project,medium,medium,I didn't do my part of the group project because the papers I needed were paywalled and the library was closed.
+school,late for the project discussion,medium,medium,I was late for the project discussion because I got caught in heavy rain and had to wait under a shop.
+school,missed the presentation rehearsal,medium,medium,I missed the presentation rehearsal because my charger stopped working and both my phone and laptop ran out of battery.
+school,missed the group project meeting,medium,low,I missed the group project meeting because a peacock chased me around the campus garden.
+school,didn't do my part of the group project,medium,low,I didn't do my part of the group project because my parrot pecked at my keyboard and broke three keys.
+school,late for the project discussion,medium,low,I was late for the project discussion because I got trapped in a revolving door with a delivery trolley.
+school,missed the presentation rehearsal,medium,low,I missed the presentation rehearsal because a magician at the fair made my phone disappear and took an hour to bring it back.
+school,missed the group project meeting,high,high,I missed the group project meeting because my father was taken to the hospital and I went with him.
+school,didn't do my part of the group project,high,high,I didn't do my part of the group project because I was sick with typhoid the whole week.
+school,late for the project discussion,high,high,I was late for the project discussion because I was in a small accident and needed first aid.
+school,missed the presentation rehearsal,high,high,I missed the presentation rehearsal because my grandmother needed urgent care and nobody else was home.
+school,missed the group project meeting,high,medium,I missed the group project meeting because a fire broke out in the hostel kitchen and everyone was evacuated.
+school,didn't do my part of the group project,high,medium,I didn't do my part of the group project because our area flooded and we had no electricity for three days.
+school,late for the project discussion,high,medium,I was late for the project discussion because my brother got hurt at cricket practice and I took him to the clinic.
+school,missed the presentation rehearsal,high,medium,I missed the presentation rehearsal because of a gas leak in our building; we had to wait outside for hours.
+school,missed the group project meeting,high,low,I missed the group project meeting because a monkey took my laptop bag up to the top of the water tank.
+school,didn't do my part of the group project,high,low,I didn't do my part of the group project because a lightning strike fried my laptop and our Wi-Fi router.
+school,late for the project discussion,high,low,I was late for the project discussion because I got stuck in a lift with a very nervous goat.
+school,missed the presentation rehearsal,high,low,I missed the presentation rehearsal because a beehive fell from the tree by my hostel window and we were shut inside.
+school,forgot to bring my textbook,low,high,I forgot to bring my textbook because I packed my bag last night using yesterday's timetable.
+school,forgot the signed permission slip,low,high,"Sorry, I left the signed permission slip on the dining table; my parent has already signed it."
+school,didn't return the library books,low,high,I didn't return the library books on time because I was out of town for the weekend.
+school,forgot my ID card,low,high,I forgot my ID card because I left it in the pocket of the jacket I wore yesterday.
+school,forgot to bring my textbook,low,medium,I forgot my textbook because my younger brother took it to school thinking it was his.
+school,forgot the signed permission slip,low,medium,I forgot the permission slip because my dad signed it and then put it in his office bag.
+school,didn't return the library books,low,medium,I didn't return the library books because the counter was already closed when I went yesterday.
+school,forgot my ID card,low,medium,I forgot my ID card because the lanyard snapped on the bus and I didn't notice it fall.
+school,forgot to bring my textbook,low,low,I forgot my textbook because I've been using it to raise my laptop to the right height for online classes.
+school,forgot the signed permission slip,low,low,I forgot the permission slip because my dog decided it was his new favourite chew toy.
+school,didn't return the library books,low,low,I didn't return the library books because I've become emotionally attached to the main character.
+school,forgot my ID card,low,low,I forgot my ID card because a crow took it from my balcony and I couldn't get it back.
+school,forgot to bring my textbook,medium,high,I forgot my textbook because I was rushing this morning after missing the bus.
+school,forgot the signed permission slip,medium,high,I forgot the permission slip because my parents were travelling and couldn't sign it in time.
+school,didn't return the library books,medium,high,I didn't return the library books because I was ill all week and couldn't come to college.
+school,forgot my ID card,medium,high,I forgot my ID card because I switched bags in a hurry this morning.
+school,forgot to bring my textbook,medium,medium,I forgot my textbook because it got soaked in the rain yesterday and it's still drying.
+school,forgot the signed permission slip,medium,medium,I forgot the permission slip because the printer at home ran out of ink and I couldn't print it.
+school,didn't return the library books,medium,medium,I didn't return the library books because one got water damage and I was getting it repaired.
+school,forgot my ID card,medium,medium,I forgot my ID card because I lost my wallet on the bus and I've applied for a duplicate.
+school,forgot to bring my textbook,medium,low,I forgot my textbook because my grandmother is using it to press flowers and won't give it back until they dry.
+school,forgot the signed permission slip,medium,low,I forgot the permission slip because the wind blew it out of my hand while I was crossing the bridge.
+school,didn't return the library books,medium,low,I didn't return the library books because my neighbour's goat chewed the cover of one and I was too embarrassed to bring it.
+school,forgot my ID card,medium,low,I forgot my ID card because I used it as a bookmark in a novel I lent to my friend.
+school,forgot to bring my textbook,high,high,I forgot my textbook because we were at the hospital with my grandfather until late last night.
+school,forgot the signed permission slip,high,high,I forgot the permission slip because my mother was unwell and I didn't want to bother her.
+school,didn't return the library books,high,high,I didn't return the library books because I was hospitalised for a week with a fever.
+school,forgot my ID card,high,high,I forgot my ID card because I left home in a rush when my sister fell sick this morning.
+school,forgot to bring my textbook,high,medium,I forgot my textbook because a short circuit at home forced us to spend the night at a neighbour's.
+school,forgot the signed permission slip,high,medium,I forgot the permission slip because we had to leave home quickly when the water pipe burst.
+school,didn't return the library books,high,medium,I didn't return the library books because they were ruined when our ceiling leaked during the storm.
+school,forgot my ID card,high,medium,I forgot my ID card because I had to rush my brother to the clinic before college.
+school,forgot to bring my textbook,high,low,I forgot my textbook because a flash flood carried my school bag away from the bus stop.
+school,forgot the signed permission slip,high,low,I forgot the permission slip because a goat ate it while my father was signing it.
+school,didn't return the library books,high,low,I didn't return the library books because a monkey carried them up a tree and they're still there.
+school,forgot my ID card,high,low,"I forgot my ID card because an eagle snatched it, probably thinking it was a snack."
+family,missed the family dinner,low,high,"Sorry I missed the family dinner, my office meeting ran late and I couldn't leave on time."
+family,skipped sunday lunch,low,high,I skipped Sunday lunch because I had already promised to help my friend with his project.
+family,late for dinner at home,low,high,I'm late for dinner because the traffic on the bridge was terrible.
+family,missed dinner with my parents,low,high,I missed dinner with you both because I had an assignment due at midnight.
+family,missed the family dinner,low,medium,I missed the family dinner because my manager called a meeting just as I was packing up to leave.
+family,skipped sunday lunch,low,medium,I skipped Sunday lunch because the bike I borrowed ran out of petrol halfway.
+family,late for dinner at home,low,medium,I'm late for dinner because I got off at the wrong metro station and had to come back.
+family,missed dinner with my parents,low,medium,I missed dinner with you both because my friend's car broke down and I stayed to help him.
+family,missed the family dinner,low,low,I missed the family dinner because I fell asleep on the sofa and woke up at midnight.
+family,skipped sunday lunch,low,low,I skipped Sunday lunch because I got stuck in a very long cricket argument at the barber shop.
+family,late for dinner at home,low,low,I'm late for dinner because I took a shortcut that turned out to be the longest route in the city.
+family,missed dinner with my parents,low,low,I missed dinner with you both because a street dog followed me and I had to make sure it got home safely.
+family,missed the family dinner,medium,high,I missed the family dinner because I wasn't feeling well and went straight to bed.
+family,skipped sunday lunch,medium,high,I skipped Sunday lunch because I had a bad headache all morning.
+family,late for dinner at home,medium,high,I'm late for dinner because my bus broke down and we waited for a replacement.
+family,missed dinner with my parents,medium,high,I missed dinner with you both because my flight was delayed by three hours.
+family,missed the family dinner,medium,medium,I missed the family dinner because my scooter got a flat tyre on the highway.
+family,skipped sunday lunch,medium,medium,I skipped Sunday lunch because my landlord needed me home for a plumbing repair.
+family,late for dinner at home,medium,medium,I'm late for dinner because the main road was blocked for a festival procession.
+family,missed dinner with my parents,medium,medium,I missed dinner with you both because my train was diverted after a technical problem.
+family,missed the family dinner,medium,low,I missed the family dinner because a cow parked itself in front of my car and refused to move.
+family,skipped sunday lunch,medium,low,I skipped Sunday lunch because the balcony door jammed and I was locked outside on my own balcony.
+family,late for dinner at home,medium,low,I'm late for dinner because I was stuck in a lift with a very talkative uncle who wouldn't stop telling stories.
+family,missed dinner with my parents,medium,low,I missed dinner with you both because a monkey stole my car keys from the dashboard.
+family,missed the family dinner,high,high,I missed the family dinner because my friend had an accident and I took him to the hospital.
+family,skipped sunday lunch,high,high,I skipped Sunday lunch because I was down with a high fever.
+family,late for dinner at home,high,high,I'm late for dinner because a colleague fainted at work and I stayed until his family arrived.
+family,missed dinner with my parents,high,high,I missed dinner with you both because I had to rush my roommate to the emergency room.
+family,missed the family dinner,high,medium,I missed the family dinner because the storm uprooted trees on my route and the roads were closed.
+family,skipped sunday lunch,high,medium,I skipped Sunday lunch because a fire broke out near my flat and we were kept outside for hours.
+family,late for dinner at home,high,medium,I'm late for dinner because the bus I was in had a minor collision and we had to wait for the police.
+family,missed dinner with my parents,high,medium,I missed dinner with you both because my flat flooded in the rain and I was moving things out.
+family,missed the family dinner,high,low,I missed the family dinner because a swarm of bees surrounded my car in the parking lot.
+family,skipped sunday lunch,high,low,I skipped Sunday lunch because a snake curled up inside my shoe and I had to wait for the rescuers.
+family,late for dinner at home,high,low,I'm late for dinner because an elephant from the temple festival was walking down the main road.
+family,missed dinner with my parents,high,low,I missed dinner with you both because a hailstorm cracked my windshield on the highway.
+family,forgot mom's birthday,low,high,"I'm so sorry I forgot your birthday, Mom; I've had back-to-back exams and completely lost track of the date."
+family,forgot my parents' anniversary,low,high,I forgot your anniversary because I thought it was next week; I'm planning a dinner for you both this weekend.
+family,forgot my brother's birthday,low,high,"Sorry I missed your birthday, my phone reminders got wiped when I switched to a new phone."
+family,didn't get a gift for dad's birthday,low,high,"I didn't get your gift in time, Dad, because the one I ordered online got delayed in delivery."
+family,forgot mom's birthday,low,medium,"I forgot your birthday, Mom, because my calendar was still showing last year's dates after the reset."
+family,forgot my parents' anniversary,low,medium,"I forgot your anniversary because I mixed it up with my aunt's, which is the day after."
+family,forgot my brother's birthday,low,medium,"Sorry I forgot your birthday, I wrote the wrong date in my diary years ago and never corrected it."
+family,didn't get a gift for dad's birthday,low,medium,"I didn't get your gift, Dad, because the shop closed early for the festival."
+family,forgot mom's birthday,low,low,"I forgot your birthday, Mom, because I was planning a surprise so big that I forgot the actual day."
+family,forgot my parents' anniversary,low,low,I forgot your anniversary because I genuinely believed you two got married in winter.
+family,forgot my brother's birthday,low,low,"Sorry I forgot your birthday, I was somehow convinced you were born on a leap day."
+family,didn't get a gift for dad's birthday,low,low,"I didn't get you a gift, Dad, because I couldn't find anything as amazing as you."
+family,forgot mom's birthday,medium,high,"I forgot your birthday, Mom, because I was sick with a fever the whole week."
+family,forgot my parents' anniversary,medium,high,I forgot your anniversary because I was travelling for work with no network for two days.
+family,forgot my brother's birthday,medium,high,"Sorry I missed your birthday, I was stuck at the office on a deadline until late at night."
+family,didn't get a gift for dad's birthday,medium,high,"I didn't get your gift, Dad, because my bank card was blocked and the payment kept failing."
+family,forgot mom's birthday,medium,medium,"I forgot your birthday, Mom, because my phone fell in water and I lost all my reminders."
+family,forgot my parents' anniversary,medium,medium,I forgot your anniversary because I was shifting flats and everything was in chaos.
+family,forgot my brother's birthday,medium,medium,"Sorry I missed your birthday, my laptop crashed and took my planner with it."
+family,didn't get a gift for dad's birthday,medium,medium,"I didn't get your gift, Dad, because the courier delivered it to the wrong address."
+family,forgot mom's birthday,medium,low,"I forgot your birthday, Mom, because a power cut reset every clock and calendar in my flat to the wrong date."
+family,forgot my parents' anniversary,medium,low,I forgot your anniversary because my calendar app switched itself to a different calendar system.
+family,forgot my brother's birthday,medium,low,"Sorry I missed your birthday, my parrot kept repeating the wrong date and I trusted him."
+family,didn't get a gift for dad's birthday,medium,low,"I didn't get your gift, Dad, because the cake I baked collapsed and I spent the whole evening making another."
+family,forgot mom's birthday,high,high,"I forgot your birthday, Mom, because my best friend was in the hospital and I was with him all week."
+family,forgot my parents' anniversary,high,high,I forgot your anniversary because I was recovering from surgery and wasn't thinking clearly.
+family,forgot my brother's birthday,high,high,"Sorry I missed your birthday, I had a bad fall from my bike and spent the day getting treated."
+family,didn't get a gift for dad's birthday,high,high,"I didn't get your gift, Dad, because I was down with dengue and couldn't go out."
+family,forgot mom's birthday,high,medium,"I forgot your birthday, Mom, because our area flooded and I was helping the neighbours move to safety."
+family,forgot my parents' anniversary,high,medium,I forgot your anniversary because there was a fire in my office building and everything was disrupted.
+family,forgot my brother's birthday,high,medium,"Sorry I missed your birthday, grandma fell ill and the whole day went in hospital visits."
+family,didn't get a gift for dad's birthday,high,medium,"I didn't get your gift, Dad, because a storm cut off the power and roads in my area for two days."
+family,forgot mom's birthday,high,low,"I forgot your birthday, Mom, because a lightning strike erased every reminder on my phone."
+family,forgot my parents' anniversary,high,low,I forgot your anniversary because a monkey ran off with my diary that had all the dates in it.
+family,forgot my brother's birthday,high,low,"Sorry I missed your birthday, I was stranded on an island when the ferry broke down."
+family,didn't get a gift for dad's birthday,high,low,"I didn't get your gift, Dad, because a goat ate the wrapping paper and the gift along with it."
+family,came home late,low,high,I came home late because my class ran over and the last bus had already left.
+family,missed my curfew,low,high,I missed my curfew because the movie we went to was much longer than we expected.
+family,late getting back home,low,high,I'm late getting back home because the highway traffic was bumper to bumper.
+family,stayed out too late,low,high,I stayed out too late because we were finishing our group assignment at my friend's place.
+family,came home late,low,medium,I came home late because my friend's scooter ran out of petrol and we had to push it to the pump.
+family,missed my curfew,low,medium,I missed my curfew because my phone switched off and I couldn't book a cab.
+family,late getting back home,low,medium,I'm late getting back home because the metro skipped my station for construction work.
+family,stayed out too late,low,medium,I stayed out too late because the restaurant took an hour to bring our bill.
+family,came home late,low,low,I came home late because I got lost in the new mall and couldn't find the exit for an hour.
+family,missed my curfew,low,low,I missed my curfew because my watch was still set to another time zone from my trip.
+family,late getting back home,low,low,I'm late getting back home because a street magician picked me as his assistant.
+family,stayed out too late,low,low,I stayed out too late because we were trying to rescue a kite stuck in a tree.
+family,came home late,medium,high,I came home late because my bus broke down and the replacement took an hour.
+family,missed my curfew,medium,high,I missed my curfew because I wasn't feeling well and rested at my friend's house before coming back.
+family,late getting back home,medium,high,I'm late getting back home because heavy rain flooded the roads.
+family,stayed out too late,medium,high,I stayed out too late because my friend's car battery failed and we had to wait for help.
+family,came home late,medium,medium,I came home late because I got stuck in the lift at my friend's building.
+family,missed my curfew,medium,medium,I missed my curfew because the cab driver took a wrong route and we ended up on the highway.
+family,late getting back home,medium,medium,I'm late getting back home because the road was closed for a festival procession.
+family,stayed out too late,medium,medium,I stayed out too late because I was helping my friend's family move furniture into their new flat.
+family,came home late,medium,low,I came home late because a herd of cows decided to walk home on the same road as me.
+family,missed my curfew,medium,low,I missed my curfew because a family I'd never met invited me into their wedding and wouldn't let me leave without eating.
+family,late getting back home,medium,low,I'm late getting back home because the auto driver stopped to check the cricket score at every tea stall.
+family,stayed out too late,medium,low,I stayed out too late because I won the café quiz and had to stay for the prize ceremony.
+family,came home late,high,high,I came home late because my friend had a bad fall and I took him to the hospital.
+family,missed my curfew,high,high,I missed my curfew because I felt dizzy and stopped at a clinic to get checked.
+family,late getting back home,high,high,I'm late getting back home because I saw an accident and stayed to help the injured person.
+family,stayed out too late,high,high,I stayed out too late because my friend's mother was unwell and they needed help at the hospital.
+family,came home late,high,medium,I came home late because a tree fell on the road and traffic was stopped for two hours.
+family,missed my curfew,high,medium,I missed my curfew because a fire near the station closed off the whole area.
+family,late getting back home,high,medium,I'm late getting back home because the train stopped midway because of flooding.
+family,stayed out too late,high,medium,I stayed out too late because my friend's house had a gas leak and we waited outside until it was fixed.
+family,came home late,high,low,I came home late because the Ferris wheel broke down while I was stuck at the very top.
+family,missed my curfew,high,low,I missed my curfew because a snake was blocking the entrance of my friend's building.
+family,late getting back home,high,low,I'm late getting back home because a swarm of bees chased us and we hid inside a shop.
+family,stayed out too late,high,low,I stayed out too late because an elephant procession blocked the only road out.
+family,didn't call my parents back,low,high,"Sorry I didn't call you back, I was in a long meeting and my phone was on silent."
+family,didn't answer mom's calls,low,high,"I didn't answer your calls, Mom, because I was driving and couldn't pick up."
+family,forgot to call grandma,low,high,"I forgot to call you, Grandma, because I came home very tired and fell asleep early."
+family,didn't reply in the family group,low,high,I didn't reply in the family group because I muted it during exams and forgot to unmute it.
+family,didn't call my parents back,low,medium,I didn't call you back because my phone's speaker stopped working and I couldn't hear anything.
+family,didn't answer mom's calls,low,medium,"I didn't answer your calls, Mom, because my phone ended up in my friend's bag by mistake."
+family,forgot to call grandma,low,medium,"I forgot to call you, Grandma, because my phone showed the call as connected when it had actually failed."
+family,didn't reply in the family group,low,medium,I didn't reply in the family group because the app logged me out and I never saw the messages.
+family,didn't call my parents back,low,low,I didn't call you back because I was practising a speech in my head and forgot the world existed.
+family,didn't answer mom's calls,low,low,"I didn't answer your calls, Mom, because my phone was on vibrate and buried in the laundry basket."
+family,forgot to call grandma,low,low,"I forgot to call you, Grandma, because I dreamt that I had already called you."
+family,didn't reply in the family group,low,low,I didn't reply in the family group because I'm still thinking of a good enough comeback to uncle's joke.
+family,didn't call my parents back,medium,high,I didn't call you back because my phone battery ran out and I had no charger.
+family,didn't answer mom's calls,medium,high,"I didn't answer your calls, Mom, because there was no network on the route I was travelling."
+family,forgot to call grandma,medium,high,"I forgot to call you, Grandma, because I was down with a fever and slept most of the day."
+family,didn't reply in the family group,medium,high,I didn't reply in the family group because my phone was at the repair shop.
+family,didn't call my parents back,medium,medium,I didn't call you back because my phone fell and the screen stopped working.
+family,didn't answer mom's calls,medium,medium,"I didn't answer your calls, Mom, because I was visiting a friend in the hospital ward where phones had to be off."
+family,forgot to call grandma,medium,medium,"I forgot to call you, Grandma, because there was a power cut and my phone was out of charge all evening."
+family,didn't reply in the family group,medium,medium,I didn't reply in the family group because I lost my phone on the bus and only just got a new one.
+family,didn't call my parents back,medium,low,I didn't call you back because my phone fell into the lake while I was taking a selfie.
+family,didn't answer mom's calls,medium,low,"I didn't answer your calls, Mom, because a monkey ran off with my phone at the temple."
+family,forgot to call grandma,medium,low,"I forgot to call you, Grandma, because autocorrect renamed your contact and I couldn't find it."
+family,didn't reply in the family group,medium,low,I didn't reply in the family group because my cat deleted the app by walking across my phone.
+family,didn't call my parents back,high,high,"I didn't call you back because I was at the hospital with my roommate, who was unwell."
+family,didn't answer mom's calls,high,high,"I didn't answer your calls, Mom, because I was in a minor accident and was getting treated."
+family,forgot to call grandma,high,high,"I forgot to call you, Grandma, because I had a very high fever and could barely get up."
+family,didn't reply in the family group,high,high,I didn't reply in the family group because I was taking care of my sick child all day.
+family,didn't call my parents back,high,medium,I didn't call you back because a storm knocked out the mobile towers in my area.
+family,didn't answer mom's calls,high,medium,"I didn't answer your calls, Mom, because there was a fire drill at work and we had to leave our phones inside."
+family,forgot to call grandma,high,medium,"I forgot to call you, Grandma, because a pipe burst in my flat and I spent the evening cleaning up."
+family,didn't reply in the family group,high,medium,I didn't reply in the family group because our area flooded and the network was down for two days.
+family,didn't call my parents back,high,low,I didn't call you back because a goat chewed through my phone charger and then my phone.
+family,didn't answer mom's calls,high,low,"I didn't answer your calls, Mom, because I was on a cave tour with no signal for hours."
+family,forgot to call grandma,high,low,"I forgot to call you, Grandma, because lightning hit our building and fried my phone."
+family,didn't reply in the family group,high,low,I didn't reply in the family group because a crow stole my phone from the balcony.
+family,can't attend the family function,low,high,I can't attend the family function because I have an important exam the next morning.
+family,can't come to my cousin's wedding,low,high,I can't come to the wedding because my office hasn't approved my leave for those dates.
+family,missing the family reunion,low,high,I'm missing the family reunion because I'm on a work trip that was planned months ago.
+family,can't visit home for the festival,low,high,I can't come home for the festival because the train tickets are completely sold out.
+family,can't attend the family function,low,medium,I can't attend the family function because my passport renewal appointment is on the same day.
+family,can't come to my cousin's wedding,low,medium,I can't come to the wedding because my flight was cancelled and there are no other seats.
+family,missing the family reunion,low,medium,I'm missing the family reunion because my landlord has scheduled the house inspection for that day.
+family,can't visit home for the festival,low,medium,I can't come home for the festival because the bus operators have gone on strike.
+family,can't attend the family function,low,low,I can't attend the family function because I've been chosen to judge the neighbourhood dance competition.
+family,can't come to my cousin's wedding,low,low,I can't come to the wedding because my only formal suit shrank in the wash.
+family,missing the family reunion,low,low,I'm missing the family reunion because my goldfish needs me during this difficult time.
+family,can't visit home for the festival,low,low,I can't come home for the festival because I promised my plants I wouldn't leave them alone again.
+family,can't attend the family function,medium,high,I can't attend the family function because I've had a fever since yesterday and don't want to spread it.
+family,can't come to my cousin's wedding,medium,high,I can't come to the wedding because my project deadline was moved to that week.
+family,missing the family reunion,medium,high,I'm missing the family reunion because I hurt my back and the doctor advised against travelling.
+family,can't visit home for the festival,medium,high,I can't come home for the festival because my semester exams start right after the holiday.
+family,can't attend the family function,medium,medium,I can't attend the family function because my car is at the service centre and there's no other way to get there.
+family,can't come to my cousin's wedding,medium,medium,I can't come to the wedding because my visa appointment was rescheduled to that week.
+family,missing the family reunion,medium,medium,I'm missing the family reunion because my flat has a water leak that has to be fixed urgently.
+family,can't visit home for the festival,medium,medium,I can't come home for the festival because the highway is closed after landslides.
+family,can't attend the family function,medium,low,I can't attend the family function because my neighbour's dog has claimed my only good shoes and won't give them back.
+family,can't come to my cousin's wedding,medium,low,I can't come to the wedding because a bird built a nest in my car and the eggs haven't hatched yet.
+family,missing the family reunion,medium,low,I'm missing the family reunion because a local news crew is filming my rooftop garden that day.
+family,can't visit home for the festival,medium,low,I can't come home for the festival because I booked a train going to the opposite end of the country by mistake.
+family,can't attend the family function,high,high,I can't attend the family function because my roommate is in the hospital and I'm staying with him.
+family,can't come to my cousin's wedding,high,high,I can't come to the wedding because I've been told to rest completely after a minor surgery.
+family,missing the family reunion,high,high,I'm missing the family reunion because my child has chickenpox and can't travel.
+family,can't visit home for the festival,high,high,I can't come home for the festival because I'm recovering from a fracture and can't travel.
+family,can't attend the family function,high,medium,I can't attend the family function because floods have cut off the roads out of my city.
+family,can't come to my cousin's wedding,high,medium,I can't come to the wedding because there was a fire in my building and I'm sorting out the damage.
+family,missing the family reunion,high,medium,I'm missing the family reunion because my in-laws have a medical emergency and need help.
+family,can't visit home for the festival,high,medium,I can't come home for the festival because a cyclone warning has stopped all trains in my region.
+family,can't attend the family function,high,low,I can't attend the family function because a sinkhole opened up right outside my gate.
+family,can't come to my cousin's wedding,high,low,I can't come to the wedding because a tiger was spotted near my town and travel is restricted.
+family,missing the family reunion,high,low,I'm missing the family reunion because a swarm of locusts has covered the entire highway.
+family,can't visit home for the festival,high,low,I can't come home for the festival because an ash cloud has grounded every flight in my region.
+family,forgot to do the chores,low,high,"Sorry I forgot to do the chores, I had a test today and studied until late."
+family,didn't clean my room,low,high,I didn't clean my room because I got home late from practice and was exhausted.
+family,forgot to buy groceries,low,high,I forgot to buy groceries because the store near my office was closed by the time I left.
+family,didn't take out the trash,low,high,I didn't take out the trash because I rushed out early for the bus and forgot about it.
+family,forgot to do the chores,low,medium,I forgot to do the chores because I thought it was my brother's turn this week.
+family,didn't clean my room,low,medium,I didn't clean my room because the vacuum cleaner stopped working halfway through.
+family,forgot to buy groceries,low,medium,I forgot to buy groceries because I left the shopping list at home and couldn't remember anything on it.
+family,didn't take out the trash,low,medium,I didn't take out the trash because the garbage van came early and left before I got out.
+family,forgot to do the chores,low,low,I forgot to do the chores because I was busy designing a better system for doing chores.
+family,didn't clean my room,low,low,I didn't clean my room because the mess is organised in a way only I understand.
+family,forgot to buy groceries,low,low,I forgot to buy groceries because I got distracted by a sale on things we didn't need.
+family,didn't take out the trash,low,low,I didn't take out the trash because a cat was sleeping on the bin and looked too peaceful to disturb.
+family,forgot to do the chores,medium,high,I forgot to do the chores because I wasn't feeling well and slept all afternoon.
+family,didn't clean my room,medium,high,I didn't clean my room because I had to finish an urgent assignment.
+family,forgot to buy groceries,medium,high,I forgot to buy groceries because my card payment kept failing at the store.
+family,didn't take out the trash,medium,high,I didn't take out the trash because it was raining heavily all evening.
+family,forgot to do the chores,medium,medium,I forgot to do the chores because there was no water supply all day.
+family,didn't clean my room,medium,medium,I didn't clean my room because there was a power cut and it was too dark to see anything.
+family,forgot to buy groceries,medium,medium,I forgot to buy groceries because my bike had a flat tyre and the market is too far to walk.
+family,didn't take out the trash,medium,medium,I didn't take out the trash because the building's garbage room was locked for repairs.
+family,forgot to do the chores,medium,low,I forgot to do the chores because a pigeon got into the house and I spent an hour guiding it out.
+family,didn't clean my room,medium,low,I didn't clean my room because I found my old comic collection and had to read every single one.
+family,forgot to buy groceries,medium,low,I forgot to buy groceries because the shopkeeper started telling me his entire life story.
+family,didn't take out the trash,medium,low,I didn't take out the trash because a monkey was sitting on the garbage bin outside.
+family,forgot to do the chores,high,high,I forgot to do the chores because I had to take grandpa to the doctor.
+family,didn't clean my room,high,high,I didn't clean my room because I sprained my ankle and could barely walk.
+family,forgot to buy groceries,high,high,I forgot to buy groceries because my friend got hurt and I took him to the clinic.
+family,didn't take out the trash,high,high,I didn't take out the trash because I've had a high fever since the morning.
+family,forgot to do the chores,high,medium,I forgot to do the chores because a pipe burst in the bathroom and I was mopping up the water.
+family,didn't clean my room,high,medium,I didn't clean my room because the storm broke my window and I was busy covering it.
+family,forgot to buy groceries,high,medium,I forgot to buy groceries because the market was closed after a fire nearby.
+family,didn't take out the trash,high,medium,I didn't take out the trash because a snake was spotted near the bins and everyone was told to stay away.
+family,forgot to do the chores,high,low,I forgot to do the chores because a swarm of bees moved into the kitchen window.
+family,didn't clean my room,high,low,I didn't clean my room because a family of squirrels has taken over my cupboard.
+family,forgot to buy groceries,high,low,I forgot to buy groceries because an elephant was blocking the road to the market.
+family,didn't take out the trash,high,low,I didn't take out the trash because a crocodile was seen near the drain outside our gate.
+social,cancelling plans with friends,low,high,"Sorry, I have to cancel our plans; my manager asked me to finish a report tonight."
+social,can't make it tonight,low,high,I can't make it tonight because I'm completely exhausted after a long week.
+social,need to cancel our dinner plans,low,high,I need to cancel our dinner because my parents are visiting unexpectedly.
+social,backing out of movie night,low,high,I'm backing out of movie night because I have an early exam tomorrow morning.
+social,cancelling plans with friends,low,medium,I have to cancel our plans because my landlord is coming this evening to fix the leaking tap.
+social,can't make it tonight,low,medium,I can't make it tonight because my bike is at the service centre and cab prices are surging.
+social,need to cancel our dinner plans,low,medium,I need to cancel our dinner because I've just found out I'm on call for the support team tonight.
+social,backing out of movie night,low,medium,I'm backing out of movie night because my cousin dropped his kids at my place and I'm babysitting.
+social,cancelling plans with friends,low,low,I have to cancel our plans because my horoscope says today is a bad day for social activities.
+social,can't make it tonight,low,low,I can't make it tonight because I'm in the middle of a very important nap.
+social,need to cancel our dinner plans,low,low,I need to cancel our dinner because I accidentally agreed to two dinners and my aunt wins.
+social,backing out of movie night,low,low,I'm backing out of movie night because my cat is sulking and needs company.
+social,cancelling plans with friends,medium,high,I have to cancel our plans because I've caught a bad cold and don't want to pass it on.
+social,can't make it tonight,medium,high,I can't make it tonight because a work deadline got moved up to tomorrow morning.
+social,need to cancel our dinner plans,medium,high,I need to cancel our dinner because my mother is unwell and I need to stay with her.
+social,backing out of movie night,medium,high,I'm backing out of movie night because my car broke down and I'm waiting for the mechanic.
+social,cancelling plans with friends,medium,medium,I have to cancel our plans because a pipe burst in my flat and I'm waiting for the plumber.
+social,can't make it tonight,medium,medium,I can't make it tonight because my wallet went missing and I have to block all my cards.
+social,need to cancel our dinner plans,medium,medium,I need to cancel our dinner because there's a power cut and my building's electric gate won't open.
+social,backing out of movie night,medium,medium,I'm backing out of movie night because the road to the theatre is closed for repairs.
+social,cancelling plans with friends,medium,low,I have to cancel our plans because a pigeon is trapped in my bathroom and I can't leave it like that.
+social,can't make it tonight,medium,low,I can't make it tonight because my neighbour's dog stole my shoe and won't give it back.
+social,need to cancel our dinner plans,medium,low,I need to cancel our dinner because I dyed my hair and it came out bright green.
+social,backing out of movie night,medium,low,I'm backing out of movie night because I got locked out on my own balcony.
+social,cancelling plans with friends,high,high,I have to cancel our plans because my grandfather was admitted to the hospital tonight.
+social,can't make it tonight,high,high,I can't make it tonight because I had a fall and the doctor wants to check my ankle.
+social,need to cancel our dinner plans,high,high,I need to cancel our dinner because my sister went into labour and we're heading to the hospital.
+social,backing out of movie night,high,high,I'm backing out of movie night because I've had a high fever since the afternoon.
+social,cancelling plans with friends,high,medium,I have to cancel our plans because a small fire started in my building's kitchen and we're all outside.
+social,can't make it tonight,high,medium,I can't make it tonight because the storm has flooded the road outside my house.
+social,need to cancel our dinner plans,high,medium,I need to cancel our dinner because my brother had a minor accident and I'm going to the hospital.
+social,backing out of movie night,high,medium,I'm backing out of movie night because a gas leak was reported in my area and we can't leave.
+social,cancelling plans with friends,high,low,I have to cancel our plans because a monkey has taken over my kitchen and won't leave.
+social,can't make it tonight,high,low,I can't make it tonight because a beehive fell onto my balcony and we've sealed all the doors.
+social,need to cancel our dinner plans,high,low,I need to cancel our dinner because a snake is curled up asleep in my car.
+social,backing out of movie night,high,low,I'm backing out of movie night because a lost peacock walked into my living room and the forest team is on the way.
+social,missed my friend's birthday party,low,high,"Sorry I missed your birthday party, I had to stay late at work to finish a deadline."
+social,skipped the housewarming,low,high,I skipped your housewarming because I had a family dinner planned weeks ago.
+social,didn't show up to the party,low,high,I didn't show up to the party because I fell asleep after a long shift.
+social,missed the farewell party,low,high,I missed the farewell party because I was in the middle of my exams.
+social,missed my friend's birthday party,low,medium,I missed your birthday party because I went to the wrong address and couldn't reach you.
+social,skipped the housewarming,low,medium,I skipped your housewarming because the cab cancelled on me three times in a row.
+social,didn't show up to the party,low,medium,I didn't show up to the party because my phone switched off and I didn't have the location saved.
+social,missed the farewell party,low,medium,I missed the farewell party because the venue changed and I never got the update.
+social,missed my friend's birthday party,low,low,I missed your birthday party because I was making you a handmade gift and it took much longer than planned.
+social,skipped the housewarming,low,low,I skipped your housewarming because I spent two hours trying to decide which plant to bring.
+social,didn't show up to the party,low,low,I didn't show up to the party because I spent an hour trying on outfits and then gave up.
+social,missed the farewell party,low,low,"I missed the farewell party because I refuse to say goodbye to anyone, ever."
+social,missed my friend's birthday party,medium,high,I missed your birthday party because I was sick with a stomach bug.
+social,skipped the housewarming,medium,high,I skipped your housewarming because my train was delayed by three hours.
+social,didn't show up to the party,medium,high,I didn't show up to the party because my car broke down on the way.
+social,missed the farewell party,medium,high,I missed the farewell party because an urgent work issue came up that couldn't wait.
+social,missed my friend's birthday party,medium,medium,I missed your birthday party because I sprained my ankle on the stairs that evening.
+social,skipped the housewarming,medium,medium,I skipped your housewarming because I was stuck in the lift in my building.
+social,didn't show up to the party,medium,medium,I didn't show up to the party because a water pipe burst in my flat.
+social,missed the farewell party,medium,medium,I missed the farewell party because I lost my wallet and spent the evening sorting it out at the bank.
+social,missed my friend's birthday party,medium,low,I missed your birthday party because a cow blocked my building's gate for hours.
+social,skipped the housewarming,medium,low,I skipped your housewarming because my parrot escaped and I spent the evening on the roof trying to catch him.
+social,didn't show up to the party,medium,low,I didn't show up to the party because I got trapped in a selfie queue at the mall.
+social,missed the farewell party,medium,low,I missed the farewell party because a power cut left me stuck inside the cinema hall.
+social,missed my friend's birthday party,high,high,I missed your birthday party because my father was taken to the hospital.
+social,skipped the housewarming,high,high,I skipped your housewarming because I was in a minor accident on the way.
+social,didn't show up to the party,high,high,I didn't show up to the party because my child had a high fever.
+social,missed the farewell party,high,high,I missed the farewell party because my grandmother fell ill suddenly.
+social,missed my friend's birthday party,high,medium,I missed your birthday party because a fire in the nearby market closed all the roads.
+social,skipped the housewarming,high,medium,I skipped your housewarming because floods cut off my area.
+social,didn't show up to the party,high,medium,I didn't show up to the party because a friend fainted and I took her to the clinic.
+social,missed the farewell party,high,medium,I missed the farewell party because my flat's ceiling started leaking badly in the storm.
+social,missed my friend's birthday party,high,low,I missed your birthday party because a swarm of bees chased me away from the venue.
+social,skipped the housewarming,high,low,I skipped your housewarming because a snake was sitting in my car and I couldn't drive.
+social,didn't show up to the party,high,low,I didn't show up to the party because an elephant was blocking the road.
+social,missed the farewell party,high,low,I missed the farewell party because a monkey stole my car keys.
+social,late to meet my friend,low,high,"Sorry I'm late to meet you, the traffic near the market is really bad today."
+social,late for our coffee catch-up,low,high,I'm late for our coffee because my previous meeting ran over.
+social,kept my friend waiting,low,high,"Sorry for keeping you waiting, I missed my bus and had to wait for the next one."
+social,late for the movie,low,high,I'm late for the movie because the mall parking was completely full.
+social,late to meet my friend,low,medium,I'm late to meet you because the cab driver went to the wrong pickup point.
+social,late for our coffee catch-up,low,medium,I'm late for our coffee because I left my wallet at home and had to go back for it.
+social,kept my friend waiting,low,medium,"Sorry for keeping you waiting, the metro was so crowded I couldn't get on the first two trains."
+social,late for the movie,low,medium,I'm late for the movie because the ticket app crashed and I had to rebook at the counter.
+social,late to meet my friend,low,low,I'm late to meet you because I got stuck behind the slowest tractor in the city.
+social,late for our coffee catch-up,low,low,I'm late for our coffee because I stopped to pet every dog on the way.
+social,kept my friend waiting,low,low,"Sorry for keeping you waiting, I was stuck in a staring contest with a cat."
+social,late for the movie,low,low,I'm late for the movie because I tried to look cool and walked straight into a glass door.
+social,late to meet my friend,medium,high,I'm late to meet you because my scooter got a flat tyre.
+social,late for our coffee catch-up,medium,high,I'm late for our coffee because the rain flooded the underpass.
+social,kept my friend waiting,medium,high,"Sorry for keeping you waiting, my train was delayed by thirty minutes."
+social,late for the movie,medium,high,I'm late for the movie because my car battery failed in the parking lot.
+social,late to meet my friend,medium,medium,I'm late to meet you because the main road was closed for a marathon.
+social,late for our coffee catch-up,medium,medium,I'm late for our coffee because I had to wait at home for the electrician.
+social,kept my friend waiting,medium,medium,"Sorry for keeping you waiting, I got stuck in a lift for twenty minutes."
+social,late for the movie,medium,medium,I'm late for the movie because the bridge was closed for repairs and I had to go around.
+social,late to meet my friend,medium,low,I'm late to meet you because a herd of goats was crossing the road very slowly.
+social,late for our coffee catch-up,medium,low,I'm late for our coffee because a street magician wouldn't let me leave his act.
+social,kept my friend waiting,medium,low,"Sorry for keeping you waiting, my maps app sent me to a café with the same name in a different area."
+social,late for the movie,medium,low,I'm late for the movie because a monkey grabbed my sunglasses and I had to chase it.
+social,late to meet my friend,high,high,I'm late to meet you because I stopped to help an injured cyclist and waited for the ambulance.
+social,late for our coffee catch-up,high,high,I'm late for our coffee because my mother needed to see a doctor urgently.
+social,kept my friend waiting,high,high,"Sorry for keeping you waiting, I had a minor accident on the way but I'm fine."
+social,late for the movie,high,high,I'm late for the movie because my brother fell ill and I had to take him home first.
+social,late to meet my friend,high,medium,I'm late to meet you because a tree fell across the road in the storm.
+social,late for our coffee catch-up,high,medium,I'm late for our coffee because the fire alarm forced everyone out of my building.
+social,kept my friend waiting,high,medium,"Sorry for keeping you waiting, the train stopped because of flooding on the tracks."
+social,late for the movie,high,medium,I'm late for the movie because of a gas leak in my lane; nobody was allowed to leave.
+social,late to meet my friend,high,low,I'm late to meet you because a swarm of bees covered the bus stop.
+social,late for our coffee catch-up,high,low,I'm late for our coffee because a snake was sleeping on my scooter seat.
+social,kept my friend waiting,high,low,"Sorry for keeping you waiting, a peacock chased me for half a kilometre."
+social,late for the movie,high,low,I'm late for the movie because a crocodile was spotted near the road and traffic was stopped.
+social,didn't reply to messages,low,high,"Sorry I didn't reply to your messages, I've been buried in work all week."
+social,left my friend on read,low,high,I left you on read because I opened your message in a meeting and forgot to reply afterwards.
+social,ignored the group chat,low,high,I didn't check the group chat because I muted it to focus on my exams.
+social,didn't return my friend's call,low,high,I didn't return your call because I was at the gym and my phone was in the locker.
+social,didn't reply to messages,low,medium,I didn't reply because my messaging app stopped sending notifications after the update.
+social,left my friend on read,low,medium,I left you on read because I typed a reply and my phone froze before it sent.
+social,ignored the group chat,low,medium,I missed the group chat because it got archived somehow and I didn't notice.
+social,didn't return my friend's call,low,medium,I didn't return your call because my call history was cleared when I reset my phone.
+social,didn't reply to messages,low,low,I didn't reply because I was trying to write the perfect message and it took three days.
+social,left my friend on read,low,low,I left you on read because my thumb slipped and I genuinely thought I'd sent a reply.
+social,ignored the group chat,low,low,I ignored the group chat because there were four hundred unread messages and I panicked.
+social,didn't return my friend's call,low,low,I didn't return your call because my phone has been in my other jeans all week.
+social,didn't reply to messages,medium,high,I didn't reply to your messages because my phone was at the repair shop.
+social,left my friend on read,medium,high,I left you on read because I was sick and barely used my phone.
+social,ignored the group chat,medium,high,I didn't check the group chat because I was travelling with no network.
+social,didn't return my friend's call,medium,high,I didn't return your call because I've had back-to-back exams.
+social,didn't reply to messages,medium,medium,I didn't reply to your messages because my phone fell in water and stopped working.
+social,left my friend on read,medium,medium,I left you on read because my SIM card got blocked and I only just got a new one.
+social,ignored the group chat,medium,medium,I didn't check the group chat because I lost my phone and only got it back today.
+social,didn't return my friend's call,medium,medium,I didn't return your call because my phone's microphone stopped working.
+social,didn't reply to messages,medium,low,I didn't reply because my grandmother confiscated my phone for the entire family puja.
+social,left my friend on read,medium,low,I left you on read because my cat locked my phone by sitting on it.
+social,ignored the group chat,medium,low,I ignored the group chat because my phone's language switched to French and I couldn't find the settings.
+social,didn't return my friend's call,medium,low,I didn't return your call because a parrot learned my ringtone and I stopped trusting every ring.
+social,didn't reply to messages,high,high,I didn't reply to your messages because I was in the hospital for a few days.
+social,left my friend on read,high,high,I left you on read because my father was unwell and I was taking care of him.
+social,ignored the group chat,high,high,I didn't check the group chat because I was recovering from a fever.
+social,didn't return my friend's call,high,high,I didn't return your call because there was a medical emergency at home.
+social,didn't reply to messages,high,medium,I didn't reply to your messages because a storm knocked out the network in my area.
+social,left my friend on read,high,medium,I left you on read because a fire in our building kept us out of the flat for a day.
+social,ignored the group chat,high,medium,I didn't check the group chat because floods cut the power for three days.
+social,didn't return my friend's call,high,medium,I didn't return your call because my grandmother fell and I was with her at the clinic.
+social,didn't reply to messages,high,low,I didn't reply because a monkey stole my phone and only gave it back today.
+social,left my friend on read,high,low,I left you on read because lightning hit the mobile tower near my house.
+social,ignored the group chat,high,low,I ignored the group chat because a goat ate my charger and my phone stayed off for two days.
+social,didn't return my friend's call,high,low,I didn't return your call because I was stuck in a cave with no signal during a tour.
+social,can't attend the wedding,low,high,I can't attend the wedding because I have exams that week.
+social,can't come on the trip,low,high,I can't come on the trip because I haven't been able to get leave from work.
+social,skipping the reunion,low,high,I'm skipping the reunion because I already have plans with my family that day.
+social,can't make it to the concert,low,high,I can't make it to the concert because I have an early shift the next morning.
+social,can't attend the wedding,low,medium,I can't attend the wedding because my passport is still at the embassy for a visa.
+social,can't come on the trip,low,medium,I can't come on the trip because my tickets got cancelled and there are no seats left.
+social,skipping the reunion,low,medium,I'm skipping the reunion because my apartment's renovation is scheduled that day.
+social,can't make it to the concert,low,medium,I can't make it to the concert because my ticket is linked to an old email I can't access anymore.
+social,can't attend the wedding,low,low,I can't attend the wedding because my only suit doesn't fit after all the festival sweets.
+social,can't come on the trip,low,low,I can't come on the trip because I'm scared of the mosquitoes there.
+social,skipping the reunion,low,low,I'm skipping the reunion because I'm still recovering from the last one.
+social,can't make it to the concert,low,low,I can't make it to the concert because I promised my neighbour's parrot I'd teach him a new song.
+social,can't attend the wedding,medium,high,I can't attend the wedding because I'm down with a viral fever.
+social,can't come on the trip,medium,high,I can't come on the trip because my project deadline was moved up.
+social,skipping the reunion,medium,high,I'm skipping the reunion because my mother isn't well and needs me at home.
+social,can't make it to the concert,medium,high,I can't make it to the concert because my car broke down and I have no way to get there.
+social,can't attend the wedding,medium,medium,I can't attend the wedding because the road to the venue is closed after landslides.
+social,can't come on the trip,medium,medium,I can't come on the trip because I sprained my ankle playing football.
+social,skipping the reunion,medium,medium,I'm skipping the reunion because my house has a water leak that's being fixed that day.
+social,can't make it to the concert,medium,medium,I can't make it to the concert because the trains are cancelled for maintenance.
+social,can't attend the wedding,medium,low,I can't attend the wedding because a bird nested in my car and I can't drive it.
+social,can't come on the trip,medium,low,I can't come on the trip because my pet tortoise has a very busy week.
+social,skipping the reunion,medium,low,I'm skipping the reunion because a magician at a party made my shoes disappear and never brought them back.
+social,can't make it to the concert,medium,low,I can't make it to the concert because I lost my voice cheering at the last one.
+social,can't attend the wedding,high,high,I can't attend the wedding because my grandfather is in the hospital.
+social,can't come on the trip,high,high,I can't come on the trip because I was in a minor accident and need rest.
+social,skipping the reunion,high,high,I'm skipping the reunion because my child is ill.
+social,can't make it to the concert,high,high,I can't make it to the concert because I just had a minor surgery and need rest.
+social,can't attend the wedding,high,medium,I can't attend the wedding because floods have cut off the roads.
+social,can't come on the trip,high,medium,I can't come on the trip because a fire damaged my flat and I need to sort things out.
+social,skipping the reunion,high,medium,I'm skipping the reunion because my aunt has a medical emergency.
+social,can't make it to the concert,high,medium,I can't make it to the concert because a storm warning has stopped all trains.
+social,can't attend the wedding,high,low,I can't attend the wedding because a tiger has been spotted near my town.
+social,can't come on the trip,high,low,I can't come on the trip because a swarm of locusts has covered my village.
+social,skipping the reunion,high,low,I'm skipping the reunion because a sinkhole swallowed the road outside my house.
+social,can't make it to the concert,high,low,I can't make it to the concert because an elephant is resting on the only road out.
+social,forgot to return a borrowed book,low,high,"Sorry I forgot to return your book, I left it in my office drawer."
+social,forgot to return the charger,low,high,I forgot to return your charger because I packed it with my laptop by mistake.
+social,haven't returned my friend's jacket,low,high,I haven't returned your jacket because it's still at the laundry.
+social,forgot to bring back the notes,low,high,I forgot to bring back your notes because I was photocopying them for the exam.
+social,forgot to return a borrowed book,low,medium,I forgot to return your book because my sister borrowed it from me without asking.
+social,forgot to return the charger,low,medium,I forgot to return your charger because I thought the one I gave back was yours.
+social,haven't returned my friend's jacket,low,medium,I haven't returned your jacket because the dry cleaner lost the receipt.
+social,forgot to bring back the notes,low,medium,I forgot to bring back your notes because I left them on the bus and the depot still has them.
+social,forgot to return a borrowed book,low,low,I forgot to return your book because I'm on the last chapter and couldn't stop reading.
+social,forgot to return the charger,low,low,I forgot to return your charger because it's the only one that fits my phone and we've bonded.
+social,haven't returned my friend's jacket,low,low,I haven't returned your jacket because it looks better on me and I'm still processing that.
+social,forgot to bring back the notes,low,low,I forgot to bring back your notes because my dog was sleeping on them.
+social,forgot to return a borrowed book,medium,high,I forgot to return your book because I was sick all week.
+social,forgot to return the charger,medium,high,I forgot to return your charger because I was travelling for work.
+social,haven't returned my friend's jacket,medium,high,I haven't returned your jacket because I've been working late every day.
+social,forgot to bring back the notes,medium,high,I forgot to bring back your notes because I rushed out this morning.
+social,forgot to return a borrowed book,medium,medium,I forgot to return your book because it got wet in the rain and I'm drying it out.
+social,forgot to return the charger,medium,medium,I forgot to return your charger because it stopped working and I'm buying you a new one.
+social,haven't returned my friend's jacket,medium,medium,I haven't returned your jacket because a button fell off and I'm getting it fixed.
+social,forgot to bring back the notes,medium,medium,I forgot to bring back your notes because the photocopy shop closed early.
+social,forgot to return a borrowed book,medium,low,I forgot to return your book because a monkey took it from my balcony.
+social,forgot to return the charger,medium,low,I forgot to return your charger because my cat chewed through the wire.
+social,haven't returned my friend's jacket,medium,low,I haven't returned your jacket because a pigeon decided to nest in the hood.
+social,forgot to bring back the notes,medium,low,I forgot to bring back your notes because my grandmother used them to wrap a jar of pickles.
+social,forgot to return a borrowed book,high,high,I forgot to return your book because I was in the hospital for a few days.
+social,forgot to return the charger,high,high,I forgot to return your charger because my mother was unwell and I was with her.
+social,haven't returned my friend's jacket,high,high,I haven't returned your jacket because I was down with dengue.
+social,forgot to bring back the notes,high,high,I forgot to bring back your notes because my brother had an accident and I was at the hospital.
+social,forgot to return a borrowed book,high,medium,I forgot to return your book because our house flooded and everything got moved.
+social,forgot to return the charger,high,medium,I forgot to return your charger because a short circuit fried it.
+social,haven't returned my friend's jacket,high,medium,I haven't returned your jacket because the fire alarm forced us out of the building and I couldn't get back in.
+social,forgot to bring back the notes,high,medium,I forgot to bring back your notes because a storm damaged my room.
+social,forgot to return a borrowed book,high,low,I forgot to return your book because a goat ate half of it.
+social,forgot to return the charger,high,low,I forgot to return your charger because lightning fried it.
+social,haven't returned my friend's jacket,high,low,I haven't returned your jacket because a crow stole it from the clothesline.
+social,forgot to bring back the notes,high,low,I forgot to bring back your notes because a flood carried them away.

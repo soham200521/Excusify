@@ -1,356 +1,614 @@
 import streamlit as st
 
-st.set_page_config(page_title="Excuse Generator AI", layout="centered")
+st.set_page_config(page_title="Excusify", page_icon="🎭", layout="centered")
+
+import os
+import re
+import textwrap
+import uuid
+from datetime import datetime
+from io import BytesIO
 
 import pandas as pd
-from transformers import pipeline, GPT2LMHeadModel, GPT2Tokenizer
+import plotly.express as px
+import torch
+from deep_translator import GoogleTranslator
 from gtts import gTTS
-from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
-from faker import Faker
-from datetime import datetime
-import textwrap
-from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.utils import simpleSplit
-from deep_translator import GoogleTranslator
-import tempfile
+from reportlab.pdfgen import canvas
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# -------------- SESSION STATE INIT ---------------
-if "excuses" not in st.session_state:
-    st.session_state.excuses = []
-if "apologies" not in st.session_state:
-    st.session_state.apologies = []
-if "emergencies" not in st.session_state:
-    st.session_state.emergencies = []
-if "feedback" not in st.session_state:
-    st.session_state.feedback = []
+MODEL_REPOS = {
+    "excuse": "Sohamb2005/gpt2-finetuned-excuses",
+    "apology": "Sohamb2005/gpt2-finetuned-apologies",
+    "emergency": "Sohamb2005/gpt2-finetuned-emergency",
+}
+GITHUB_URL = "https://github.com/soham200521/Excusify"
 
-fake = Faker()
+# -------------- SESSION STATE ---------------
+for key in ["excuses", "apologies", "emergencies", "feedback"]:
+    if key not in st.session_state:
+        st.session_state[key] = []
+# latest result of each mode, so it survives reruns (feedback submit, PDF download)
+if "results" not in st.session_state:
+    st.session_state.results = {}
 
-# -------------- UTILITY FUNCTIONS ---------------
-def speak_text(text, lang='en'):
-    tts = gTTS(text, lang=lang)
-    fp = BytesIO()
-    tts.write_to_fp(fp)
-    fp.seek(0)
-    return fp
 
-def is_appropriate(text, parental_lock=True):
-    inappropriate_keywords = [
-        "gun", "shooter", "suicide", "murder", "kill", "dead", "violence",
-        "blood", "assault", "sex", "rape", "alcohol", "drugs",
-        "overdose", "hang", "stab", "choke", "explosion", "terror", "abuse"
-    ]
-    if not parental_lock:
-        return True
-    return not any(word in text.lower() for word in inappropriate_keywords)
+# -------------- PROMPT FORMAT (identical to training/train_excusify.ipynb) ---------------
+def normalize(text):
+    """Lower-case, straight quotes, no separator characters, no trailing punctuation."""
+    text = (text or "").replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
+    text = re.sub(r"[|:\n]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip().rstrip(".!?").strip()
+    return text.lower()
 
-def create_whatsapp_chat(user_msg, sender_msg, user_name="You", sender_name="Sender", mode="excuse"):
-    width, height = 700, 300
-    bg_color = (230, 230, 230)
-    user_bubble_color = (255, 255, 255) if mode == "excuse" else (255, 239, 213)
-    sender_bubble_color = (0, 132, 255)
-    user_text_color = (0, 0, 0)
-    sender_text_color = (255, 255, 255)
-    font = ImageFont.load_default()
-    img = Image.new('RGB', (width, height), color=bg_color)
-    draw = ImageDraw.Draw(img)
-    user_text = textwrap.fill(f"{user_name}: {user_msg}", width=40)
-    user_bbox = draw.multiline_textbbox((0, 0), user_text, font=font)
-    user_w, user_h = user_bbox[2] - user_bbox[0], user_bbox[3] - user_bbox[1]
-    user_bubble = (width - user_w - 50, 30, width - 20, 30 + user_h + 20)
-    draw.rounded_rectangle(user_bubble, fill=user_bubble_color, radius=20, outline=(200,200,200))
-    draw.multiline_text((user_bubble[0]+15, user_bubble[1]+10), user_text, fill=user_text_color, font=font)
-    sender_text = textwrap.fill(f"{sender_name}: {sender_msg}", width=40)
-    sender_bbox = draw.multiline_textbbox((0, 0), sender_text, font=font)
-    sender_w, sender_h = sender_bbox[2] - sender_bbox[0], sender_bbox[3] - sender_bbox[1]
-    sender_bubble = (20, height - sender_h - 60, 20 + sender_w + 30, height - 40)
-    draw.rounded_rectangle(sender_bubble, fill=sender_bubble_color, radius=20)
-    draw.multiline_text((sender_bubble[0]+15, sender_bubble[1]+10), sender_text, fill=sender_text_color, font=font)
-    return img
 
-def create_sms_chat(message_text, sender_name="XX-NDMAEW"):
-    width, height = 750, 180
-    background = (0, 0, 0)
-    bubble_color = (50, 50, 50)
-    text_color = (255, 255, 255)
-    font = ImageFont.load_default()
-    img = Image.new('RGB', (width, height), background)
-    draw = ImageDraw.Draw(img)
-    wrapped_text = textwrap.fill(message_text, width=50)
-    bubble_x, bubble_y = 20, 60
-    bubble_w, bubble_h = draw.multiline_textbbox((0, 0), wrapped_text, font=font)[2:]
-    bubble_box = (bubble_x, bubble_y, bubble_x + bubble_w + 30, bubble_y + bubble_h + 30)
-    draw.rounded_rectangle(bubble_box, radius=20, fill=bubble_color)
-    draw.multiline_text((bubble_x + 15, bubble_y + 15), wrapped_text, fill=text_color, font=font)
-    draw.text((width // 2 - 50, 15), sender_name, fill=(180, 180, 180), font=font)
-    return img
+def excuse_prompt(scenario, urgency, believability, situation):
+    return f"{normalize(scenario)} | {normalize(urgency)} | {normalize(believability)} | {normalize(situation)} :"
 
-def create_pdf(text, header="Official Statement"):
-    temp = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
-    c = canvas.Canvas(temp.name, pagesize=LETTER)
-    width, height = LETTER
-    c.setFont("Helvetica-Bold", 16)
-    c.drawString(50, height - 50, header)
-    c.setFont("Helvetica", 12)
-    c.drawString(50, height - 80, f"Date: {datetime.now().strftime('%d/%m/%Y')}")
-    c.drawString(50, height - 100, "Name: [Redacted]")
-    y = height - 140
-    lines = simpleSplit(text, "Helvetica", 12, width - 100)
-    for line in lines:
-        c.drawString(50, y, line)
-        y -= 18
-    c.drawString(50, y - 30, "Signature: _________________________")
-    c.save()
-    return temp.name
 
-def generate_location_log(num_entries=5):
-    data = []
-    base_time = datetime.now()
-    for i in range(num_entries):
-        timestamp = (base_time.replace(second=0, microsecond=0) - pd.Timedelta(minutes=10*i)).strftime('%Y-%m-%d %H:%M:%S')
-        lat, lon = fake.latitude(), fake.longitude()
-        address = fake.address().replace('\n', ', ')
-        data.append(f"{timestamp} | {lat}, {lon} | {address}")
-    return "\n".join(data)
+def apology_prompt(apology_type, situation):
+    return f"{normalize(apology_type)} | {normalize(situation)} :"
 
-# -------------- LOAD MODELS ---------------
-@st.cache_resource
-def load_models():
-    tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-    tokenizer.pad_token = tokenizer.eos_token
-    excuse_model = GPT2LMHeadModel.from_pretrained("Sohamb2005/gpt2-finetuned-excuses")
-    apology_model = GPT2LMHeadModel.from_pretrained("Sohamb2005/gpt2-finetuned-apologies")
-    emergency_model = GPT2LMHeadModel.from_pretrained("Sohamb2005/gpt2-finetuned-emergency")
-    excuse_gen = pipeline("text-generation", model=excuse_model, tokenizer=tokenizer)
-    apology_gen = pipeline("text-generation", model=apology_model, tokenizer=tokenizer)
-    emergency_gen = pipeline("text-generation", model=emergency_model, tokenizer=tokenizer)
-    return excuse_gen, apology_gen, emergency_gen, tokenizer
 
-excuse_gen, apology_gen, emergency_gen, tokenizer = load_models()
+def emergency_prompt(scenario, details=""):
+    details = normalize(details)
+    return f"{normalize(scenario)} | {details} :" if details else f"{normalize(scenario)} :"
 
-# -------------- APP LAYOUT ---------------
-st.title("🎭 Intelligent Excuse Generator")
 
-# Sidebar: Parental Control and Dashboard
-st.sidebar.header("Settings")
-parental_lock = st.sidebar.toggle("Parental Control (filter inappropriate content)", value=True)
+# -------------- MODELS & GENERATION ---------------
+GEN_KWARGS = dict(do_sample=True, top_p=0.92, top_k=50, temperature=0.8,
+                  no_repeat_ngram_size=3, repetition_penalty=1.1)
+NUM_CANDIDATES = 4
 
-if st.sidebar.button("Show Dashboard"):
-    st.header("📊 Dashboard")
-
-    # Show counts
-    total_excuses = len(st.session_state.excuses)
-    total_apologies = len(st.session_state.apologies)
-    total_emergencies = len(st.session_state.emergencies)
-    st.write(f"**Total Excuses:** {total_excuses}")
-    st.write(f"**Total Apologies:** {total_apologies}")
-    st.write(f"**Total Emergencies:** {total_emergencies}")
-
-    # Prepare DataFrames
-    df_excuses = pd.DataFrame(st.session_state.excuses) if st.session_state.excuses else pd.DataFrame()
-    df_feedback = pd.DataFrame(st.session_state.feedback) if st.session_state.feedback else pd.DataFrame()
-
-    # Merge feedback with excuses for ranking (if both exist)
-    if not df_excuses.empty and not df_feedback.empty:
-        df_merged = df_feedback[df_feedback['type'] == 'excuse'].merge(
-            df_excuses, left_on='content', right_on='generated_excuse', how='left'
-        )
-    else:
-        df_merged = pd.DataFrame()
-
-    # Ranking: Top-rated and most liked/favorited excuses
-    if not df_merged.empty:
-        st.subheader("🏆 Top Excuses (by Rating)")
-        top_rated = df_merged.sort_values("rating", ascending=False).head(3)
-        for i, row in top_rated.iterrows():
-            st.markdown(f"**{row['content']}**  \nRating: {row['rating']} | Likes: {row['liked']} | Favorite: {row['favorite']}")
-
-        st.subheader("⭐ Favorite Excuses")
-        favorites = df_merged[df_merged['favorite'] == 'Yes']
-        if not favorites.empty:
-            for i, row in favorites.iterrows():
-                st.markdown(f"**{row['content']}**  \nRating: {row['rating']}")
-        else:
-            st.info("No favorite excuses yet.")
-
-        st.subheader("👍 Most Liked Excuses")
-        likes = df_merged[df_merged['liked'] == 'Yes']
-        if not likes.empty:
-            for i, row in likes.iterrows():
-                st.markdown(f"**{row['content']}**  \nRating: {row['rating']}")
-        else:
-            st.info("No liked excuses yet.")
-
-        st.subheader("📈 Ratings Distribution")
-        st.bar_chart(df_merged['rating'].value_counts().sort_index())
-    else:
-        st.info("No feedback or excuses to rank yet.")
-
-    # Show all feedback table
-    if not df_feedback.empty:
-        st.subheader("All Feedback")
-        st.dataframe(df_feedback)
-    else:
-        st.info("No feedback yet.")
-
-    # Show all excuses table
-    if not df_excuses.empty:
-        st.subheader("All Generated Excuses")
-        st.dataframe(df_excuses)
-    else:
-        st.info("No excuses yet.")
-
-    st.stop()
-
-# -------------- MAIN APP ---------------
-language_options = {
-    "English": "en", "Hindi": "hi", "Spanish": "es", "French": "fr",
-    "German": "de", "Italian": "it", "Chinese (Simplified)": "zh-cn",
-    "Japanese": "ja", "Russian": "ru"
+STOPWORDS = {
+    "the", "and", "for", "with", "that", "this", "was", "were", "are", "you", "your", "our", "but", "not",
+    "have", "had", "has", "from", "about", "into", "all", "can", "could", "will", "would", "didn't", "don't",
+    "can't", "i'm", "i've", "i'll", "she", "her", "him", "his", "they", "them", "its", "it's", "too", "very",
+    "got", "get", "just", "out", "today", "tonight", "yesterday",
 }
 
-mode = st.selectbox("Choose Mode", ["Excuse", "Apology", "Emergency"])
-lang_name = st.selectbox("Language", list(language_options.keys()))
-lang_code = language_options[lang_name]
 
-def generate_text(prompt, generator):
-    out = generator(prompt, max_length=40, num_return_sequences=1)[0]['generated_text']
-    return out[len(prompt):].split('.')[0] + '.'
+@st.cache_resource(show_spinner=False)
+def load_model(kind):
+    repo = MODEL_REPOS[kind]
+    tokenizer = AutoTokenizer.from_pretrained(repo)
+    model = AutoModelForCausalLM.from_pretrained(repo)
+    model.eval()
+    return tokenizer, model
+
+
+def clean_completion(text):
+    """Keep at most two complete sentences of the model's answer."""
+    text = text.split("\n")[0].split(" | ")[0]
+    text = re.sub(r"\s+", " ", text).strip()
+    sentences = [s for s in re.split(r"(?<=[.!?])\s+", text) if s]
+    complete = [s for s in sentences if re.search(r"[.!?]$", s)]
+    if complete:
+        return " ".join(complete[:2])
+    return (text.rstrip(",;:- ") + ".") if text else ""
+
+
+def generate_candidates(kind, prompt, max_new_tokens=60):
+    tokenizer, model = load_model(kind)
+    inputs = tokenizer(prompt, return_tensors="pt")
+    with torch.no_grad():
+        output = model.generate(
+            **inputs, num_return_sequences=NUM_CANDIDATES, max_new_tokens=max_new_tokens,
+            pad_token_id=tokenizer.eos_token_id, eos_token_id=tokenizer.eos_token_id, **GEN_KWARGS,
+        )
+    start = inputs["input_ids"].shape[1]
+    return [clean_completion(tokenizer.decode(seq[start:], skip_special_tokens=True)) for seq in output]
+
+
+def _stems(text):
+    return {w[:5] for w in re.findall(r"[a-z']+", text.lower()) if len(w) > 2 and w not in STOPWORDS}
+
+
+def relevance(candidate, target):
+    """How many content words of the user's input the candidate mentions (5-letter stems)."""
+    return len(_stems(target) & _stems(candidate))
+
+
+BLOCKED_WORDS = [
+    "gun", "shooter", "suicide", "murder", "kill", "dead", "violence",
+    "blood", "assault", "sex", "rape", "alcohol", "drug",
+    "overdose", "hang", "stab", "stabbed", "stabbing", "choke", "explosion", "terror", "abuse",
+]
+# whole words plus common endings, so "deadline", "change" or "skills" are not blocked
+_BLOCKED_RE = re.compile(
+    r"\b(?:" + "|".join(map(re.escape, BLOCKED_WORDS)) + r")(?:s|es|d|ed|ing|er|ers|y|ly|ist|ists|ism)?\b",
+    re.IGNORECASE,
+)
+
+
+def is_appropriate(text, parental_lock=True):
+    return (not parental_lock) or _BLOCKED_RE.search(text) is None
+
+
+def run_generation(kind, prompt, relevance_target, spinner_msg, parental_lock, **gen_kwargs):
+    """Samples several candidates and returns the most relevant appropriate one (or None)."""
+    try:
+        if kind not in st.session_state.get("_loaded", set()):
+            with st.spinner(f"Loading the {kind} model (the first time downloads about 500 MB)..."):
+                load_model(kind)
+            st.session_state.setdefault("_loaded", set()).add(kind)
+        with st.spinner(spinner_msg):
+            candidates = generate_candidates(kind, prompt, **gen_kwargs)
+    except Exception as e:
+        st.error(f"⚠️ Couldn't generate text ({MODEL_REPOS[kind]}): {e}")
+        return None
+
+    usable = [c for c in candidates if len(c.split()) >= 4]
+    if not usable:
+        st.error("⚠️ The model didn't return a usable sentence. Please try again.")
+        return None
+    allowed = [c for c in usable if is_appropriate(c, parental_lock)]
+    if not allowed:
+        st.error("🚫 Inappropriate content detected and blocked by Parental Control. Please try again.")
+        return None
+    # highest relevance wins; ties keep the model's sampling order
+    return max(enumerate(allowed), key=lambda pair: (relevance(pair[1], relevance_target), -pair[0]))[1]
+
+
+# -------------- PREVIEWS & EXPORTS ---------------
+FONT_CANDIDATES = ["DejaVuSans.ttf", "arial.ttf", "LiberationSans-Regular.ttf", "Helvetica.ttf"]
+
+
+@st.cache_resource
+def load_font(size):
+    font_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
+    for name in FONT_CANDIDATES:
+        for path in (os.path.join(font_dir, name), name):
+            try:
+                return ImageFont.truetype(path, size)
+            except OSError:
+                continue
+    try:
+        return ImageFont.load_default(size=size)  # Pillow >= 10.1
+    except TypeError:
+        return ImageFont.load_default()
+
+
+def image_to_png_bytes(img):
+    buf = BytesIO()
+    img.save(buf, format="PNG")
+    return buf.getvalue()
+
+
+def create_whatsapp_chat(user_msg, ai_response_msg, user_name="You", sender_name="Recipient", mode="excuse"):
+    try:
+        width = 700
+        bubble_padding = 30
+        spacing = 10
+        side = 15
+        tail_width = 10
+        radius = 15
+        bg_color = (217, 229, 221)
+        user_bubble_color = (220, 248, 198)
+        sender_bubble_color = (255, 255, 255)
+        text_color = (0, 0, 0)
+        font = load_font(16)
+        measure = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+        max_content_width = int(width * 0.75) - 2 * side
+
+        def wrap(text):
+            avg_char = font.getlength("A") or 8
+            lines = textwrap.wrap(text, width=max(int(max_content_width / avg_char), 20), break_long_words=True)
+            wrapped = "\n".join(lines)
+            box = measure.multiline_textbbox((0, 0), wrapped, font=font, spacing=4)
+            return wrapped, box[2] - box[0], box[3] - box[1]
+
+        reply = {"excuse": "Okay, I understand. Take care.", "apology": "Thank you for your apology."}.get(mode, "Okay.")
+        messages = []
+        for text, is_user in [(f"{user_name}: {user_msg}", True), (f"{user_name}: {ai_response_msg}", True),
+                              (f"{sender_name}: {reply}", False)]:
+            wrapped, w, h = wrap(text)
+            messages.append((wrapped, w, h, is_user))
+
+        height = 2 * side - spacing + sum(h + bubble_padding + spacing for _, _, h, _ in messages)
+        img = Image.new("RGB", (width, int(height)), color=bg_color)
+        draw = ImageDraw.Draw(img)
+        y = side
+        for wrapped, w, h, is_user in messages:
+            bubble_h = h + bubble_padding
+            bubble_w = min(w + 2 * side, max_content_width + 2 * side)
+            if is_user:
+                x1 = width - bubble_w - side - tail_width
+                color = user_bubble_color
+                tail = [(width - side - tail_width, y + bubble_h - radius * 1.5), (width - side, y + bubble_h - radius),
+                        (width - side - tail_width, y + bubble_h - radius * 0.5)]
+            else:
+                x1 = side + tail_width
+                color = sender_bubble_color
+                tail = [(side + tail_width, y + bubble_h - radius * 1.5), (side, y + bubble_h - radius),
+                        (side + tail_width, y + bubble_h - radius * 0.5)]
+            draw.rounded_rectangle((x1, y, x1 + bubble_w, y + bubble_h), radius=radius, fill=color)
+            draw.multiline_text((x1 + side, y + bubble_padding / 2), wrapped, fill=text_color, font=font, spacing=4)
+            draw.polygon(tail, fill=color)
+            y += bubble_h + spacing
+        return img
+    except Exception as e:
+        print(f"Error in create_whatsapp_chat: {e}")
+        return None
+
+
+def create_sms_chat(message_text, recipient="Contact"):
+    try:
+        width = 750
+        font = load_font(20)
+        header_font = load_font(16)
+        side_pad, vert_pad, header_space, footer_space = 30, 20, 40, 20
+        measure = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+        wrapped = "\n".join(textwrap.wrap(message_text, width=30, break_long_words=True))
+        box = measure.multiline_textbbox((0, 0), wrapped, font=font, spacing=5)
+        bubble_w = box[2] - box[0] + 2 * side_pad
+        bubble_h = box[3] - box[1] + 2 * vert_pad
+        img = Image.new("RGB", (width, max(100, header_space + bubble_h + footer_space)), (0, 0, 0))
+        draw = ImageDraw.Draw(img)
+        draw.text((width / 2, 15), f"To: {recipient}", fill=(160, 160, 160), font=header_font, anchor="mt")
+        x1 = (width - bubble_w) / 2
+        draw.rounded_rectangle((x1, header_space, x1 + bubble_w, header_space + bubble_h), radius=25, fill=(45, 45, 45))
+        draw.multiline_text((x1 + side_pad, header_space + vert_pad), wrapped, fill=(230, 230, 230), font=font, spacing=5)
+        return img
+    except Exception as e:
+        print(f"Error in create_sms_chat: {e}")
+        return None
+
+
+def create_pdf(text, header):
+    try:
+        buffer = BytesIO()
+        c = canvas.Canvas(buffer, pagesize=LETTER)
+        width, page_height = LETTER
+        c.setFont("Helvetica-Bold", 16)
+        c.drawString(50, page_height - 50, header[:80])
+        c.setFont("Helvetica", 12)
+        c.drawString(50, page_height - 80, f"Date: {datetime.now().strftime('%B %d, %Y')}")
+        c.drawString(50, page_height - 100, "Name: [Your Name Here]")
+        text_object = c.beginText(50, page_height - 140)
+        text_object.setFont("Helvetica", 12)
+        text_object.setLeading(14)
+        for paragraph in text.split("\n"):
+            for line in simpleSplit(paragraph, "Helvetica", 12, width - 100):
+                text_object.textLine(line)
+                if text_object.getY() < 100:
+                    c.drawText(text_object)
+                    c.showPage()
+                    text_object = c.beginText(50, page_height - 50)
+                    text_object.setFont("Helvetica", 12)
+                    text_object.setLeading(14)
+        c.drawText(text_object)
+        final_y = text_object.getY()
+        if final_y < 80:
+            c.showPage()
+            final_y = page_height - 50
+        c.setFont("Helvetica", 12)
+        c.drawString(50, final_y - 30, "Signature: _________________________")
+        c.save()
+        return buffer.getvalue()
+    except Exception as e:
+        print(f"Error creating PDF: {e}")
+        return None
+
+
+def speak_text(text, lang="en"):
+    fp = BytesIO()
+    gTTS(text=text, lang=lang, slow=False).write_to_fp(fp)
+    return fp.getvalue()
+
+
+def translate_text(text, lang_code, lang_name, notes):
+    if lang_code == "en":
+        return text
+    try:
+        with st.spinner(f"Translating to {lang_name}..."):
+            return GoogleTranslator(source="auto", target=lang_code).translate(text) or text
+    except Exception as e:
+        notes.append(f"Translation to {lang_name} failed ({e}). Showing the English version.")
+        return text
+
+
+def build_result(kind, original, lang_name, lang_code, *, heading, box, image, image_caption,
+                 pdf_header, pdf_name):
+    """Does the slow work once (translation, audio, PDF) and returns a dict kept in session_state."""
+    notes = []
+    display = translate_text(original, lang_code, lang_name, notes)
+    audio = None
+    with st.spinner("🎤 Preparing audio..."):
+        try:
+            audio = speak_text(display, lang_code)
+        except Exception as e:
+            notes.append(f"Could not generate audio: {e}")
+    pdf = create_pdf(original, header=pdf_header)
+    if pdf is None:
+        notes.append("Could not generate the PDF.")
+    if image is None:
+        notes.append("Could not generate the preview image.")
+    return {
+        "id": uuid.uuid4().hex[:8], "kind": kind, "original": original, "display": display, "notes": notes,
+        "audio": audio, "heading": heading, "box": box,
+        "image": image_to_png_bytes(image) if image is not None else None, "image_caption": image_caption,
+        "pdf": pdf, "pdf_name": pdf_name, "feedback_given": False,
+    }
+
+
+# -------------- RESULT & FEEDBACK UI ---------------
+FEEDBACK_LABELS = {
+    "excuse": ("👍 Liked it?", "⭐ Favorite?", "💯 Rate it (0-10):"),
+    "apology": ("👍 Liked it?", "⭐ Favorite?", "💯 Rate it (0-10):"),
+    "emergency": ("👍 Effective?", "⭐ Favorite?", "💯 Rate effectiveness (0-10):"),
+}
+
+
+def render_feedback_form(result):
+    if result["feedback_given"]:
+        st.caption("✅ Feedback recorded for this one. Thank you!")
+        return
+    liked_label, fav_label, rating_label = FEEDBACK_LABELS[result["kind"]]
+    rid = result["id"]
+    with st.form(f"feedback_form_{rid}"):
+        st.markdown("##### Your feedback")
+        cols = st.columns(2)
+        liked = cols[0].radio(liked_label, ["Yes", "No"], index=1, horizontal=True, key=f"liked_{rid}")
+        favorite = cols[1].radio(fav_label, ["No", "Yes"], index=0, horizontal=True, key=f"fav_{rid}")
+        rating = st.slider(rating_label, 0, 10, 5, key=f"rate_{rid}")
+        comment = st.text_area("💬 Comments (optional):", key=f"comm_{rid}")
+        if st.form_submit_button("Submit Feedback"):
+            st.session_state.feedback.append({
+                "timestamp": pd.Timestamp.now(tz="UTC"), "item_id": rid, "type": result["kind"],
+                "content": result["original"], "liked": liked, "rating": rating, "favorite": favorite,
+                "comment": comment,
+            })
+            result["feedback_given"] = True
+            st.toast("Feedback saved! Thank you!", icon="🎉")
+
+
+def render_result(result):
+    st.markdown(result["heading"])
+    getattr(st, result["box"])(result["display"])
+    for note in result["notes"]:
+        st.warning(note)
+    if result["audio"]:
+        st.audio(result["audio"], format="audio/mp3")
+    with st.expander("📎 Preview & export"):
+        if result["image"]:
+            st.image(result["image"], caption=result["image_caption"])
+        if result["pdf"]:
+            st.download_button("📄 Download as PDF", data=result["pdf"], file_name=result["pdf_name"],
+                               mime="application/pdf", key=f"pdf_{result['id']}")
+    render_feedback_form(result)
+
+
+# -------------- DASHBOARD ---------------
+def records_to_df(records, columns):
+    return pd.DataFrame(records) if records else pd.DataFrame(columns=columns)
+
+
+def render_dashboard():
+    st.header("📊 Dashboard")
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Excuses", len(st.session_state.excuses))
+    col2.metric("Apologies", len(st.session_state.apologies))
+    col3.metric("Emergency messages", len(st.session_state.emergencies))
+    col4.metric("Feedback", len(st.session_state.feedback))
+    st.markdown("---")
+
+    df_excuses = records_to_df(st.session_state.excuses, [
+        "id", "timestamp", "scenario", "situation", "urgency", "believability", "generated_excuse", "language"])
+    df_apologies = records_to_df(st.session_state.apologies, [
+        "id", "timestamp", "apology_type", "situation", "generated_apology", "language"])
+    df_emergencies = records_to_df(st.session_state.emergencies, [
+        "id", "timestamp", "scenario", "details", "generated_emergency", "language"])
+    df_feedback = records_to_df(st.session_state.feedback, [
+        "timestamp", "item_id", "type", "content", "liked", "rating", "favorite", "comment"])
+
+    if df_feedback.empty:
+        st.info("No feedback yet. Generate something and rate it to see the analysis here.")
+    else:
+        st.subheader("📈 Feedback analysis")
+        col_chart1, col_chart2 = st.columns(2)
+        with col_chart1:
+            type_counts = df_feedback["type"].value_counts().rename_axis("type").reset_index(name="count")
+            fig = px.pie(type_counts, values="count", names="type", title="Feedback by type", hole=0.3)
+            fig.update_traces(textposition="inside", textinfo="percent+label")
+            st.plotly_chart(fig)
+        with col_chart2:
+            st.markdown("##### Liked vs. not liked")
+            st.bar_chart(df_feedback["liked"].value_counts())
+        st.markdown("---")
+
+        st.subheader("🏆 Excuse leaderboard")
+        excuse_feedback = df_feedback[df_feedback["type"] == "excuse"]
+        merged = excuse_feedback.merge(df_excuses, left_on="item_id", right_on="id", how="inner",
+                                       suffixes=("_fb", "_exc")) if not df_excuses.empty else pd.DataFrame()
+        if merged.empty:
+            st.info("Rate a few excuses to see the leaderboard.")
+        else:
+            st.markdown("#### ⭐ Top rated")
+            for i, row in enumerate(merged.sort_values("rating", ascending=False).head(3).itertuples(index=False), 1):
+                st.markdown(f"**{i}. \"{row.generated_excuse}\"**")
+                st.caption(f"Rating {row.rating}/10 · {row.scenario} · for: {row.situation} · "
+                           f"liked: {row.liked} · favorite: {row.favorite}")
+            st.markdown("#### 📊 Rating distribution")
+            st.bar_chart(merged["rating"].value_counts().sort_index())
+            sort_cols = ["rating", "timestamp_fb"]
+            for title, column, limit in [("#### ❤️ Favorites", "favorite", None), ("#### 👍 Most liked", "liked", 5)]:
+                st.markdown(title)
+                picked = merged[merged[column] == "Yes"].sort_values(sort_cols, ascending=False)
+                if picked.empty:
+                    st.info("Nothing here yet.")
+                for row in (picked if limit is None else picked.head(limit)).itertuples(index=False):
+                    st.markdown(f"- \"{row.generated_excuse}\" (rating {row.rating})")
+
+    st.markdown("---")
+    st.subheader("📚 History")
+    if not df_excuses.empty:
+        with st.expander("📜 Excuses"):
+            st.dataframe(df_excuses[["timestamp", "scenario", "situation", "urgency", "believability",
+                                     "generated_excuse", "language"]].sort_values("timestamp", ascending=False))
+    if not df_apologies.empty:
+        with st.expander("💌 Apologies"):
+            st.dataframe(df_apologies[["timestamp", "apology_type", "situation", "generated_apology",
+                                       "language"]].sort_values("timestamp", ascending=False))
+    if not df_emergencies.empty:
+        with st.expander("🚨 Emergency messages"):
+            st.dataframe(df_emergencies[["timestamp", "scenario", "details", "generated_emergency",
+                                         "language"]].sort_values("timestamp", ascending=False))
+    if not df_feedback.empty:
+        with st.expander("📝 Feedback"):
+            st.dataframe(df_feedback.sort_values("timestamp", ascending=False))
+
+
+def render_footer():
+    st.markdown("---")
+    st.markdown("<p style='text-align: center;'>Built with fine-tuned GPT-2 and Streamlit. "
+                "For entertainment purposes only.</p>", unsafe_allow_html=True)
+
+
+# ================= PAGE =================
+st.title("🎭 Excusify")
+st.markdown("Excuses, apologies and urgent messages written by GPT-2 models fine-tuned on hand-written datasets.")
+
+st.sidebar.header("⚙️ Settings")
+parental_lock = st.sidebar.toggle("Parental Control (filter inappropriate content)", value=True)
+st.sidebar.markdown("---")
+view = st.sidebar.radio("View", ["🎭 Generator", "📊 Dashboard"], key="view_select")
+st.sidebar.markdown("---")
+st.sidebar.caption(f"[Source code]({GITHUB_URL}) · Models: "
+                   + " · ".join(f"[{k}](https://huggingface.co/{v})" for k, v in MODEL_REPOS.items()))
+
+if view == "📊 Dashboard":
+    render_dashboard()
+    render_footer()
+    st.stop()
+
+LANGUAGES = {
+    "English": "en", "Spanish": "es", "French": "fr", "German": "de", "Hindi": "hi",
+    "Italian": "it", "Portuguese": "pt", "Russian": "ru", "Japanese": "ja", "Chinese (Simplified)": "zh-CN",
+}
+LEVELS = ["low", "medium", "high"]
+
+cols_top = st.columns(2)
+with cols_top[0]:
+    mode = st.selectbox("🎯 Mode:", ["Excuse", "Apology", "Emergency"], key="main_mode_select")
+with cols_top[1]:
+    lang_name = st.selectbox("🌐 Language:", list(LANGUAGES), key="main_lang_select")
+lang_code = LANGUAGES[lang_name]
+
 
 if mode == "Excuse":
-    scenario_input = st.text_input("Scenario | Urgency | Believability", "work | high | high")
-    reason_input = st.text_input("What do you need an excuse for?", "Late submission")
-    if st.button("Generate Excuse"):
-        if not scenario_input.strip() or not reason_input.strip():
-            st.warning("Please enter all required fields.")
+    st.subheader("📝 Excuse details")
+    situation = st.text_input("What do you need an excuse for?", "Forgot to submit the report", key="exc_situation")
+    cols = st.columns(3)
+    with cols[0]:
+        scenario = st.selectbox("Context:", ["work", "school", "family", "social"], key="exc_scenario")
+    with cols[1]:
+        urgency = st.select_slider("Urgency:", LEVELS, value="medium", key="exc_urgency",
+                                   help="How serious the reason is: low = minor slip, high = emergency.")
+    with cols[2]:
+        believability = st.select_slider("Believability:", LEVELS, value="high", key="exc_believability",
+                                         help="high = ordinary and believable, low = absurd and funny.")
+
+    if st.button("💡 Generate Excuse", type="primary", key="exc_generate_button"):
+        if not situation.strip():
+            st.warning("Please describe what you need an excuse for.")
         else:
-            prompt = scenario_input.strip() + " :"
-            excuse = generate_text(prompt, excuse_gen)
-            if not is_appropriate(excuse, parental_lock):
-                st.error("🚫 Inappropriate content blocked.")
+            excuse = run_generation("excuse", excuse_prompt(scenario, urgency, believability, situation),
+                                    situation, "🧠 Thinking of a good excuse...", parental_lock)
+            if not excuse:
+                st.session_state.results.pop("excuse", None)
             else:
-                final_excuse = GoogleTranslator(source='auto', target=lang_code).translate(excuse) if lang_code != 'en' else excuse
-                st.success(final_excuse)
-                st.audio(speak_text(final_excuse, lang_code), format='audio/mp3')
-                img = create_whatsapp_chat(excuse, "Take care!", mode="excuse")
-                st.image(img, caption="WhatsApp-style Chat")
-                pdf_path = create_pdf(excuse)
-                with open(pdf_path, "rb") as f:
-                    st.download_button("Download PDF Proof", f, file_name="excuse_proof.pdf")
-                st.text(generate_location_log())
-                # Save to session state
+                topic = situation.strip().rstrip(".!?")
+                roles = {
+                    "work": ("Employee", "Boss", "Hi, I'm really sorry about this."),
+                    "school": ("Student", "Teacher", "Good morning, I wanted to explain something."),
+                    "family": ("Me", "Family", "Hey, I'm so sorry about this."),
+                    "social": ("Me", "Friend", "Hey! So sorry about this."),
+                }
+                user_name, recipient, opener = roles[scenario]
+                result = build_result(
+                    "excuse", excuse, lang_name, lang_code, heading="#### ✨ Your excuse:", box="success",
+                    image=create_whatsapp_chat(opener, excuse, user_name, recipient, mode="excuse"),
+                    image_caption=f"Chat preview: {user_name} → {recipient}",
+                    pdf_header=f"Note: {topic}", pdf_name=f"{scenario}_excuse.pdf",
+                )
+                st.session_state.results["excuse"] = result
                 st.session_state.excuses.append({
-                    'timestamp': pd.Timestamp.now(),
-                    'scenario': scenario_input.split('|')[0].strip().lower(),
-                    'urgency': scenario_input.split('|')[1].strip().lower(),
-                    'believability': scenario_input.split('|')[2].strip().lower(),
-                    'what_excuse_for': reason_input,
-                    'generated_excuse': excuse
+                    "id": result["id"], "timestamp": pd.Timestamp.now(tz="UTC"), "scenario": scenario,
+                    "situation": situation, "urgency": urgency, "believability": believability,
+                    "generated_excuse": excuse, "language": lang_name,
                 })
-                # Feedback widgets in a form
-                with st.form("excuse_feedback_form"):
-                    st.subheader("Feedback")
-                    liked = st.radio("Did you like this excuse?", ["Yes", "No"])
-                    favorite = st.radio("Mark as Favorite?", ["Yes", "No"])
-                    rating = st.slider("Rate this excuse (0-10):", 0, 10, 5)
-                    comment = st.text_area("Comments (optional):")
-                    submitted = st.form_submit_button("Save Feedback")
-                    if submitted:
-                        st.session_state.feedback.append({
-                            'timestamp': pd.Timestamp.now(),
-                            'type': 'excuse',
-                            'content': excuse,
-                            'liked': liked,
-                            'rating': rating,
-                            'favorite': favorite,
-                            'comment': comment
-                        })
-                        st.success("Feedback saved!")
+
+    if "excuse" in st.session_state.results:
+        render_result(st.session_state.results["excuse"])
+
 
 elif mode == "Apology":
-    apology_type = st.selectbox("Apology Type", ["emotional", "professional"])
-    if st.button("Generate Apology"):
-        prompt = f"{apology_type} :"
-        apology = generate_text(prompt, apology_gen)
-        if not is_appropriate(apology, parental_lock):
-            st.error("🚫 Inappropriate content blocked.")
+    st.subheader("💌 Apology details")
+    APOLOGY_TYPES = {"emotional": "Emotional (heartfelt)", "professional": "Professional (formal)",
+                     "informal": "Informal (casual)"}
+    apology_type = st.selectbox("Tone:", list(APOLOGY_TYPES), format_func=APOLOGY_TYPES.get, key="apo_type")
+    situation = st.text_input("What are you apologizing for?", "being late to the meeting", key="apo_situation")
+
+    if st.button("🙏 Generate Apology", type="primary", key="apo_generate_button"):
+        if not situation.strip():
+            st.warning("Please describe what you are apologizing for.")
         else:
-            final_apology = GoogleTranslator(source='auto', target=lang_code).translate(apology) if lang_code != 'en' else apology
-            st.success(final_apology)
-            st.audio(speak_text(final_apology, lang_code), format='audio/mp3')
-            img = create_whatsapp_chat(apology, "Thank you for your apology.", mode="apology")
-            st.image(img, caption="WhatsApp-style Chat")
-            pdf_path = create_pdf(apology, header="Apology Letter")
-            with open(pdf_path, "rb") as f:
-                st.download_button("Download PDF Letter", f, file_name="apology_letter.pdf")
-            st.text(generate_location_log())
-            # Save to session state
-            st.session_state.apologies.append({
-                'timestamp': pd.Timestamp.now(),
-                'apology_type': apology_type,
-                'generated_apology': apology
-            })
-            # Feedback widgets in a form
-            with st.form("apology_feedback_form"):
-                st.subheader("Feedback")
-                liked = st.radio("Did you like this apology?", ["Yes", "No"])
-                favorite = st.radio("Mark as Favorite?", ["Yes", "No"])
-                rating = st.slider("Rate this apology (0-10):", 0, 10, 5)
-                comment = st.text_area("Comments (optional):")
-                submitted = st.form_submit_button("Save Feedback")
-                if submitted:
-                    st.session_state.feedback.append({
-                        'timestamp': pd.Timestamp.now(),
-                        'type': 'apology',
-                        'content': apology,
-                        'liked': liked,
-                        'rating': rating,
-                        'favorite': favorite,
-                        'comment': comment
-                    })
-                    st.success("Feedback saved!")
+            apology = run_generation("apology", apology_prompt(apology_type, situation), situation,
+                                     "🖋️ Writing your apology...", parental_lock)
+            if not apology:
+                st.session_state.results.pop("apology", None)
+            else:
+                recipient = {"emotional": "Loved one", "professional": "Manager", "informal": "Friend"}[apology_type]
+                opener = "Hi, I owe you an apology."
+                result = build_result(
+                    "apology", apology, lang_name, lang_code, heading="#### ✨ Your apology:", box="info",
+                    image=create_whatsapp_chat(opener, apology, "Me", recipient, mode="apology"),
+                    image_caption=f"Chat preview: {APOLOGY_TYPES[apology_type]}",
+                    pdf_header=f"Apology: {situation.strip().rstrip('.!?')}", pdf_name=f"{apology_type}_apology.pdf",
+                )
+                st.session_state.results["apology"] = result
+                st.session_state.apologies.append({
+                    "id": result["id"], "timestamp": pd.Timestamp.now(tz="UTC"), "apology_type": apology_type,
+                    "situation": situation, "generated_apology": apology, "language": lang_name,
+                })
+
+    if "apology" in st.session_state.results:
+        render_result(st.session_state.results["apology"])
+
 
 elif mode == "Emergency":
-    emergency_scenario = st.selectbox("Emergency Scenario", ["work", "school", "family", "social"])
-    if st.button("Generate Emergency Message"):
-        prompt = f"{emergency_scenario}:"
-        message = generate_text(prompt, emergency_gen)
-        if not is_appropriate(message, parental_lock):
-            st.error("🚫 Inappropriate content blocked.")
+    st.subheader("🚨 Emergency message details")
+    RECIPIENTS = {
+        "work issue": "Manager", "school absence": "Class Teacher", "family matter": "Manager",
+        "social event cancellation": "Friends", "car trouble": "Manager", "medical issue": "Manager",
+        "stuck somewhere": "Friend", "urgent help needed": "Best Friend",
+    }
+    scenario = st.selectbox("Scenario:", list(RECIPIENTS), key="em_scenario")
+    details = st.text_input("Details (optional, e.g. flat tyre on the highway):", "", key="em_details")
+
+    if st.button("📢 Generate Message", type="primary", key="em_generate_button"):
+        message = run_generation("emergency", emergency_prompt(scenario, details), details or scenario,
+                                 "📡 Writing an urgent message...", parental_lock, max_new_tokens=70)
+        if not message:
+            st.session_state.results.pop("emergency", None)
         else:
-            final_msg = GoogleTranslator(source='auto', target=lang_code).translate(message) if lang_code != 'en' else message
-            st.success(final_msg)
-            st.audio(speak_text(final_msg, lang_code), format='audio/mp3')
-            img = create_sms_chat(message)
-            st.image(img, caption="SMS-style Emergency Alert")
-            pdf_path = create_pdf(message, header="Emergency Notification")
-            with open(pdf_path, "rb") as f:
-                st.download_button("Download Emergency PDF", f, file_name="emergency_alert.pdf")
-            st.text(generate_location_log())
-            # Save to session state
+            result = build_result(
+                "emergency", message, lang_name, lang_code, heading="#### ✨ Your message:", box="warning",
+                image=create_sms_chat(message, recipient=RECIPIENTS[scenario]),
+                image_caption=f"Message preview (to {RECIPIENTS[scenario]})",
+                pdf_header=f"Urgent message: {scenario}", pdf_name=f"urgent_{scenario.replace(' ', '_')}.pdf",
+            )
+            st.session_state.results["emergency"] = result
             st.session_state.emergencies.append({
-                'timestamp': pd.Timestamp.now(),
-                'scenario': emergency_scenario,
-                'generated_emergency': message
+                "id": result["id"], "timestamp": pd.Timestamp.now(tz="UTC"), "scenario": scenario,
+                "details": details, "generated_emergency": message, "language": lang_name,
             })
-            # Feedback widgets in a form
-            with st.form("emergency_feedback_form"):
-                st.subheader("Feedback")
-                liked = st.radio("Did you like this emergency message?", ["Yes", "No"])
-                favorite = st.radio("Mark as Favorite?", ["Yes", "No"])
-                rating = st.slider("Rate this emergency message (0-10):", 0, 10, 5)
-                comment = st.text_area("Comments (optional):")
-                submitted = st.form_submit_button("Save Feedback")
-                if submitted:
-                    st.session_state.feedback.append({
-                        'timestamp': pd.Timestamp.now(),
-                        'type': 'emergency',
-                        'content': message,
-                        'liked': liked,
-                        'rating': rating,
-                        'favorite': favorite,
-                        'comment': comment
-                    })
-                    st.success("Feedback saved!")
+
+    if "emergency" in st.session_state.results:
+        render_result(st.session_state.results["emergency"])
+
+render_footer()
