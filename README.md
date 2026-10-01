@@ -73,9 +73,10 @@ The notebook [`training/train_excusify.ipynb`](training/train_excusify.ipynb) tr
 | Objective | causal LM loss on the completion **and its end-of-text token**; prompt tokens are masked |
 | Split | 90 / 10, stratified by scenario or tone |
 | Hyperparameters | batch size 8, cosine schedule, 10% warm-up; learning rate and epochs from a sweep (5e-5 × 5, 1e-4 × 10, 1e-4 × 20) |
-| Model selection | the sweep setting with the highest *situation match* (see below) |
+| Model selection | among settings within 0.10 of the best *situation match* (see below), the one with the lowest held-out loss |
+| Decoding | top-p 0.92, temperature 0.8, no repetition penalties; the app samples 6 answers and picks one of the most relevant |
 
-Low loss alone didn't mean useful answers: the first v2 run kept the epoch with the lowest held-out loss, and its excuses were fluent but often ignored the situation. So the notebook also measures **situation match**, the share of generated answers that mention at least one content word of the situation they were asked for. It is measured on held-out prompts and on situations that appear nowhere in the data; the hand-written answers score 94–100% on the same measure. Loss, perplexity and situation match for the chosen settings are printed by step 8 and recorded in each model card:
+Low loss alone didn't mean useful answers: the first v2 run kept the epoch with the lowest held-out loss, and its excuses were fluent but often ignored the situation. So the notebook also measures **situation match**, the share of generated answers that mention at least one content word of the situation they were asked for. It is measured on held-out prompts and on situations that appear nowhere in the data; the hand-written answers score 94–100% on the same measure. Training longer raises held-out loss (the model grows confident in the dataset's own phrasings) while situation match climbs steeply, which is why the selection rule trades the two off explicitly. The sweep and the chosen settings are printed by step 8 and recorded in each model card:
 [excuses](https://huggingface.co/Sohamb2005/gpt2-finetuned-excuses) ·
 [apologies](https://huggingface.co/Sohamb2005/gpt2-finetuned-apologies) ·
 [emergency messages](https://huggingface.co/Sohamb2005/gpt2-finetuned-emergency).
@@ -90,7 +91,8 @@ The first version generated text that often didn't make sense or ignored what th
 2. **The model never learned to stop.** With `pad_token = eos_token`, `DataCollatorForLanguageModeling` masks every end-of-text label, so the model rambled and the app had to cut text at the first full stop. Labels are now built by hand so the end-of-text token is a training target.
 3. **The data didn't say what an excuse was for.** The old rows only had scenario, urgency and believability, so the "what do you need an excuse for?" box couldn't influence the output. The datasets were rebuilt around a `Situation` column. The old excuse data was also 33% duplicates, and 270 excuses appeared under conflicting labels.
 4. **App bugs.** Feedback was lost because the feedback form only existed during the button-click rerun. The dashboard leaderboard never showed because of a pandas merge-suffix mistake. The parental filter matched substrings, so "dead" blocked "deadline" and "hang" blocked "change". Chinese translation used an invalid language code.
-5. **Removed what didn't work.** A random "location log" (coordinates and addresses that didn't match), and "ranking" and "prediction" claims that the code didn't actually implement.
+5. **Decoding fought the prompt** (found while building v2). `repetition_penalty` and `no_repeat_ngram_size` also count prompt tokens in Hugging Face Transformers, so they penalised exactly the words the model should repeat: *"late to the meeting"* came back as *"early to the gathering"*. Both are now off.
+6. **Removed what didn't work.** A random "location log" (coordinates and addresses that didn't match), and "ranking" and "prediction" claims that the code didn't actually implement.
 
 ## Run it locally
 

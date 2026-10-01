@@ -3,6 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="Excusify", page_icon="🎭", layout="centered")
 
 import os
+import random
 import re
 import textwrap
 import uuid
@@ -58,8 +59,10 @@ def emergency_prompt(scenario, details=""):
     return f"{normalize(scenario)} | {details} :" if details else f"{normalize(scenario)} :"
 
 
-GEN_KWARGS = dict(do_sample=True, top_p=0.9, top_k=50, temperature=0.7,
-                  no_repeat_ngram_size=3, repetition_penalty=1.1)
+# repetition_penalty and no_repeat_ngram_size stay OFF: in transformers both also count the prompt, so they
+# punish the model for repeating the situation ("late" became "early", "meeting" became "gathering")
+GEN_KWARGS = dict(do_sample=True, top_p=0.92, top_k=50, temperature=0.8,
+                  repetition_penalty=1.0, no_repeat_ngram_size=0)
 
 STOPWORDS = {
     "the", "and", "for", "with", "that", "this", "was", "were", "are", "you", "your", "our", "but", "not",
@@ -160,8 +163,10 @@ def run_generation(kind, prompt, relevance_target, spinner_msg, parental_lock, *
     if not allowed:
         st.error("🚫 Inappropriate content detected and blocked by Parental Control. Please try again.")
         return None
-    # highest relevance wins; ties keep the model's sampling order
-    return max(enumerate(allowed), key=lambda pair: (relevance(pair[1], relevance_target), -pair[0]))[1]
+    # keep the answers that mention the situation most, then pick one at random for variety
+    allowed = list(dict.fromkeys(allowed))
+    best = max(relevance(c, relevance_target) for c in allowed)
+    return random.choice([c for c in allowed if relevance(c, relevance_target) == best])
 
 
 # -------------- PREVIEWS & EXPORTS ---------------
