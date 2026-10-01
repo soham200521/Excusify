@@ -36,10 +36,10 @@ if "results" not in st.session_state:
     st.session_state.results = {}
 
 
-# -------------- PROMPT FORMAT (identical to training/train_excusify.ipynb) ---------------
+# -------------- PROMPT FORMAT, DECODING & RELEVANCE (verbatim copy of step 2 in training/train_excusify.ipynb) ---------------
 def normalize(text):
     """Lower-case, straight quotes, no separator characters, no trailing punctuation."""
-    text = (text or "").replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
+    text = (text or "").replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
     text = re.sub(r"[|:\n]+", " ", text)
     text = re.sub(r"\s+", " ", text).strip().rstrip(".!?").strip()
     return text.lower()
@@ -58,17 +58,37 @@ def emergency_prompt(scenario, details=""):
     return f"{normalize(scenario)} | {details} :" if details else f"{normalize(scenario)} :"
 
 
-# -------------- MODELS & GENERATION ---------------
-GEN_KWARGS = dict(do_sample=True, top_p=0.92, top_k=50, temperature=0.8,
+GEN_KWARGS = dict(do_sample=True, top_p=0.9, top_k=50, temperature=0.7,
                   no_repeat_ngram_size=3, repetition_penalty=1.1)
-NUM_CANDIDATES = 4
 
 STOPWORDS = {
     "the", "and", "for", "with", "that", "this", "was", "were", "are", "you", "your", "our", "but", "not",
     "have", "had", "has", "from", "about", "into", "all", "can", "could", "will", "would", "didn't", "don't",
     "can't", "i'm", "i've", "i'll", "she", "her", "him", "his", "they", "them", "its", "it's", "too", "very",
-    "got", "get", "just", "out", "today", "tonight", "yesterday",
+    "got", "get", "just", "out", "today", "tonight", "yesterday", "being", "been", "after", "before", "some",
+    "then", "than", "there", "their", "when", "what", "because", "sorry", "really", "need", "make", "my",
 }
+
+
+def _stem(word):
+    for suffix in ("ing", "ed", "es", "s"):
+        if len(word) > len(suffix) + 2 and word.endswith(suffix):
+            word = word[: -len(suffix)]
+            break
+    return word.rstrip("'")[:5]
+
+
+def _stems(text):
+    return {_stem(w) for w in re.findall(r"[a-z']+", (text or "").lower()) if len(w) > 2 and w not in STOPWORDS}
+
+
+def relevance(candidate, target):
+    """How many content words of the user's input the candidate mentions (5-letter stems)."""
+    return len(_stems(target) & _stems(candidate))
+
+
+# -------------- MODELS & GENERATION ---------------
+NUM_CANDIDATES = 6
 
 
 @st.cache_resource(show_spinner=False)
@@ -101,15 +121,6 @@ def generate_candidates(kind, prompt, max_new_tokens=60):
         )
     start = inputs["input_ids"].shape[1]
     return [clean_completion(tokenizer.decode(seq[start:], skip_special_tokens=True)) for seq in output]
-
-
-def _stems(text):
-    return {w[:5] for w in re.findall(r"[a-z']+", text.lower()) if len(w) > 2 and w not in STOPWORDS}
-
-
-def relevance(candidate, target):
-    """How many content words of the user's input the candidate mentions (5-letter stems)."""
-    return len(_stems(target) & _stems(candidate))
 
 
 BLOCKED_WORDS = [

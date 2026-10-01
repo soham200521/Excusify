@@ -29,7 +29,7 @@ Every result can be translated into 10 languages, played back as audio, previewe
 ```mermaid
 flowchart LR
     A["User input<br/>situation + options"] --> B["Prompt builder<br/>(same format as training)"]
-    B --> C["Fine-tuned GPT-2<br/>samples 4 candidates"]
+    B --> C["Fine-tuned GPT-2<br/>samples 6 candidates"]
     C --> D["Clean-up<br/>complete sentences only"]
     D --> E["Parental-control<br/>word filter"]
     E --> F["Relevance ranking<br/>overlap with the situation"]
@@ -43,7 +43,7 @@ Each mode has its own model. The app turns the form into the exact text format t
 work | medium | high | forgot to submit the report :
 ```
 
-and the model writes the completion after the colon, then stops with an end-of-text token. Four candidates are sampled; the app drops incomplete or filtered ones and keeps the candidate that mentions the most words from your situation.
+and the model writes the completion after the colon, then stops with an end-of-text token. Six candidates are sampled; the app drops incomplete or filtered ones and keeps the candidate that mentions the most words from your situation.
 
 ## Datasets
 
@@ -64,7 +64,7 @@ Quality checks: no duplicate texts, straight apostrophes only, and no row contai
 
 ## Training
 
-The notebook [`training/train_excusify.ipynb`](training/train_excusify.ipynb) trains and uploads all three models (a few minutes on a free Colab T4 GPU).
+The notebook [`training/train_excusify.ipynb`](training/train_excusify.ipynb) trains, evaluates and uploads all three models (about 20–30 minutes on a free Colab T4 GPU).
 
 | Setting | Value |
 |---|---|
@@ -72,15 +72,15 @@ The notebook [`training/train_excusify.ipynb`](training/train_excusify.ipynb) tr
 | Example format | `scenario \| urgency \| believability \| situation : excuse<\|endoftext\|>` |
 | Objective | causal LM loss on the completion **and its end-of-text token**; prompt tokens are masked |
 | Split | 90 / 10, stratified by scenario or tone |
-| Hyperparameters | 5 epochs, learning rate 5e-5, batch size 8, cosine schedule, 10% warm-up |
-| Model selection | best epoch by held-out loss |
+| Hyperparameters | batch size 8, cosine schedule, 10% warm-up; learning rate and epochs from a sweep (5e-5 × 5, 1e-4 × 10, 1e-4 × 20) |
+| Model selection | the sweep setting with the highest *situation match* (see below) |
 
-Held-out loss and perplexity, before and after fine-tuning, are printed by step 8 of the notebook and recorded in each model card:
+Low loss alone didn't mean useful answers: the first v2 run kept the epoch with the lowest held-out loss, and its excuses were fluent but often ignored the situation. So the notebook also measures **situation match**, the share of generated answers that mention at least one content word of the situation they were asked for. It is measured on held-out prompts and on situations that appear nowhere in the data; the hand-written answers score 94–100% on the same measure. Loss, perplexity and situation match for the chosen settings are printed by step 8 and recorded in each model card:
 [excuses](https://huggingface.co/Sohamb2005/gpt2-finetuned-excuses) ·
 [apologies](https://huggingface.co/Sohamb2005/gpt2-finetuned-apologies) ·
 [emergency messages](https://huggingface.co/Sohamb2005/gpt2-finetuned-emergency).
 
-<!-- Paste the table printed by step 8 of the notebook here. -->
+<!-- Paste the two tables printed by step 8 of the notebook here. -->
 
 ## What changed in v2
 
