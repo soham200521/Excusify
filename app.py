@@ -2,6 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Excusify", page_icon="🎭", layout="centered")
 
+import json
 import os
 import re
 import textwrap
@@ -11,20 +12,20 @@ from io import BytesIO
 
 import pandas as pd
 import plotly.express as px
+import streamlit.components.v1 as components
 import torch
-from deep_translator import GoogleTranslator
-from gtts import gTTS
 from PIL import Image, ImageDraw, ImageFont
 from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.utils import simpleSplit
 from reportlab.pdfgen import canvas
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer
 
 MODEL_REPOS = {
     "excuse": "Sohamb2005/gpt2-finetuned-excuses",
     "apology": "Sohamb2005/gpt2-finetuned-apologies",
     "emergency": "Sohamb2005/gpt2-finetuned-emergency",
 }
+TRANSLATION_REPO = "facebook/nllb-200-distilled-600M"   # Meta's NLLB-200, runs inside the app
 GITHUB_URL = "https://github.com/soham200521/Excusify"
 
 # -------------- SESSION STATE ---------------
@@ -330,18 +331,91 @@ def create_pdf(text, header):
         return None
 
 
-def speak_text(text, lang="en"):
-    fp = BytesIO()
-    gTTS(text=text, lang=lang, slow=False).write_to_fp(fp)
-    return fp.getvalue()
+# browser voices use BCP-47 tags
+SPEECH_LANGS = {"en": "en-US", "es": "es-ES", "fr": "fr-FR", "de": "de-DE", "hi": "hi-IN", "it": "it-IT",
+                "pt": "pt-BR", "ru": "ru-RU", "ja": "ja-JP", "zh-CN": "zh-CN"}
+
+SPEECH_WIDGET = """
+<style>
+  body { margin: 0; font-family: "Source Sans Pro", sans-serif; }
+  button { font: inherit; font-size: 15px; padding: 6px 14px; border-radius: 8px; cursor: pointer;
+           border: 1px solid rgba(128, 128, 128, 0.45); background: #f0f2f6; color: #31333f; }
+  button:hover { border-color: #ff4b4b; color: #ff4b4b; }
+  span { margin-left: 10px; font-size: 13px; color: #808495; }
+</style>
+<button id="speak">🔊 Listen</button><span id="note"></span>
+<script>
+  const TEXT = __TEXT__, LANG = __LANG__;
+  const button = document.getElementById("speak"), note = document.getElementById("note");
+  const synth = window.speechSynthesis;
+  if (!synth) { button.disabled = true; note.textContent = "Read-aloud isn't supported in this browser."; }
+  else { synth.getVoices(); synth.onvoiceschanged = () => synth.getVoices(); }
+  function pickVoice() {
+    const voices = synth.getVoices(), want = LANG.toLowerCase(), base = want.split("-")[0];
+    const norm = (v) => v.lang.toLowerCase().replace("_", "-");
+    return voices.find((v) => norm(v) === want) || voices.find((v) => norm(v).split("-")[0] === base);
+  }
+  button.addEventListener("click", () => {
+    try {
+      if (synth.speaking) { synth.cancel(); return; }
+      const utterance = new SpeechSynthesisUtterance(TEXT);
+      utterance.lang = LANG;
+      const voice = pickVoice();
+      if (voice) { utterance.voice = voice; note.textContent = ""; }
+      else if (synth.getVoices().length) { note.textContent = "No " + LANG + " voice in this browser, using the default voice."; }
+      utterance.onstart = () => { button.textContent = "⏹ Stop"; };
+      utterance.onend = utterance.onerror = () => { button.textContent = "🔊 Listen"; };
+      synth.speak(utterance);
+    } catch (err) {
+      note.textContent = "Couldn't read aloud: " + err.message;
+    }
+  });
+</script>
+"""
+
+
+def speech_widget(text, lang_code):
+    """Read-aloud button that uses the visitor's browser (Web Speech API): no server calls, no rate limits."""
+    def js(value):
+        return json.dumps(value).replace("</", "<\\/")
+    html = SPEECH_WIDGET.replace("__TEXT__", js(text)).replace("__LANG__", js(SPEECH_LANGS.get(lang_code, "en-US")))
+    components.html(html, height=44)
+
+
+# NLLB-200 language codes
+NLLB_CODES = {"es": "spa_Latn", "fr": "fra_Latn", "de": "deu_Latn", "hi": "hin_Deva", "it": "ita_Latn",
+              "pt": "por_Latn", "ru": "rus_Cyrl", "ja": "jpn_Jpan", "zh-CN": "zho_Hans"}
+
+
+@st.cache_resource(show_spinner=False)
+def load_translator():
+    tokenizer = AutoTokenizer.from_pretrained(TRANSLATION_REPO, src_lang="eng_Latn")
+    model = AutoModelForSeq2SeqLM.from_pretrained(TRANSLATION_REPO)
+    model.eval()
+    return tokenizer, model
+
+
+@st.cache_data(show_spinner=False, max_entries=500)
+def _translate(text, lang_code):
+    tokenizer, model = load_translator()
+    inputs = tokenizer(text, return_tensors="pt")
+    with torch.no_grad():
+        output = model.generate(**inputs, forced_bos_token_id=tokenizer.convert_tokens_to_ids(NLLB_CODES[lang_code]),
+                                num_beams=4, max_new_tokens=128)
+    return tokenizer.decode(output[0], skip_special_tokens=True).strip() or text
 
 
 def translate_text(text, lang_code, lang_name, notes):
+    """Translates with a local NLLB-200 model, so there is no external API to rate-limit the app."""
     if lang_code == "en":
         return text
     try:
+        if "translator" not in st.session_state.get("_loaded", set()):
+            with st.spinner("Loading the translation model (the first time downloads about 2.5 GB)..."):
+                load_translator()
+            st.session_state.setdefault("_loaded", set()).add("translator")
         with st.spinner(f"Translating to {lang_name}..."):
-            return GoogleTranslator(source="auto", target=lang_code).translate(text) or text
+            return _translate(text, lang_code)
     except Exception as e:
         notes.append(f"Translation to {lang_name} failed ({e}). Showing the English version.")
         return text
@@ -349,15 +423,9 @@ def translate_text(text, lang_code, lang_name, notes):
 
 def build_result(kind, original, lang_name, lang_code, *, heading, box, image, image_caption,
                  pdf_header, pdf_name):
-    """Does the slow work once (translation, audio, PDF) and returns a dict kept in session_state."""
+    """Does the slow work once (translation, PDF) and returns a dict kept in session_state."""
     notes = []
     display = translate_text(original, lang_code, lang_name, notes)
-    audio = None
-    with st.spinner("🎤 Preparing audio..."):
-        try:
-            audio = speak_text(display, lang_code)
-        except Exception as e:
-            notes.append(f"Could not generate audio: {e}")
     pdf = create_pdf(original, header=pdf_header)
     if pdf is None:
         notes.append("Could not generate the PDF.")
@@ -365,7 +433,7 @@ def build_result(kind, original, lang_name, lang_code, *, heading, box, image, i
         notes.append("Could not generate the preview image.")
     return {
         "id": uuid.uuid4().hex[:8], "kind": kind, "original": original, "display": display, "notes": notes,
-        "audio": audio, "heading": heading, "box": box,
+        "lang_code": lang_code, "heading": heading, "box": box,
         "image": image_to_png_bytes(image) if image is not None else None, "image_caption": image_caption,
         "pdf": pdf, "pdf_name": pdf_name, "feedback_given": False,
     }
@@ -407,8 +475,7 @@ def render_result(result):
     getattr(st, result["box"])(result["display"])
     for note in result["notes"]:
         st.warning(note)
-    if result["audio"]:
-        st.audio(result["audio"], format="audio/mp3")
+    speech_widget(result["display"], result["lang_code"])
     with st.expander("📎 Preview & export"):
         if result["image"]:
             st.image(result["image"], caption=result["image_caption"])
@@ -514,7 +581,8 @@ st.sidebar.markdown("---")
 view = st.sidebar.radio("View", ["🎭 Generator", "📊 Dashboard"], key="view_select")
 st.sidebar.markdown("---")
 st.sidebar.caption(f"[Source code]({GITHUB_URL}) · Models: "
-                   + " · ".join(f"[{k}](https://huggingface.co/{v})" for k, v in MODEL_REPOS.items()))
+                   + " · ".join(f"[{k}](https://huggingface.co/{v})" for k, v in MODEL_REPOS.items())
+                   + f" · Translation: [NLLB-200](https://huggingface.co/{TRANSLATION_REPO})")
 
 if view == "📊 Dashboard":
     render_dashboard()

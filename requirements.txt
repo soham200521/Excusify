@@ -1,9 +1,8 @@
 streamlit>=1.40
 transformers>=4.41
 torch
+sentencepiece
 pandas
 plotly
 pillow
 reportlab
-gTTS
-deep-translator

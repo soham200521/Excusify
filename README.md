@@ -1,6 +1,6 @@
 # 🎭 Excusify
 
-**Situation-aware excuse, apology and urgent-message generator.** Three GPT-2 models, each fine-tuned on a hand-written dataset, served through a Streamlit app with translation, text-to-speech, chat-style previews, PDF export and a feedback dashboard.
+**Situation-aware excuse, apology and urgent-message generator.** Three GPT-2 models, each fine-tuned on a hand-written dataset, served through a Streamlit app with offline translation, read-aloud, chat-style previews, PDF export and a feedback dashboard.
 
 [![Live demo](https://img.shields.io/badge/demo-Hugging%20Face%20Space-yellow?logo=huggingface)](https://huggingface.co/spaces/Sohamb2005/excusify-app)
 [![Models](https://img.shields.io/badge/models-3%20fine--tuned%20GPT--2-blue?logo=huggingface)](https://huggingface.co/Sohamb2005)
@@ -22,7 +22,7 @@
 | **Apology** | What you're apologising for and a tone (emotional, professional, informal) | An apology that names the situation and, in the professional tone, how you'll fix it |
 | **Emergency** | One of 8 scenarios (car trouble, medical issue, stuck somewhere, …) and optional details | A short, first-person urgent message you could send to a manager, teacher or friend |
 
-Every result can be translated into 10 languages, played back as audio, previewed as a chat or text message, exported as a PDF and rated. Ratings feed a dashboard with a leaderboard of the best-rated excuses.
+Every result can be shown in 10 languages, read aloud, previewed as a chat or text message, exported as a PDF and rated. Ratings feed a dashboard with a leaderboard of the best-rated excuses.
 
 ## How it works
 
@@ -116,7 +116,8 @@ The first working version generated text that often didn't make sense or ignored
 3. **The data didn't say what an excuse was for.** The old rows only had scenario, urgency and believability, so the "what do you need an excuse for?" box couldn't influence the output. The datasets were rebuilt around a `Situation` column. The old excuse data was also 33% duplicates, and 270 excuses appeared under conflicting labels.
 4. **App bugs.** Feedback was lost because the feedback form only existed during the button-click rerun. The dashboard leaderboard never showed because of a pandas merge-suffix mistake. The parental filter matched substrings, so "dead" blocked "deadline" and "hang" blocked "change". Chinese translation used an invalid language code.
 5. **Decoding fought the prompt.** `repetition_penalty` and `no_repeat_ngram_size` also count prompt tokens in Hugging Face Transformers, so they penalised exactly the words the model should repeat: *"late to the meeting"* came back as *"early to the gathering"*. Both are now off.
-6. **Removed what didn't work.** A random "location log" (coordinates and addresses that didn't match), and "ranking" and "prediction" claims that the code didn't actually implement.
+6. **Free Google endpoints rate-limited the hosted app.** Text-to-speech (gTTS) and translation (deep-translator) both called unofficial Google endpoints, which answer *HTTP 429 Too Many Requests* to the shared IP addresses of Hugging Face Spaces, so both features failed once deployed. Translation now runs on Meta's open [NLLB-200](https://huggingface.co/facebook/nllb-200-distilled-600M) model inside the app, and read-aloud uses the browser's built-in Web Speech API, so neither depends on an external service.
+7. **Removed what didn't work.** A random "location log" (coordinates and addresses that didn't match), and "ranking" and "prediction" claims that the code didn't actually implement.
 
 ## Run it locally
 
@@ -127,13 +128,14 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Each model (about 500 MB) is downloaded from the Hugging Face Hub the first time its mode is used. Translation and speech need an internet connection.
+Each GPT-2 model (about 500 MB) is downloaded from the Hugging Face Hub the first time its mode is used, and the translation model (about 2.5 GB) the first time you pick a language other than English. After that the app needs no internet connection; read-aloud uses your browser's built-in voices.
 
 ## Project structure
 
 ```
 Excusify/
 ├── app.py                      # Streamlit app
+├── .streamlit/config.toml      # turns off the file watcher (faster reruns, clean logs)
 ├── requirements.txt
 ├── data/
 │   ├── excuses.csv
@@ -146,13 +148,15 @@ Excusify/
 
 ## Tech stack
 
-Python · PyTorch · Hugging Face Transformers · Streamlit · pandas · Plotly · Pillow · ReportLab · gTTS · deep-translator · Google Colab
+Python · PyTorch · Hugging Face Transformers · Streamlit · pandas · Plotly · Pillow · ReportLab · NLLB-200 (Meta) · Web Speech API · Google Colab
 
 ## Limitations
 
 - GPT-2 is a small model and the datasets are small, so it sometimes repeats phrasings from the data or gives generic answers to situations far from what it has seen.
 - The parental filter is a keyword list, not a classifier.
-- Translation (Google Translate) and speech (gTTS) are external services; previews and PDFs stay in English because the bundled fonts don't cover every script.
+- Read-aloud uses the voices installed in the visitor's browser and operating system, so a language without an installed voice falls back to the default voice.
+- Chat previews and PDFs stay in English because the bundled fonts don't cover every script.
+- The translation model, NLLB-200, is licensed CC BY-NC 4.0 (non-commercial use only).
 - Built for fun and for practising awkward messages. Please don't use it to mislead people in ways that could hurt them.
 
 ## Author
