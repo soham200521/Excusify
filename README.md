@@ -76,9 +76,9 @@ The notebook [`training/train_excusify.ipynb`](training/train_excusify.ipynb) tr
 | Model selection | among settings within 0.10 of the best *situation match* (see below), the one with the lowest held-out loss |
 | Decoding | top-p 0.92, temperature 0.8, no repetition penalties; 6 samples re-ranked by relevance, then by model likelihood |
 
-Low loss alone didn't guarantee useful answers: the first v2 run kept the epoch with the lowest held-out loss, and its excuses were fluent but often ignored the situation. So the notebook also measures **situation match**, the share of generated answers that mention at least one content word of the situation they were asked for, on held-out prompts and on 20 situations that appear nowhere in the data. The hand-written answers score 94–100% on the same measure.
+Low loss alone didn't guarantee useful answers: an early training run kept the epoch with the lowest held-out loss, and its excuses were fluent but often ignored the situation. So the notebook also measures **situation match**, the share of generated answers that mention at least one content word of the situation they were asked for, on held-out prompts and on 20 situations that appear nowhere in the data. The hand-written answers score 94–100% on the same measure.
 
-The next run suggested relevance needed much longer training (20 epochs), but that turned out to be a decoding artefact: repetition penalties were punishing the model for repeating the situation (see *What changed in v2*). With them off, every setting reaches about the same relevance, so the selection rule keeps the 5-epoch models, which have by far the lowest held-out loss. Each model card on the Hub records the same numbers:
+The next run suggested relevance needed much longer training (20 epochs), but that turned out to be a decoding artefact: repetition penalties were punishing the model for repeating the situation (see [Challenges and fixes](#challenges-and-fixes)). With them off, every setting reaches about the same relevance, so the selection rule keeps the 5-epoch models, which have by far the lowest held-out loss. Each model card on the Hub records the same numbers:
 [excuses](https://huggingface.co/Sohamb2005/gpt2-finetuned-excuses) ·
 [apologies](https://huggingface.co/Sohamb2005/gpt2-finetuned-apologies) ·
 [emergency messages](https://huggingface.co/Sohamb2005/gpt2-finetuned-emergency).
@@ -107,15 +107,15 @@ The next run suggested relevance needed much longer training (20 epochs), but th
 
 Situation match only checks that an answer is *about* the right thing, not that the reason is sensible. The app handles that at generation time: of the 6 sampled answers it keeps the most relevant, then returns the one the model itself rates most likely for the prompt, including its urgency and believability labels.
 
-## What changed in v2
+## Challenges and fixes
 
-The first version generated text that often didn't make sense or ignored what the user typed. Tracking down why:
+The first working version generated text that often didn't make sense or ignored what the user typed. Tracking down why:
 
 1. **Training and inference used different prompts.** The models were trained on `work | high | high : …` but the app sent full sentences such as *"Craft a medium, normal urgency excuse for …"*. Prompt building now lives in one set of functions, copied into the notebook and the app, and a test checks that both produce identical text.
 2. **The model never learned to stop.** With `pad_token = eos_token`, `DataCollatorForLanguageModeling` masks every end-of-text label, so the model rambled and the app had to cut text at the first full stop. Labels are now built by hand so the end-of-text token is a training target.
 3. **The data didn't say what an excuse was for.** The old rows only had scenario, urgency and believability, so the "what do you need an excuse for?" box couldn't influence the output. The datasets were rebuilt around a `Situation` column. The old excuse data was also 33% duplicates, and 270 excuses appeared under conflicting labels.
 4. **App bugs.** Feedback was lost because the feedback form only existed during the button-click rerun. The dashboard leaderboard never showed because of a pandas merge-suffix mistake. The parental filter matched substrings, so "dead" blocked "deadline" and "hang" blocked "change". Chinese translation used an invalid language code.
-5. **Decoding fought the prompt** (found while building v2). `repetition_penalty` and `no_repeat_ngram_size` also count prompt tokens in Hugging Face Transformers, so they penalised exactly the words the model should repeat: *"late to the meeting"* came back as *"early to the gathering"*. Both are now off.
+5. **Decoding fought the prompt.** `repetition_penalty` and `no_repeat_ngram_size` also count prompt tokens in Hugging Face Transformers, so they penalised exactly the words the model should repeat: *"late to the meeting"* came back as *"early to the gathering"*. Both are now off.
 6. **Removed what didn't work.** A random "location log" (coordinates and addresses that didn't match), and "ranking" and "prediction" claims that the code didn't actually implement.
 
 ## Run it locally
@@ -158,8 +158,6 @@ Python · PyTorch · Hugging Face Transformers · Streamlit · pandas · Plotly 
 ## Author
 
 **Soham Bacchuwar** · [GitHub](https://github.com/soham200521) · [Hugging Face](https://huggingface.co/Sohamb2005)
-
-First version May 2025; v2 (new datasets, retrained models, rebuilt app) October 2026.
 
 ## License
 
