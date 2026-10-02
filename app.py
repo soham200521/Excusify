@@ -332,54 +332,104 @@ def create_pdf(text, header):
 
 
 # browser voices use BCP-47 tags
-SPEECH_LANGS = {"en": "en-US", "es": "es-ES", "fr": "fr-FR", "de": "de-DE", "hi": "hi-IN", "it": "it-IT",
-                "pt": "pt-BR", "ru": "ru-RU", "ja": "ja-JP", "zh-CN": "zh-CN"}
+SPEECH_LANGS = {"en": ("en-US", "English"), "es": ("es-ES", "Spanish"), "fr": ("fr-FR", "French"),
+                "de": ("de-DE", "German"), "hi": ("hi-IN", "Hindi"), "it": ("it-IT", "Italian"),
+                "pt": ("pt-BR", "Portuguese"), "ru": ("ru-RU", "Russian"), "ja": ("ja-JP", "Japanese"),
+                "zh-CN": ("zh-CN", "Chinese")}
 
 SPEECH_WIDGET = """
 <style>
   body { margin: 0; font-family: "Source Sans Pro", sans-serif; }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
   button { font: inherit; font-size: 15px; padding: 6px 14px; border-radius: 8px; cursor: pointer;
            border: 1px solid rgba(128, 128, 128, 0.45); background: #f0f2f6; color: #31333f; }
   button:hover { border-color: #ff4b4b; color: #ff4b4b; }
-  span { margin-left: 10px; font-size: 13px; color: #808495; }
+  #note { font-size: 13px; line-height: 1.35; color: #808495; }
 </style>
-<button id="speak">🔊 Listen</button><span id="note"></span>
+<div class="row"><button id="speak">🔊 Listen</button><span id="note"></span></div>
 <script>
-  const TEXT = __TEXT__, LANG = __LANG__;
+  const TEXT = __TEXT__, LANG = __LANG__, LANG_NAME = __LANG_NAME__;
+  const IDLE = "🔊 Listen", BUSY = "⏹ Stop";
   const button = document.getElementById("speak"), note = document.getElementById("note");
   const synth = window.speechSynthesis;
-  if (!synth) { button.disabled = true; note.textContent = "Read-aloud isn't supported in this browser."; }
-  else { synth.getVoices(); synth.onvoiceschanged = () => synth.getVoices(); }
-  function pickVoice() {
-    const voices = synth.getVoices(), want = LANG.toLowerCase(), base = want.split("-")[0];
-    const norm = (v) => v.lang.toLowerCase().replace("_", "-");
-    return voices.find((v) => norm(v) === want) || voices.find((v) => norm(v).split("-")[0] === base);
+  const ua = navigator.userAgent;
+  const HOW_TO_ADD = /Mac/.test(ua)
+    ? "add a " + LANG_NAME + " voice in System Settings › Accessibility › Spoken Content › System voice › Manage Voices, then restart the browser"
+    : /Windows/.test(ua)
+    ? "add a " + LANG_NAME + " voice in Settings › Time & language › Speech, then restart the browser"
+    : "try Chrome or Edge, which include voices for most languages";
+  let playing = false, started = false, watchdog = null;
+
+  function reset() { playing = false; button.textContent = IDLE; clearTimeout(watchdog); }
+  function missingVoice(reason) { note.textContent = reason + " To hear " + LANG_NAME + ", " + HOW_TO_ADD + "."; }
+
+  function pickVoice(voices) {
+    const want = LANG.toLowerCase(), base = want.split("-")[0];
+    const norm = (v) => (v.lang || "").toLowerCase().replace("_", "-");
+    const exact = voices.filter((v) => norm(v) === want);
+    const close = voices.filter((v) => norm(v) !== want && norm(v).split("-")[0] === base);
+    const matches = exact.concat(close);
+    return matches.find((v) => v.localService) || matches[0];   // voices on the device are the most reliable
   }
-  button.addEventListener("click", () => {
+
+  function speak(voices) {
     try {
-      if (synth.speaking) { synth.cancel(); return; }
       const utterance = new SpeechSynthesisUtterance(TEXT);
       utterance.lang = LANG;
-      const voice = pickVoice();
-      if (voice) { utterance.voice = voice; note.textContent = ""; }
-      else if (synth.getVoices().length) { note.textContent = "No " + LANG + " voice in this browser, using the default voice."; }
-      utterance.onstart = () => { button.textContent = "⏹ Stop"; };
-      utterance.onend = utterance.onerror = () => { button.textContent = "🔊 Listen"; };
+      const voice = pickVoice(voices);
+      if (voice) utterance.voice = voice;
+      else missingVoice("This browser has no " + LANG_NAME + " voice.");
+      utterance.onstart = () => { started = true; clearTimeout(watchdog); };
+      utterance.onend = () => reset();
+      utterance.onerror = (e) => {
+        if (e.error !== "interrupted" && e.error !== "canceled") missingVoice("Couldn't read aloud (" + e.error + ").");
+        reset();
+      };
+      synth.cancel();                       // clears a queue that Chrome sometimes leaves stuck
       synth.speak(utterance);
+      if (synth.paused) synth.resume();
+      // some browsers stay silent without any error when a voice is missing
+      watchdog = setTimeout(() => {
+        if (!started) { synth.cancel(); reset(); missingVoice("Nothing was spoken: this browser may not have a working " + LANG_NAME + " voice."); }
+      }, 4000);
     } catch (err) {
+      reset();
       note.textContent = "Couldn't read aloud: " + err.message;
     }
-  });
+  }
+
+  if (!synth) {
+    button.disabled = true;
+    note.textContent = "Read-aloud isn't supported in this browser.";
+  } else {
+    synth.getVoices();   // starts loading the voice list
+    button.addEventListener("click", () => {
+      if (playing) { synth.cancel(); reset(); return; }
+      playing = true; started = false; button.textContent = BUSY; note.textContent = "";
+      const voices = synth.getVoices();
+      if (voices.length) { speak(voices); return; }      // speak inside the click so browsers allow it
+      let done = false;                                  // voice list still loading (Chrome loads it lazily)
+      const go = () => { if (!done) { done = true; speak(synth.getVoices()); } };
+      synth.addEventListener("voiceschanged", go, { once: true });
+      setTimeout(go, 1000);
+    });
+  }
 </script>
 """
 
 
-def speech_widget(text, lang_code):
-    """Read-aloud button that uses the visitor's browser (Web Speech API): no server calls, no rate limits."""
+def speech_widget_html(text, lang_code):
+    tag, name = SPEECH_LANGS.get(lang_code, ("en-US", "English"))
+
     def js(value):
         return json.dumps(value).replace("</", "<\\/")
-    html = SPEECH_WIDGET.replace("__TEXT__", js(text)).replace("__LANG__", js(SPEECH_LANGS.get(lang_code, "en-US")))
-    components.html(html, height=44)
+    return (SPEECH_WIDGET.replace("__TEXT__", js(text)).replace("__LANG_NAME__", js(name))
+            .replace("__LANG__", js(tag)))
+
+
+def speech_widget(text, lang_code):
+    """Read-aloud button that uses the visitor's browser (Web Speech API): no server calls, no rate limits."""
+    components.html(speech_widget_html(text, lang_code), height=80)
 
 
 # NLLB-200 language codes
