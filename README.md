@@ -32,7 +32,7 @@ flowchart LR
     B --> C["Fine-tuned GPT-2<br/>samples 6 candidates"]
     C --> D["Clean-up<br/>complete sentences only"]
     D --> E["Parental-control<br/>word filter"]
-    E --> F["Relevance ranking<br/>overlap with the situation"]
+    E --> F["Re-ranking<br/>relevance, then likelihood"]
     F --> G["Translate · speech ·<br/>chat preview · PDF"]
     G --> H["Feedback →<br/>dashboard"]
 ```
@@ -43,7 +43,7 @@ Each mode has its own model. The app turns the form into the exact text format t
 work | medium | high | forgot to submit the report :
 ```
 
-and the model writes the completion after the colon, then stops with an end-of-text token. Six candidates are sampled; the app drops incomplete or filtered ones and keeps the candidate that mentions the most words from your situation.
+and the model writes the completion after the colon, then stops with an end-of-text token. Six candidates are sampled; the app drops incomplete or filtered ones, keeps those that mention your situation most, and returns the one the model finds most likely for your prompt.
 
 ## Datasets
 
@@ -74,14 +74,38 @@ The notebook [`training/train_excusify.ipynb`](training/train_excusify.ipynb) tr
 | Split | 90 / 10, stratified by scenario or tone |
 | Hyperparameters | batch size 8, cosine schedule, 10% warm-up; learning rate and epochs from a sweep (5e-5 × 5, 1e-4 × 10, 1e-4 × 20) |
 | Model selection | among settings within 0.10 of the best *situation match* (see below), the one with the lowest held-out loss |
-| Decoding | top-p 0.92, temperature 0.8, no repetition penalties; the app samples 6 answers and picks one of the most relevant |
+| Decoding | top-p 0.92, temperature 0.8, no repetition penalties; 6 samples re-ranked by relevance, then by model likelihood |
 
-Low loss alone didn't mean useful answers: the first v2 run kept the epoch with the lowest held-out loss, and its excuses were fluent but often ignored the situation. So the notebook also measures **situation match**, the share of generated answers that mention at least one content word of the situation they were asked for. It is measured on held-out prompts and on situations that appear nowhere in the data; the hand-written answers score 94–100% on the same measure. Training longer raises held-out loss (the model grows confident in the dataset's own phrasings) while situation match climbs steeply, which is why the selection rule trades the two off explicitly. The sweep and the chosen settings are printed by step 8 and recorded in each model card:
+Low loss alone didn't guarantee useful answers: the first v2 run kept the epoch with the lowest held-out loss, and its excuses were fluent but often ignored the situation. So the notebook also measures **situation match**, the share of generated answers that mention at least one content word of the situation they were asked for, on held-out prompts and on 20 situations that appear nowhere in the data. The hand-written answers score 94–100% on the same measure.
+
+The next run suggested relevance needed much longer training (20 epochs), but that turned out to be a decoding artefact: repetition penalties were punishing the model for repeating the situation (see *What changed in v2*). With them off, every setting reaches about the same relevance, so the selection rule keeps the 5-epoch models, which have by far the lowest held-out loss. Each model card on the Hub records the same numbers:
 [excuses](https://huggingface.co/Sohamb2005/gpt2-finetuned-excuses) ·
 [apologies](https://huggingface.co/Sohamb2005/gpt2-finetuned-apologies) ·
 [emergency messages](https://huggingface.co/Sohamb2005/gpt2-finetuned-emergency).
 
-<!-- Paste the two tables printed by step 8 of the notebook here. -->
+**Results** (chosen models)
+
+| Model | Train / eval | Perplexity (GPT-2 → fine-tuned) | Situation match: held-out / unseen (hand-written) |
+|---|---|---|---|
+| `Sohamb2005/gpt2-finetuned-excuses` | 777 / 87 | 32.1 → 5.8 | 100% / 100% (100%) |
+| `Sohamb2005/gpt2-finetuned-apologies` | 256 / 29 | 27.1 → 6.4 | 95% / 100% (96%) |
+| `Sohamb2005/gpt2-finetuned-emergency` | 203 / 23 | 27.0 → 7.3 | 83% / 100% (94%) |
+
+**Sweep**
+
+| Model | Learning rate | Epochs | Eval loss | Situation match held-out | Situation match unseen |
+|---|---|---|---|---|---|
+| excuse | 5e-05 | 5 | 1.75 | 100% | 100% |
+| excuse | 0.0001 | 10 | 2.404 | 100% | 100% |
+| excuse | 0.0001 | 20 | 2.844 | 100% | 100% |
+| apology | 5e-05 | 5 | 1.86 | 95% | 100% |
+| apology | 0.0001 | 10 | 2.62 | 93% | 75% |
+| apology | 0.0001 | 20 | 3.325 | 96% | 83% |
+| emergency | 5e-05 | 5 | 1.99 | 83% | 100% |
+| emergency | 0.0001 | 10 | 2.598 | 83% | 100% |
+| emergency | 0.0001 | 20 | 3.171 | 78% | 100% |
+
+Situation match only checks that an answer is *about* the right thing, not that the reason is sensible. The app handles that at generation time: of the 6 sampled answers it keeps the most relevant, then returns the one the model itself rates most likely for the prompt, including its urgency and believability labels.
 
 ## What changed in v2
 

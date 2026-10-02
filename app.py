@@ -3,7 +3,6 @@ import streamlit as st
 st.set_page_config(page_title="Excusify", page_icon="🎭", layout="centered")
 
 import os
-import random
 import re
 import textwrap
 import uuid
@@ -126,6 +125,21 @@ def generate_candidates(kind, prompt, max_new_tokens=60):
     return [clean_completion(tokenizer.decode(seq[start:], skip_special_tokens=True)) for seq in output]
 
 
+def completion_logprobs(model, tokenizer, prompt, candidates):
+    """Mean log-probability per token of each candidate (plus end-of-text) given the prompt."""
+    prompt_ids = tokenizer(prompt)["input_ids"]
+    scores = []
+    with torch.no_grad():
+        for text in candidates:
+            ids = prompt_ids + tokenizer(" " + text)["input_ids"] + [tokenizer.eos_token_id]
+            logits = model(torch.tensor([ids], device=model.device)).logits[0, :-1].float()
+            positions = torch.arange(len(ids) - 1, device=logits.device)
+            targets = torch.tensor(ids[1:], device=logits.device)
+            token_logp = torch.log_softmax(logits, dim=-1)[positions, targets]
+            scores.append(token_logp[len(prompt_ids) - 1:].mean().item())
+    return scores
+
+
 BLOCKED_WORDS = [
     "gun", "shooter", "suicide", "murder", "kill", "dead", "violence",
     "blood", "assault", "sex", "rape", "alcohol", "drug",
@@ -143,7 +157,7 @@ def is_appropriate(text, parental_lock=True):
 
 
 def run_generation(kind, prompt, relevance_target, spinner_msg, parental_lock, **gen_kwargs):
-    """Samples several candidates and returns the most relevant appropriate one (or None)."""
+    """Samples several candidates and returns the best appropriate one (or None)."""
     try:
         if kind not in st.session_state.get("_loaded", set()):
             with st.spinner(f"Loading the {kind} model (the first time downloads about 500 MB)..."):
@@ -163,10 +177,16 @@ def run_generation(kind, prompt, relevance_target, spinner_msg, parental_lock, *
     if not allowed:
         st.error("🚫 Inappropriate content detected and blocked by Parental Control. Please try again.")
         return None
-    # keep the answers that mention the situation most, then pick one at random for variety
+    # keep the answers that mention the situation most, then the one the model finds most likely
+    # for this prompt (urgency and believability included); this filters out odd or off-label reasons
     allowed = list(dict.fromkeys(allowed))
-    best = max(relevance(c, relevance_target) for c in allowed)
-    return random.choice([c for c in allowed if relevance(c, relevance_target) == best])
+    rel = [relevance(c, relevance_target) for c in allowed]
+    top = [c for c, r in zip(allowed, rel) if r == max(rel)]
+    if len(top) == 1:
+        return top[0]
+    tokenizer, model = load_model(kind)
+    scores = completion_logprobs(model, tokenizer, prompt, top)
+    return top[max(range(len(top)), key=scores.__getitem__)]
 
 
 # -------------- PREVIEWS & EXPORTS ---------------
